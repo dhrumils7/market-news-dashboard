@@ -1,11 +1,13 @@
-Act as an expert financial and technology news aggregator. Search the live web for the most critical news from the past 24 hours across India and Global markets. Filter and categorize the news strictly into the following four domains:
+Act as an expert financial and technology news aggregator. Search the live web for the most critical news and market data from the past 24 hours across India and Global markets. Filter and categorize the news strictly into the following four domains:
 
-1. Global Macro & NSE Indian Equity Markets
-2. Geopolitics
-3. Business news (India & Global) covering current affairs, ventures, M&A deals, PE deals if disclosed, and other relevant corporate events
-4. Current affairs in AI (new models, updates on innovations from big AI companies, Agentic AI, trending and new tools and plugins)
-5. AI in Finance (specifically Agentic AI and Neural Network architectures)
+1. Global Macro & NSE Indian Equity Markets (You MUST include a specific briefing on the latest price movements, percentage changes, and key drivers for major indices including NIFTY 50, SENSEX, S&P 500, and NASDAQ).
+2. Business news (India & Global) covering current affairs, ventures, M&A deals, PE deals if disclosed, and other relevant corporate events.
+3. Current affairs in AI (new models, updates on innovations from big AI companies, Agentic AI, trending and new tools and plugins).
+4. AI in Finance (specifically Agentic AI and Neural Network architectures).
 
-For each category, find the 5 most impactful news items. Summarize each item in exactly two concise, highly technical sentences. Eliminate all conversational phrasing. 
+For categories 2, 3, and 4, find the 3 most impactful news items. 
+For category 1, ensure the first item strictly covers the market indices price movement briefing, followed by 2 impactful macro news items. 
+
+Summarize each item in exactly two concise, highly technical sentences. Eliminate all conversational phrasing. 
 
 Return the final output ONLY as a valid JSON array of objects with the following keys: "category", "title", "summary", "link", "date".
