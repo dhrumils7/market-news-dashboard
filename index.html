@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>News Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+<style>
+/* ══════════════════════════════════════════════
+   TOKENS
+══════════════════════════════════════════════ */
+:root{
+  /* Palette from uploaded image */
+  --black:     #0a0a0a;
+  --red:       #D93D04;
+  --red-light: #F04A08;
+  --red-dim:   rgba(217,61,4,.15);
+  --cream:     #F5F0E8;
+  --slate:     #3D3D3D;
+  --slate-2:   #2e2e2e;
+  --slate-3:   #252525;
+
+  /* Surface stack (dark) */
+  --bg:        #111111;
+  --surf-1:    #171717;
+  --surf-2:    #1e1e1e;
+  --surf-3:    #252525;
+  --surf-4:    #2c2c2c;
+
+  /* Borders */
+  --border:    rgba(255,255,255,.07);
+  --border-2:  rgba(255,255,255,.12);
+  --border-3:  rgba(255,255,255,.18);
+
+  /* Text */
+  --text-hi:   #f4f4f4;
+  --text-md:   #b0b0b0;
+  --text-lo:   #6a6a6a;
+
+  /* Status */
+  --green:     #22c55e;
+  --green-dim: rgba(34,197,94,.14);
+  --up:        #22c55e;
+  --down:      #ef4444;
+  --flat:      #f59e0b;
+
+  /* Dimensions */
+  --ticker-h:  40px;
+  --header-h:  60px;
+  --r:         12px;
+  --r-sm:      8px;
+  --r-xs:      4px;
+  --r-pill:    999px;
+
+  --font:  'Roboto', system-ui, sans-serif;
+  --mono:  'Roboto Mono', monospace;
+
+  --ease-out: cubic-bezier(0.2,0,0,1);
+}
+
+/* ══════════════════════════════════════════════
+   RESET
+══════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;color-scheme:dark}
+body{
+  background:var(--bg);
+  color:var(--text-hi);
+  font-family:var(--font);
+  font-size:14px;
+  line-height:1.6;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+
+/* ══════════════════════════════════════════════
+   TICKER BANNER
+══════════════════════════════════════════════ */
+.ticker-shell{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:1000;
+  height:var(--ticker-h);
+  background:var(--black);
+  border-bottom:1px solid var(--red);
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+
+/* Badge on the left */
+.ticker-badge{
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:0 16px;
+  height:100%;
+  background:var(--red);
+  position:relative;
+  z-index:2;
+}
+/* Angled right edge */
+.ticker-badge::after{
+  content:'';
+  position:absolute;
+  right:-12px;top:0;
+  width:14px;height:100%;
+  background:var(--red);
+  clip-path:polygon(0 0,100% 0,40% 100%,0 100%);
+}
+.ticker-live-dot{
+  width:6px;height:6px;
+  border-radius:50%;
+  background:#fff;
+  animation:liveblink 1.6s ease-in-out infinite;
+}
+@keyframes liveblink{0%,100%{opacity:1;box-shadow:0 0 6px #fff}50%{opacity:.35;box-shadow:none}}
+.ticker-badge-text{
+  font-family:var(--mono);
+  font-size:.62rem;
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#fff;
+  white-space:nowrap;
+}
+
+/* Scroll viewport */
+.ticker-vp{
+  flex:1;
+  overflow:hidden;
+  height:100%;
+  display:flex;
+  align-items:center;
+  padding-left:24px;
+  mask-image:linear-gradient(to right,transparent 0,#000 60px,#000 calc(100% - 40px),transparent 100%);
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 60px,#000 calc(100% - 40px),transparent 100%);
+}
+.ticker-track{
+  display:inline-flex;
+  align-items:center;
+  white-space:nowrap;
+  will-change:transform;
+}
+.ticker-track:hover{animation-play-state:paused!important}
+
+/* Individual items */
+.t-item{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:0 24px;
+}
+.t-sep{color:var(--red);opacity:.5;margin:0 4px;font-size:.7rem}
+.t-name{
+  font-family:var(--mono);
+  font-size:.68rem;
+  color:var(--text-md);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.t-val{
+  font-family:var(--mono);
+  font-size:.75rem;
+  font-weight:500;
+  color:var(--text-hi);
+}
+.t-chg{
+  font-family:var(--mono);
+  font-size:.65rem;
+  padding:1px 6px;
+  border-radius:var(--r-xs);
+  font-weight:500;
+}
+.t-chg.up  {color:var(--up);  background:var(--green-dim)}
+.t-chg.dn  {color:var(--down);background:rgba(239,68,68,.14)}
+.t-chg.flat{color:var(--flat);background:rgba(245,158,11,.14)}
+
+/* ══════════════════════════════════════════════
+   HEADER
+══════════════════════════════════════════════ */
+.header{
+  position:fixed;
+  top:var(--ticker-h);left:0;right:0;
+  z-index:900;
+  height:var(--header-h);
+  background:rgba(10,10,10,.92);
+  backdrop-filter:blur(18px) saturate(1.3);
+  -webkit-backdrop-filter:blur(18px) saturate(1.3);
+  border-bottom:1px solid var(--border-2);
+  display:flex;
+  align-items:center;
+  padding:0 20px;
+  gap:16px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-shrink:0;
+}
+.logo-icon{
+  width:32px;height:32px;
+  background:var(--red);
+  border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;
+}
+.logo-icon svg{width:18px;height:18px;fill:#fff}
+.logo-text{
+  font-size:1.05rem;
+  font-weight:700;
+  letter-spacing:-.02em;
+  color:var(--text-hi);
+  white-space:nowrap;
+}
+.logo-text span{color:var(--red)}
+
+/* Search */
+.header-search-wrap{
+  flex:1;
+  max-width:420px;
+  position:relative;
+}
+.header-search-icon{
+  position:absolute;
+  left:12px;top:50%;
+  transform:translateY(-50%);
+  color:var(--text-lo);
+  pointer-events:none;
+  display:flex;
+}
+.header-search{
+  width:100%;
+  background:var(--surf-2);
+  border:1px solid var(--border);
+  border-radius:var(--r-pill);
+  color:var(--text-hi);
+  font-family:var(--font);
+  font-size:.85rem;
+  padding:8px 36px;
+  outline:none;
+  transition:border-color .2s,background .2s;
+}
+.header-search::placeholder{color:var(--text-lo)}
+.header-search:focus{border-color:var(--red);background:var(--surf-3)}
+.header-search-clear{
+  position:absolute;
+  right:12px;top:50%;
+  transform:translateY(-50%);
+  color:var(--text-lo);
+  font-size:1.1rem;
+  line-height:1;
+  display:none;
+  padding:2px;
+  background:none;border:none;cursor:pointer;
+}
+.header-search-clear.show{display:block}
+
+/* Right meta */
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-left:auto;
+  flex-shrink:0;
+}
+.header-time{
+  font-family:var(--mono);
+  font-size:.7rem;
+  color:var(--text-lo);
+  white-space:nowrap;
+}
+.refresh-btn{
+  display:flex;align-items:center;gap:6px;
+  background:var(--surf-3);
+  border:1px solid var(--border-2);
+  color:var(--text-md);
+  font-size:.78rem;
+  font-weight:500;
+  padding:7px 14px;
+  border-radius:var(--r-pill);
+  transition:background .18s,border-color .18s,color .18s;
+}
+.refresh-btn:hover{background:var(--red-dim);border-color:var(--red);color:var(--text-hi)}
+.refresh-btn svg{width:14px;height:14px}
+.refresh-btn.spin svg{animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ══════════════════════════════════════════════
+   STATS STRIP (below header)
+══════════════════════════════════════════════ */
+.stats-strip{
+  margin-top:calc(var(--ticker-h) + var(--header-h));
+  background:var(--surf-1);
+  border-bottom:1px solid var(--border);
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.stats-strip::-webkit-scrollbar{display:none}
+.stat-cell{
+  flex:1;
+  min-width:130px;
+  padding:12px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  border-right:1px solid var(--border);
+  position:relative;
+}
+.stat-cell::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:2px;
+  background:var(--red);
+  opacity:0;
+  transition:opacity .2s;
+}
+.stat-cell:hover::before{opacity:1}
+.stat-cell:last-child{border-right:none}
+.stat-val{
+  font-family:var(--mono);
+  font-size:1.2rem;
+  font-weight:500;
+  color:var(--text-hi);
+  line-height:1;
+}
+.stat-lbl{
+  font-size:.65rem;
+  color:var(--text-lo);
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+/* ══════════════════════════════════════════════
+   MAIN LAYOUT
+══════════════════════════════════════════════ */
+.layout{
+  display:flex;
+  align-items:flex-start;
+  max-width:1440px;
+  margin:0 auto;
+  padding:0 0 80px;
+}
+
+/* ── SIDEBAR ── */
+.sidebar{
+  width:240px;
+  flex-shrink:0;
+  position:sticky;
+  top:calc(var(--ticker-h) + var(--header-h));
+  height:calc(100vh - var(--ticker-h) - var(--header-h));
+  overflow-y:auto;
+  scrollbar-width:none;
+  padding:20px 0;
+  border-right:1px solid var(--border);
+  background:var(--surf-1);
+}
+.sidebar::-webkit-scrollbar{display:none}
+
+.sb-section-label{
+  font-size:.62rem;
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--text-lo);
+  padding:0 16px 8px;
+}
+.sb-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  width:100%;
+  text-align:left;
+  padding:9px 16px;
+  border-radius:0;
+  color:var(--text-md);
+  font-size:.82rem;
+  font-weight:400;
+  border-left:3px solid transparent;
+  transition:background .15s,color .15s,border-color .15s;
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+  background:none;border-top:none;border-right:none;border-bottom:none;
+}
+.sb-item:hover{background:rgba(217,61,4,.08);color:var(--text-hi)}
+.sb-item.active{
+  border-left-color:var(--red);
+  background:rgba(217,61,4,.12);
+  color:var(--text-hi);
+  font-weight:500;
+}
+.sb-dot{
+  width:8px;height:8px;
+  border-radius:50%;
+  flex-shrink:0;
+}
+.sb-count{
+  margin-left:auto;
+  font-family:var(--mono);
+  font-size:.62rem;
+  color:var(--text-lo);
+  background:var(--surf-3);
+  padding:1px 7px;
+  border-radius:var(--r-pill);
+  flex-shrink:0;
+}
+.sb-divider{
+  height:1px;
+  background:var(--border);
+  margin:8px 16px;
+}
+
+/* ── MAIN CONTENT ── */
+.main{
+  flex:1;
+  min-width:0;
+  padding:20px 24px;
+}
+
+/* ── SEARCH RESULT INFO ── */
+.search-info{
+  display:none;
+  font-family:var(--mono);
+  font-size:.72rem;
+  color:var(--text-lo);
+  margin-bottom:16px;
+}
+.search-info.show{display:block}
+
+/* ── CATEGORY BLOCK ── */
+.cat-block{
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  overflow:hidden;
+  background:var(--surf-1);
+  transition:box-shadow .2s;
+}
+.cat-block:hover{box-shadow:0 0 0 1px var(--border-2)}
+.cat-block.hidden{display:none}
+
+.cat-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 18px;
+  background:var(--surf-2);
+  cursor:pointer;
+  user-select:none;
+  border-bottom:1px solid var(--border);
+  transition:background .15s;
+}
+.cat-header:hover{background:var(--surf-3)}
+
+.cat-color-bar{
+  width:4px;
+  height:28px;
+  border-radius:2px;
+  flex-shrink:0;
+}
+.cat-title{
+  font-size:.88rem;
+  font-weight:500;
+  color:var(--text-hi);
+  letter-spacing:-.01em;
+  flex:1;
+}
+.cat-badge{
+  font-family:var(--mono);
+  font-size:.62rem;
+  padding:2px 8px;
+  border-radius:var(--r-pill);
+  background:var(--surf-3);
+  border:1px solid var(--border);
+  color:var(--text-lo);
+  flex-shrink:0;
+}
+.cat-chevron{
+  color:var(--text-lo);
+  transition:transform .25s var(--ease-out);
+  flex-shrink:0;
+  display:flex;
+}
+.cat-block.collapsed .cat-chevron{transform:rotate(-90deg)}
+.cat-block.collapsed .cat-body{display:none}
+
+/* ── CARD GRID ── */
+.cat-body{padding:16px}
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:12px;
+}
+
+/* ── CARD ── */
+.card{
+  background:var(--surf-2);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition:border-color .2s,background .2s,transform .15s,box-shadow .2s;
+  cursor:pointer;
+  text-decoration:none;
+  color:inherit;
+  position:relative;
+}
+.card::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:3px;
+}
+.card:hover{
+  border-color:var(--border-3);
+  background:var(--surf-3);
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(0,0,0,.4);
+}
+
+.card-body{
+  padding:14px 16px;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.card-meta{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.card-date{
+  font-family:var(--mono);
+  font-size:.62rem;
+  color:var(--text-lo);
+}
+.card-num{
+  font-family:var(--mono);
+  font-size:.6rem;
+  color:var(--text-lo);
+  margin-left:auto;
+}
+.card-title{
+  font-size:.9rem;
+  font-weight:500;
+  color:var(--text-hi);
+  line-height:1.4;
+  letter-spacing:-.01em;
+  transition:color .15s;
+}
+.card:hover .card-title{color:#fff}
+.card-summary{
+  font-size:.78rem;
+  color:var(--text-md);
+  line-height:1.65;
+  flex:1;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.card-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 16px;
+  border-top:1px solid var(--border);
+  background:var(--surf-1);
+}
+.card-domain{
+  font-family:var(--mono);
+  font-size:.62rem;
+  color:var(--text-lo);
+}
+.card-arrow{
+  font-size:.7rem;
+  color:var(--text-lo);
+  transition:color .15s,transform .15s;
+}
+.card:hover .card-arrow{color:var(--red);transform:translateX(3px)}
+
+/* Highlight for search */
+mark{
+  background:rgba(217,61,4,.3);
+  color:var(--text-hi);
+  border-radius:2px;
+  padding:0 1px;
+}
+
+/* ══════════════════════════════════════════════
+   MARKETS CARD (special — full width in grid)
+══════════════════════════════════════════════ */
+.markets-card{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:0;
+  border-radius:var(--r);
+  overflow:hidden;
+  border:1px solid var(--border);
+}
+.mkt-cell{
+  padding:16px 18px;
+  background:var(--surf-2);
+  border-right:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  transition:background .15s;
+}
+.mkt-cell:hover{background:var(--surf-3)}
+.mkt-cell:last-child{border-right:none}
+.mkt-name{
+  font-family:var(--mono);
+  font-size:.65rem;
+  color:var(--text-lo);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.mkt-val{
+  font-family:var(--mono);
+  font-size:1.05rem;
+  font-weight:500;
+  color:var(--text-hi);
+}
+.mkt-chg{
+  font-family:var(--mono);
+  font-size:.7rem;
+  font-weight:500;
+}
+.mkt-chg.up  {color:var(--up)}
+.mkt-chg.dn  {color:var(--down)}
+.mkt-chg.flat{color:var(--flat)}
+
+/* ══════════════════════════════════════════════
+   EMPTY / LOADING / ERROR STATES
+══════════════════════════════════════════════ */
+.state-box{
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:80px 20px;
+  text-align:center;gap:14px;
+}
+.state-spinner{
+  width:28px;height:28px;
+  border:2.5px solid var(--border-2);
+  border-top-color:var(--red);
+  border-radius:50%;
+  animation:spin .7s linear infinite;
+}
+.state-title{font-size:.95rem;font-weight:500;color:var(--text-hi)}
+.state-msg{font-size:.78rem;color:var(--text-lo);max-width:340px;line-height:1.7}
+
+/* ══════════════════════════════════════════════
+   NO RESULTS
+══════════════════════════════════════════════ */
+.no-results{
+  display:none;
+  text-align:center;
+  padding:60px 20px;
+  color:var(--text-lo);
+  font-size:.82rem;
+}
+.no-results.show{display:block}
+.no-results strong{display:block;font-size:.9rem;color:var(--text-hi);margin-bottom:6px}
+
+/* ══════════════════════════════════════════════
+   MOBILE SIDEBAR TOGGLE
+══════════════════════════════════════════════ */
+.sidebar-overlay{
+  display:none;
+  position:fixed;inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:800;
+}
+.sidebar-overlay.open{display:block}
+.ham-btn{
+  display:none;
+  padding:6px;color:var(--text-md);
+  background:none;border:none;cursor:pointer;
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media(max-width:900px){
+  .sidebar{
+    position:fixed;
+    top:calc(var(--ticker-h)+var(--header-h));
+    left:0;
+    height:calc(100vh - var(--ticker-h) - var(--header-h));
+    z-index:850;
+    transform:translateX(-100%);
+    transition:transform .25s var(--ease-out);
+    border-right:1px solid var(--border-2);
+    box-shadow:8px 0 32px rgba(0,0,0,.5);
+  }
+  .sidebar.open{transform:translateX(0)}
+  .ham-btn{display:flex}
+  .stats-strip .stat-cell{min-width:100px;padding:10px 14px}
+  .stat-val{font-size:1rem}
+  .main{padding:14px}
+  .layout{flex-direction:column}
+  .markets-card{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .card-grid{grid-template-columns:1fr}
+  .markets-card{grid-template-columns:1fr 1fr}
+  .header-search-wrap{display:none}
+  .logo-text{font-size:.92rem}
+  .stats-strip{display:none}
+}
+
+/* ══════════════════════════════════════════════
+   SCROLLBAR STYLING
+══════════════════════════════════════════════ */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--slate);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--border-3)}
+</style>
+</head>
+<body>
+
+<!-- ── TICKER ────────────────────────────────────────────── -->
+<div class="ticker-shell" id="tickerShell">
+  <div class="ticker-badge">
+    <span class="ticker-live-dot"></span>
+    <span class="ticker-badge-text">Markets</span>
+  </div>
+  <div class="ticker-vp" id="tickerVp">
+    <div class="ticker-track" id="tickerTrack">
+      <span class="t-item" style="color:var(--text-lo);font-size:.75rem;font-style:italic">
+        Loading market data…
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ── HEADER ─────────────────────────────────────────────── -->
+<header class="header">
+  <button class="ham-btn" id="hamBtn" aria-label="Menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/>
+    </svg>
+  </button>
+
+  <div class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    </div>
+    <span class="logo-text">News <span>Dashboard</span></span>
+  </div>
+
+  <div class="header-search-wrap">
+    <span class="header-search-icon">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </span>
+    <input class="header-search" id="searchInput" type="text" placeholder="Search across all stories…" oninput="handleSearch(this.value)" autocomplete="off"/>
+    <button class="header-search-clear" id="searchClear" onclick="clearSearch()">×</button>
+  </div>
+
+  <div class="header-right">
+    <span class="header-time" id="headerTime">—</span>
+    <button class="refresh-btn" id="refreshBtn" onclick="loadData()">
+      <svg id="rIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="23 4 23 10 17 10"/>
+        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+      </svg>
+      Refresh
+    </button>
+  </div>
+</header>
+
+<!-- ── STATS STRIP ────────────────────────────────────────── -->
+<div class="stats-strip" id="statsStrip">
+  <div class="stat-cell"><div class="stat-val" id="ss-total">—</div><div class="stat-lbl">Total Stories</div></div>
+  <div class="stat-cell"><div class="stat-val" id="ss-cats">—</div><div class="stat-lbl">Categories</div></div>
+  <div class="stat-cell"><div class="stat-val" id="ss-showing">—</div><div class="stat-lbl">Showing</div></div>
+  <div class="stat-cell"><div class="stat-val" id="ss-updated">—</div><div class="stat-lbl">Last Updated</div></div>
+</div>
+
+<!-- ── MAIN ───────────────────────────────────────────────── -->
+<div class="sidebar-overlay" id="sbOverlay" onclick="closeSb()"></div>
+
+<div class="layout">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-section-label">Categories</div>
+    <button class="sb-item active" data-cat="ALL" onclick="filterCat('ALL',this)">
+      <span class="sb-dot" style="background:var(--red)"></span>
+      All Stories
+      <span class="sb-count" id="sbCntAll">—</span>
+    </button>
+    <div class="sb-divider"></div>
+    <div id="sbCats"></div>
+  </aside>
+
+  <!-- Content -->
+  <main class="main" id="mainContent">
+    <div id="searchInfo" class="search-info"></div>
+    <div class="no-results" id="noResults">
+      <div style="font-size:2rem;opacity:.15;margin-bottom:8px">◌</div>
+      <strong>No stories found</strong>
+      Try different keywords or select another category.
+    </div>
+    <div id="content">
+      <div class="state-box">
+        <div class="state-spinner"></div>
+        <div class="state-title">Loading Feed</div>
+        <div class="state-msg">Fetching the latest news digest…</div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   CONFIGURATION
+══════════════════════════════════════════════════════════ */
+const MARKETS_CAT = "Global Macro & NSE Indian Equity Markets";
+
+// 10 distinct colours — mapped to categories in order of appearance
+const CAT_COLORS = [
+  "#D93D04","#e05fff","#22c55e","#46c6ff","#f59e0b",
+  "#ff5c7c","#7b8cff","#00d68f","#c3ff5a","#ff8c5a"
+];
+
+/* ══════════════════════════════════════════════════════════
+   STATE
+══════════════════════════════════════════════════════════ */
+let allItems       = [];
+let allCats        = [];
+let catColorMap    = {};
+let activeFilter   = "ALL";
+let searchQ        = "";
+let updateTime     = null;
+let tickerAnim     = null;
+
+/* ══════════════════════════════════════════════════════════
+   CLOCK
+══════════════════════════════════════════════════════════ */
+(function tick(){
+  const n=new Date(), p=v=>String(v).padStart(2,"0");
+  const el=document.getElementById("headerTime");
+  if(el) el.textContent=`${p(n.getUTCHours())}:${p(n.getUTCMinutes())}:${p(n.getUTCSeconds())} UTC`;
+  setTimeout(tick,1000);
+})();
+
+/* ══════════════════════════════════════════════════════════
+   FETCH + BOOTSTRAP
+══════════════════════════════════════════════════════════ */
+async function loadData(){
+  setContent(`<div class="state-box"><div class="state-spinner"></div>
+    <div class="state-title">Loading Feed</div>
+    <div class="state-msg">Fetching the latest news digest…</div></div>`);
+  document.getElementById("refreshBtn").classList.add("spin");
+
+  try{
+    const r=await fetch("data.json?t="+Date.now());
+    if(!r.ok) throw new Error(`HTTP ${r.status}`);
+    const d=await r.json();
+    if(!Array.isArray(d)||!d.length) throw new Error("Empty dataset");
+    allItems=d;
+    updateTime=new Date();
+    bootstrap();
+  }catch(e){
+    setContent(`<div class="state-box">
+      <div style="font-size:2rem;opacity:.15">⚠</div>
+      <div class="state-title">Feed Unavailable</div>
+      <div class="state-msg">Could not load <code style="color:var(--red)">data.json</code>.
+      Make sure the backend has run successfully.<br><br>
+      <span style="font-size:.72rem;font-family:var(--mono);color:var(--text-lo)">${esc(e.message)}</span>
+      </div></div>`);
+  }finally{
+    document.getElementById("refreshBtn").classList.remove("spin");
+  }
+}
+
+function bootstrap(){
+  // Build ordered category list (Markets first if present)
+  const seen=new Set();
+  allCats=[];
+  // Markets category goes first
+  allItems.forEach(i=>{ if((i.category||"General")===MARKETS_CAT && !seen.has(MARKETS_CAT)){ seen.add(MARKETS_CAT); allCats.push(MARKETS_CAT); }});
+  allItems.forEach(i=>{ const c=i.category||"General"; if(!seen.has(c)){ seen.add(c); allCats.push(c); }});
+
+  // Assign colours
+  catColorMap={};
+  allCats.forEach((c,i)=>{ catColorMap[c]=CAT_COLORS[i%CAT_COLORS.length]; });
+
+  // Build sidebar
+  buildSidebar();
+  // Update stats
+  updateStats();
+  // Build ticker
+  buildTicker();
+  // Render cards
+  renderContent();
+}
+
+/* ══════════════════════════════════════════════════════════
+   TICKER BANNER
+══════════════════════════════════════════════════════════ */
+function buildTicker(){
+  const marketItems=allItems.filter(i=>(i.category||"")=== MARKETS_CAT);
+  if(!marketItems.length){
+    document.getElementById("tickerTrack").innerHTML=
+      `<span class="t-item" style="color:var(--text-lo);font-size:.75rem">No market data available</span>`;
+    return;
+  }
+
+  // Use the first article's summary to extract index data
+  const summary=(marketItems[0].summary||"")+" "+(marketItems[0].title||"");
+
+  // Parse known indices from the text
+  const indices=extractIndices(summary);
+
+  // If parser found structured data, use it; otherwise display raw summary segments
+  const items = indices.length ? indices : buildFallbackItems(summary);
+
+  // Build HTML — doubled for seamless loop
+  const html = items.map(it=>{
+    let dirClass="flat";
+    if(it.change){
+      const n=parseFloat(it.change.replace(/[^0-9.\-]/g,""));
+      if(n>0) dirClass="up";
+      else if(n<0) dirClass="dn";
+    }
+    const chgHtml=it.change
+      ? `<span class="t-chg ${dirClass}">${it.change}</span>`
+      : "";
+    return `<span class="t-item">
+      <span class="t-sep">◆</span>
+      <span class="t-name">${esc(it.name)}</span>
+      <span class="t-val">${esc(it.value)}</span>
+      ${chgHtml}
+    </span>`;
+  }).join("");
+
+  const track=document.getElementById("tickerTrack");
+  // Double the content for seamless infinite scroll
+  track.innerHTML=html+html;
+
+  // Cancel any existing animation
+  if(tickerAnim) tickerAnim.cancel();
+
+  // Use WAAPI for buttery smooth scroll
+  const totalW=track.scrollWidth/2; // half because doubled
+  if(!totalW) return;
+  const dur=Math.max(18000, totalW*28); // ~28ms per px
+
+  tickerAnim=track.animate(
+    [{transform:"translateX(0)"},{transform:`translateX(-${totalW}px)`}],
+    {duration:dur, iterations:Infinity, easing:"linear"}
+  );
+}
+
+/* Extract indices using regex patterns for common index text */
+function extractIndices(text){
+  const results=[];
+  // Patterns: "NIFTY 50: 24,500.25 (+1.2%)" or "NIFTY 50 at 24,500" etc.
+  const patterns=[
+    /\b(NIFTY\s*50)\b[:\s\-–at]*([0-9][0-9,\.]+)\s*[\(\[]?([+\-][0-9\.]+%?[\)\]]?)?/i,
+    /\b(SENSEX)\b[:\s\-–at]*([0-9][0-9,\.]+)\s*[\(\[]?([+\-][0-9\.]+%?[\)\]]?)?/i,
+    /\b(S&P\s*500|SPX)\b[:\s\-–at]*([0-9][0-9,\.]+)\s*[\(\[]?([+\-][0-9\.]+%?[\)\]]?)?/i,
+    /\b(NASDAQ|NDX)\b[:\s\-–at]*([0-9][0-9,\.]+)\s*[\(\[]?([+\-][0-9\.]+%?[\)\]]?)?/i,
+    /\b(DOW|DJIA)\b[:\s\-–at]*([0-9][0-9,\.]+)\s*[\(\[]?([+\-][0-9\.]+%?[\)\]]?)?/i,
+    /\b(USD[\/\-]INR|INR)\b[:\s\-–at]*([0-9][0-9,\.]+)\s*[\(\[]?([+\-][0-9\.]+%?[\)\]]?)?/i,
+    /\b(GOLD|XAU)\b[:\s\-–at]*([0-9][0-9,\.]+)\s*[\(\[]?([+\-][0-9\.]+%?[\)\]]?)?/i,
+    /\b(CRUDE|BRENT|WTI)\b[:\s\-–at]*([0-9][0-9,\.]+)\s*[\(\[]?([+\-][0-9\.]+%?[\)\]]?)?/i,
+  ];
+  patterns.forEach(rx=>{
+    const m=text.match(rx);
+    if(m){
+      results.push({
+        name: m[1].replace(/\s+/g," ").toUpperCase(),
+        value: m[2],
+        change: m[3] ? m[3].replace(/[\(\)\[\]]/g,"").trim() : null
+      });
+    }
+  });
+  return results;
+}
+
+/* If regex finds nothing structured, break text into sentence-sized chunks */
+function buildFallbackItems(text){
+  // Split on common delimiters — period, semicolon, pipe
+  const chunks=text.split(/[;|•·]/).map(s=>s.trim()).filter(s=>s.length>4 && s.length<120);
+  if(!chunks.length) return [{name:"MARKETS",value:text.slice(0,80),change:null}];
+  return chunks.map((c,i)=>({name:`UPDATE ${i+1}`,value:c,change:null}));
+}
+
+/* ══════════════════════════════════════════════════════════
+   SIDEBAR
+══════════════════════════════════════════════════════════ */
+function buildSidebar(){
+  const container=document.getElementById("sbCats");
+  container.innerHTML="";
+  document.getElementById("sbCntAll").textContent=allItems.length;
+
+  allCats.forEach(cat=>{
+    const clr=catColorMap[cat]||"#888";
+    const cnt=allItems.filter(i=>(i.category||"General")===cat).length;
+    const btn=document.createElement("button");
+    btn.className="sb-item";
+    btn.dataset.cat=cat;
+    btn.innerHTML=`<span class="sb-dot" style="background:${clr}"></span>
+      <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(cat)}">${esc(cat)}</span>
+      <span class="sb-count">${cnt}</span>`;
+    btn.onclick=()=>filterCat(cat,btn);
+    container.appendChild(btn);
+  });
+}
+
+/* ══════════════════════════════════════════════════════════
+   FILTER & SEARCH
+══════════════════════════════════════════════════════════ */
+function filterCat(cat,btn){
+  activeFilter=cat;
+  document.querySelectorAll(".sb-item").forEach(b=>b.classList.remove("active"));
+  if(btn) btn.classList.add("active");
+  closeSb();
+  renderContent();
+}
+
+let searchTimer;
+function handleSearch(val){
+  searchQ=val;
+  document.getElementById("searchClear").classList.toggle("show",val.length>0);
+  clearTimeout(searchTimer);
+  searchTimer=setTimeout(renderContent,140);
+}
+function clearSearch(){
+  document.getElementById("searchInput").value="";
+  searchQ="";
+  document.getElementById("searchClear").classList.remove("show");
+  renderContent();
+}
+
+/* ══════════════════════════════════════════════════════════
+   STATS STRIP
+══════════════════════════════════════════════════════════ */
+function updateStats(showing){
+  document.getElementById("ss-total").textContent=allItems.length;
+  document.getElementById("ss-cats").textContent=allCats.length;
+  if(showing!==undefined) document.getElementById("ss-showing").textContent=showing;
+  if(updateTime){
+    const p=v=>String(v).padStart(2,"0");
+    document.getElementById("ss-updated").textContent=
+      `${p(updateTime.getUTCHours())}:${p(updateTime.getUTCMinutes())} UTC`;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   RENDER CONTENT
+══════════════════════════════════════════════════════════ */
+function renderContent(){
+  const sq=searchQ.trim().toLowerCase();
+  const noRes=document.getElementById("noResults");
+  const si=document.getElementById("searchInfo");
+
+  // Determine which items to show
+  let items=activeFilter==="ALL"
+    ? allItems
+    : allItems.filter(i=>(i.category||"General")===activeFilter);
+
+  if(sq){
+    items=items.filter(i=>
+      (i.title||"").toLowerCase().includes(sq)||
+      (i.summary||"").toLowerCase().includes(sq)||
+      (i.category||"").toLowerCase().includes(sq)
+    );
+    si.textContent=`${items.length} result${items.length!==1?"s":""} for "${searchQ}"`;
+    si.classList.add("show");
+  } else {
+    si.classList.remove("show");
+  }
+
+  updateStats(items.length);
+
+  if(!items.length){ setContent(""); noRes.classList.add("show"); return; }
+  noRes.classList.remove("show");
+
+  // Group by category — maintaining allCats order
+  const groups={};
+  allCats.forEach(c=>{ groups[c]=[]; });
+  items.forEach(i=>{ const c=i.category||"General"; if(!groups[c]) groups[c]=[]; groups[c].push(i); });
+
+  const frag=document.createDocumentFragment();
+  let delay=0;
+
+  allCats.forEach(cat=>{
+    const list=groups[cat];
+    // If a specific category is selected, skip others (unless search active)
+    const isActive=activeFilter==="ALL"||activeFilter===cat||sq;
+    if(!isActive||!list||!list.length) return;
+
+    const clr=catColorMap[cat]||"#888";
+    const isMarkets=cat===MARKETS_CAT;
+
+    const block=document.createElement("div");
+    block.className="cat-block";
+    // Only collapse non-selected categories when a filter is active
+    const shouldCollapse=(activeFilter==="ALL"&&!sq&&cat!==allCats[0]);
+    if(shouldCollapse) block.classList.add("collapsed");
+    block.style.opacity="0";
+    block.style.transform="translateY(10px)";
+    block.style.transition=`opacity .3s ${delay}s, transform .3s ${delay}s`;
+    delay=Math.min(delay+0.06,0.4);
+
+    // Header
+    const hdr=document.createElement("div");
+    hdr.className="cat-header";
+    hdr.innerHTML=`
+      <div class="cat-color-bar" style="background:${clr}"></div>
+      <div class="cat-title">${esc(cat)}</div>
+      <div class="cat-badge">${list.length} ${list.length===1?"story":"stories"}</div>
+      <span class="cat-chevron">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </span>`;
+    hdr.onclick=()=>block.classList.toggle("collapsed");
+
+    // Body
+    const body=document.createElement("div");
+    body.className="cat-body";
+
+    if(isMarkets){
+      // Special markets display — parse indices for a visual grid
+      const indices=extractIndices((list[0]?.summary||"")+" "+(list[0]?.title||""));
+      if(indices.length){
+        const mktCard=document.createElement("div");
+        mktCard.className="markets-card";
+        mktCard.innerHTML=indices.map(it=>{
+          let cls="flat";
+          if(it.change){ const n=parseFloat(it.change.replace(/[^0-9.\-]/g,"")); if(n>0) cls="up"; else if(n<0) cls="dn"; }
+          return `<div class="mkt-cell">
+            <div class="mkt-name">${esc(it.name)}</div>
+            <div class="mkt-val">${esc(it.value)}</div>
+            ${it.change?`<div class="mkt-chg ${cls}">${it.change.startsWith("+")||it.change.startsWith("-")?it.change:(it.change)}</div>`:""}
+          </div>`;
+        }).join("");
+        body.appendChild(mktCard);
+      }
+      // Also render the article as a card below
+    }
+
+    // Regular card grid
+    const grid=document.createElement("div");
+    grid.className="card-grid";
+    list.forEach((item,idx)=>grid.appendChild(makeCard(item,idx,clr,sq)));
+    body.appendChild(grid);
+
+    block.appendChild(hdr);
+    block.appendChild(body);
+    frag.appendChild(block);
+
+    // Trigger animation
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      block.style.opacity="1";
+      block.style.transform="translateY(0)";
+    }));
+  });
+
+  const content=document.getElementById("content");
+  content.innerHTML="";
+  content.appendChild(frag);
+}
+
+/* ══════════════════════════════════════════════════════════
+   CARD BUILDER
+══════════════════════════════════════════════════════════ */
+function makeCard(item,idx,clr,sq){
+  const hasLink=item.link&&item.link!=="#";
+  const a=document.createElement("a");
+  a.className="card";
+  if(hasLink){ a.href=item.link; a.target="_blank"; a.rel="noopener noreferrer"; }
+
+  let domain="";
+  if(hasLink) try{ domain=new URL(item.link).hostname.replace("www.",""); }catch(e){}
+
+  const title  =hl(esc(item.title  ||"Untitled"),sq);
+  const summary=hl(esc(item.summary||""),sq);
+  const date   =item.date||"";
+
+  a.innerHTML=`
+    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:${clr}"></div>
+    <div class="card-body">
+      <div class="card-meta">
+        ${date?`<span class="card-date">${esc(date)}</span>`:""}
+        <span class="card-num">#${String(idx+1).padStart(2,"0")}</span>
+      </div>
+      <div class="card-title">${title}</div>
+      <div class="card-summary">${summary}</div>
+    </div>
+    <div class="card-footer">
+      <span class="card-domain">${domain||"—"}</span>
+      <span class="card-arrow">${hasLink?"→":"—"}</span>
+    </div>`;
+  return a;
+}
+
+/* ══════════════════════════════════════════════════════════
+   MOBILE SIDEBAR
+══════════════════════════════════════════════════════════ */
+document.getElementById("hamBtn").onclick=()=>{
+  document.getElementById("sidebar").classList.toggle("open");
+  document.getElementById("sbOverlay").classList.toggle("open");
+};
+function closeSb(){
+  document.getElementById("sidebar").classList.remove("open");
+  document.getElementById("sbOverlay").classList.remove("open");
+}
+
+/* ══════════════════════════════════════════════════════════
+   UTILITIES
+══════════════════════════════════════════════════════════ */
+function setContent(html){ document.getElementById("content").innerHTML=html; }
+
+function esc(s){
+  return String(s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;").replace(/'/g,"&#039;");
+}
+function hl(html,sq){
+  if(!sq) return html;
+  const rx=sq.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+  return html.replace(new RegExp(`(${rx})`,"gi"),"<mark>$1</mark>");
+}
+
+/* ══════════════════════════════════════════════════════════
+   INIT
+══════════════════════════════════════════════════════════ */
+loadData();
+</script>
+</body>
+</html>
