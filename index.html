@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewsGrid — Live Intelligence Feed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:         #0a0a0b;
+      --surface:    #111113;
+      --surface2:   #18181c;
+      --border:     #2a2a30;
+      --accent:     #e8c55a;
+      --accent2:    #5ae8c5;
+      --text:       #d4d4dc;
+      --muted:      #666672;
+      --danger:     #e85a5a;
+      --font-mono:  'IBM Plex Mono', monospace;
+      --font-body:  'IBM Plex Sans', sans-serif;
+      --font-disp:  'Bebas Neue', cursive;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Scanline overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.04) 2px,
+        rgba(0,0,0,0.04) 4px
+      );
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,11,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      gap: 2rem;
+    }
+
+    .logo {
+      font-family: var(--font-disp);
+      font-size: 1.9rem;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .logo span {
+      color: var(--text);
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .live-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--accent2);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent2);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .timestamp {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+    }
+
+    .refresh-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      padding: 4px 12px;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+
+    .refresh-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ─── TICKER ─── */
+    .ticker-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 6px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .ticker-track {
+      display: inline-block;
+      animation: ticker 40s linear infinite;
+    }
+
+    .ticker-track:hover { animation-play-state: paused; }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .ticker-item {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      padding: 0 2.5rem;
+    }
+
+    .ticker-item .ticker-cat {
+      color: var(--accent);
+      margin-right: 8px;
+    }
+
+    /* ─── MAIN ─── */
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+
+    /* ─── FILTER BAR ─── */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .filter-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-right: 0.5rem;
+    }
+
+    .filter-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      padding: 4px 14px;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: all 0.15s;
+      border-radius: 2px;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--text);
+      color: var(--text);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--bg);
+      font-weight: 600;
+    }
+
+    /* ─── CATEGORY SECTION ─── */
+    .category-section {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeUp 0.4s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .category-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .category-title {
+      font-family: var(--font-disp);
+      font-size: 1.6rem;
+      letter-spacing: 0.1em;
+      color: var(--text);
+    }
+
+    .category-count {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+
+    .category-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ─── CARD GRID ─── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    /* ─── CARD ─── */
+    .card {
+      background: var(--surface);
+      padding: 1.5rem;
+      position: relative;
+      transition: background 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--border);
+      transition: background 0.2s;
+    }
+
+    .card:hover {
+      background: var(--surface2);
+    }
+
+    .card:hover::before {
+      background: var(--accent);
+    }
+
+    .card-number {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--border);
+      letter-spacing: 0.1em;
+    }
+
+    .card-title {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.4;
+      padding-right: 2rem;
+      transition: color 0.2s;
+    }
+
+    .card:hover .card-title {
+      color: #fff;
+    }
+
+    .card-summary {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+      margin-top: auto;
+    }
+
+    .card-cat-badge {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding: 2px 8px;
+      border: 1px solid rgba(232,197,90,0.25);
+      border-radius: 1px;
+    }
+
+    .card-link-arrow {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      transition: color 0.2s;
+    }
+
+    .card:hover .card-link-arrow {
+      color: var(--accent2);
+    }
+
+    /* ─── STATES ─── */
+    .state-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .state-icon {
+      font-size: 2.5rem;
+      opacity: 0.3;
+    }
+
+    .state-title {
+      font-family: var(--font-disp);
+      font-size: 1.4rem;
+      letter-spacing: 0.1em;
+      color: var(--text);
+    }
+
+    .state-msg {
+      font-size: 0.82rem;
+      color: var(--muted);
+      max-width: 320px;
+    }
+
+    .spinner {
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .stat-value {
+      font-family: var(--font-disp);
+      font-size: 2rem;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .stat-divider {
+      width: 1px;
+      background: var(--border);
+      align-self: stretch;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.63rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 600px) {
+      .header-inner { padding: 0; }
+      .stats-bar { gap: 1.25rem; }
+      .card-grid { grid-template-columns: 1fr; }
+      main { padding: 1.5rem 1rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="#">NEWS<span>GRID</span></a>
+      <div class="header-meta">
+        <div class="live-badge">
+          <div class="live-dot"></div>
+          <span>Live Feed</span>
+        </div>
+        <div class="timestamp" id="timestamp">—</div>
+        <button class="refresh-btn" onclick="loadNews()">↺ Refresh</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- TICKER -->
+  <div class="ticker-bar" id="tickerBar" style="display:none">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+    <div id="statsBar" class="stats-bar" style="display:none"></div>
+    <div id="filterBar" class="filter-bar" style="display:none">
+      <span class="filter-label">Filter:</span>
+    </div>
+    <div id="content">
+      <div class="state-container">
+        <div class="spinner"></div>
+        <div class="state-title">Fetching Intelligence</div>
+        <div class="state-msg">Loading the latest news digest from the feed…</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    NEWSGRID &nbsp;·&nbsp; Automated Intelligence Feed &nbsp;·&nbsp; Powered by Gemini AI &nbsp;·&nbsp;
+    Data refreshes every 6 hours
+  </footer>
+
+  <script>
+    // ─── COLOR CYCLE FOR CATEGORIES ────────────────────────────────────────────
+    const CAT_COLORS = [
+      '#e8c55a', '#5ae8c5', '#e85a9b', '#5ab4e8', '#e8875a', '#a55ae8'
+    ];
+
+    let allItems   = [];
+    let activeFilter = 'ALL';
+
+    // ─── TIMESTAMP ─────────────────────────────────────────────────────────────
+    function updateTimestamp() {
+      const el = document.getElementById('timestamp');
+      const now = new Date();
+      el.textContent = now.toUTCString().replace('GMT', 'UTC');
+    }
+    updateTimestamp();
+    setInterval(updateTimestamp, 1000);
+
+    // ─── FETCH DATA ─────────────────────────────────────────────────────────────
+    async function loadNews() {
+      document.getElementById('content').innerHTML = `
+        <div class="state-container">
+          <div class="spinner"></div>
+          <div class="state-title">Fetching Intelligence</div>
+          <div class="state-msg">Loading the latest news digest…</div>
+        </div>`;
+
+      try {
+        const res = await fetch('data.json?t=' + Date.now());
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (!Array.isArray(data) || data.length === 0) throw new Error('Empty dataset');
+        allItems = data;
+        activeFilter = 'ALL';
+        renderAll();
+      } catch (err) {
+        document.getElementById('content').innerHTML = `
+          <div class="state-container">
+            <div class="state-icon">⚠</div>
+            <div class="state-title">Feed Unavailable</div>
+            <div class="state-msg">Could not load data.json. Make sure the file exists and the backend has run successfully.<br><br><code style="color:var(--danger);font-size:0.75rem">${err.message}</code></div>
+          </div>`;
+        document.getElementById('statsBar').style.display   = 'none';
+        document.getElementById('filterBar').style.display  = 'none';
+        document.getElementById('tickerBar').style.display  = 'none';
+      }
+    }
+
+    // ─── RENDER ALL ─────────────────────────────────────────────────────────────
+    function renderAll() {
+      const items = activeFilter === 'ALL'
+        ? allItems
+        : allItems.filter(i => i.category === activeFilter);
+
+      // Group by category
+      const groups = {};
+      items.forEach(item => {
+        const cat = item.category || 'General';
+        if (!groups[cat]) groups[cat] = [];
+        groups[cat].push(item);
+      });
+
+      const cats    = Object.keys(groups);
+      const catAll  = [...new Set(allItems.map(i => i.category || 'General'))];
+
+      // Stats bar
+      const statsBar = document.getElementById('statsBar');
+      statsBar.style.display = 'flex';
+      statsBar.innerHTML = `
+        <div class="stat">
+          <div class="stat-value">${allItems.length}</div>
+          <div class="stat-label">Total Stories</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-value">${catAll.length}</div>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-value">${items.length}</div>
+          <div class="stat-label">Showing</div>
+        </div>`;
+
+      // Filter bar
+      const filterBar = document.getElementById('filterBar');
+      filterBar.style.display = 'flex';
+      const existingBtns = filterBar.querySelectorAll('.filter-btn');
+      existingBtns.forEach(b => b.remove());
+
+      const allBtn = makeFilterBtn('ALL');
+      filterBar.appendChild(allBtn);
+      catAll.forEach(cat => filterBar.appendChild(makeFilterBtn(cat)));
+
+      // Ticker
+      buildTicker(items);
+
+      // Content
+      const content = document.getElementById('content');
+      if (items.length === 0) {
+        content.innerHTML = `
+          <div class="state-container">
+            <div class="state-icon">◈</div>
+            <div class="state-title">No Stories</div>
+            <div class="state-msg">No items match the selected filter.</div>
+          </div>`;
+        return;
+      }
+
+      content.innerHTML = '';
+      cats.forEach((cat, ci) => {
+        const section = document.createElement('div');
+        section.className = 'category-section';
+        section.style.animationDelay = (ci * 0.08) + 's';
+
+        const color = CAT_COLORS[catAll.indexOf(cat) % CAT_COLORS.length];
+
+        section.innerHTML = `
+          <div class="category-header">
+            <div class="category-title" style="color:${color}">${cat.toUpperCase()}</div>
+            <div class="category-count">${groups[cat].length} STOR${groups[cat].length === 1 ? 'Y' : 'IES'}</div>
+            <div class="category-line"></div>
+          </div>
+          <div class="card-grid" id="grid-${ci}"></div>`;
+
+        content.appendChild(section);
+
+        const grid = section.querySelector('.card-grid');
+        groups[cat].forEach((item, idx) => {
+          grid.appendChild(makeCard(item, idx + 1, color));
+        });
+      });
+    }
+
+    // ─── FILTER BUTTON ──────────────────────────────────────────────────────────
+    function makeFilterBtn(label) {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn' + (activeFilter === label ? ' active' : '');
+      btn.textContent = label;
+      btn.addEventListener('click', () => {
+        activeFilter = label;
+        renderAll();
+      });
+      return btn;
+    }
+
+    // ─── CARD ───────────────────────────────────────────────────────────────────
+    function makeCard(item, num, color) {
+      const a = document.createElement('a');
+      a.className = 'card';
+      a.href   = item.link || '#';
+      a.target = item.link && item.link !== '#' ? '_blank' : '_self';
+      a.rel    = 'noopener noreferrer';
+
+      a.innerHTML = `
+        <div class="card-number">${String(num).padStart(2,'0')}</div>
+        <div class="card-title">${escHtml(item.title || 'Untitled')}</div>
+        <div class="card-summary">${escHtml(item.summary || '')}</div>
+        <div class="card-footer">
+          <span class="card-cat-badge" style="color:${color};border-color:${color}40">${escHtml(item.category || 'General')}</span>
+          <span class="card-link-arrow">${item.link && item.link !== '#' ? 'READ →' : '—'}</span>
+        </div>`;
+      return a;
+    }
+
+    // ─── TICKER ─────────────────────────────────────────────────────────────────
+    function buildTicker(items) {
+      const bar   = document.getElementById('tickerBar');
+      const track = document.getElementById('tickerTrack');
+      if (!items.length) { bar.style.display = 'none'; return; }
+
+      const content = items.map(i =>
+        `<span class="ticker-item"><span class="ticker-cat">${escHtml(i.category||'')}</span>${escHtml(i.title||'')}</span>`
+      ).join('');
+      // Double for seamless loop
+      track.innerHTML = content + content;
+      bar.style.display = 'block';
+    }
+
+    // ─── HELPERS ────────────────────────────────────────────────────────────────
+    function escHtml(str) {
+      return String(str)
+        .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+    }
+
+    // ─── INIT ───────────────────────────────────────────────────────────────────
+    loadNews();
+  </script>
+</body>
+</html>
