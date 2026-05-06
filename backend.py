@@ -24,7 +24,7 @@ except ImportError:
 # ─── CONFIGURATION ─────────────────────────────────────────────────────────────
 
 # Using Meta's Llama 3 70B model - incredibly smart and free on Groq
-MODEL_ID       = "llama3-70b-8192" 
+MODEL_ID       = "llama-3.3-70b-versatile" 
 PROMPT_FILE    = "gemini_prompt.txt"
 OUTPUT_FILE    = "data.json"
 
