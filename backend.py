@@ -1,9 +1,5 @@
 """
-backend.py — Automated News Feed Generator (With Auto-Retry)
--------------------------------------------
-Reads gemini_prompt.txt, sends it to Gemini 2.5 Flash,
-strictly parses the JSON array from the response,
-and saves it as data.json.
+backend.py — Automated News Feed Generator (Groq Version)
 """
 
 import json
@@ -14,24 +10,21 @@ import time
 from pathlib import Path
 
 try:
-    from google import genai
-    from google.genai import types
+    from groq import Groq
 except ImportError:
-    print("ERROR: google-genai is not installed.")
-    print("Run: pip install google-genai")
+    print("ERROR: groq is not installed. Run: pip install groq")
     sys.exit(1)
 
 try:
-    from pydantic import BaseModel, HttpUrl, field_validator
-    from typing import List, Optional
+    from pydantic import BaseModel, field_validator
 except ImportError:
-    print("ERROR: pydantic is not installed.")
-    print("Run: pip install pydantic")
+    print("ERROR: pydantic is not installed. Run: pip install pydantic")
     sys.exit(1)
 
 # ─── CONFIGURATION ─────────────────────────────────────────────────────────────
 
-MODEL_ID       = "gemini-2.5-flash"
+# Using Meta's Llama 3 70B model - incredibly smart and free on Groq
+MODEL_ID       = "llama3-70b-8192" 
 PROMPT_FILE    = "gemini_prompt.txt"
 OUTPUT_FILE    = "data.json"
 
@@ -115,12 +108,12 @@ def save_json(data: list, path: str) -> None:
 
 def main():
     print("=" * 56)
-    print("  NewsGrid Backend — Gemini 2.5 Flash")
+    print(f"  NewsGrid Backend — Groq ({MODEL_ID})")
     print("=" * 56)
 
-    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
+    api_key = os.environ.get("GROQ_API_KEY", "").strip()
     if not api_key:
-        print("\nERROR: GEMINI_API_KEY environment variable is not set.")
+        print("\nERROR: GROQ_API_KEY environment variable is not set.")
         sys.exit(1)
     print("[✓] API key loaded from environment")
 
@@ -132,29 +125,29 @@ def main():
 
     print(f"[~] Sending prompt to {MODEL_ID}…")
     
-    # ─── RETRY LOGIC ADDED HERE ───
     max_retries = 3
     raw_text = ""
     
     for attempt in range(max_retries):
         try:
-            client = genai.Client(api_key=api_key)
+            client = Groq(api_key=api_key)
             system_instruction = (
                 "You are a professional news analyst. You MUST respond with ONLY a valid JSON array. "
                 "Each element must have these exact keys: 'category', 'title', 'summary', 'link'."
             )
-            response = client.models.generate_content(
+            
+            response = client.chat.completions.create(
                 model=MODEL_ID,
-                contents=prompt_text,
-                config=types.GenerateContentConfig(
-                    system_instruction=system_instruction,
-                    temperature=0.4,
-                    max_output_tokens=8192,
-                ),
+                messages=[
+                    {"role": "system", "content": system_instruction},
+                    {"role": "user", "content": prompt_text}
+                ],
+                temperature=0.3,
             )
-            raw_text = response.text
+            
+            raw_text = response.choices[0].message.content
             print(f"[✓] Response received on attempt {attempt + 1}")
-            break # Success, exit the retry loop
+            break 
             
         except Exception as e:
             print(f"[!] Attempt {attempt + 1} failed. Server busy or network error.")
@@ -162,7 +155,7 @@ def main():
                 print("    Waiting 15 seconds before trying again...")
                 time.sleep(15)
             else:
-                print(f"\nERROR: Gemini API call failed after {max_retries} attempts.\nDetails: {e}")
+                print(f"\nERROR: Groq API call failed after {max_retries} attempts.\nDetails: {e}")
                 sys.exit(1)
 
     print("[~] Parsing JSON array from response…")
