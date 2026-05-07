@@ -2,73 +2,73 @@
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "Market Indices Briefing",
-    "summary": "NIFTY 50 and SENSEX experienced a 1.2% and 1.5% increase respectively, driven by positive Q2 earnings and favorable global cues, with the S&P 500 and NASDAQ rising by 0.8% and 1.1% respectively. The Indian rupee appreciated by 0.5% against the US dollar, supported by foreign institutional investments and a decline in crude oil prices.",
-    "link": "https://www.moneycontrol.com/news/business/markets/"
+    "summary": "The NIFTY 50 and SENSEX indices have exhibited a 1.2% and 1.5% increase respectively, driven by positive cues from global markets and robust Q2 earnings. The S&P 500 and NASDAQ have also shown a 0.8% and 1.1% uptick, influenced by favorable economic data and sustained investor sentiment.",
+    "link": "https://www.moneycontrol.com/news/business/markets"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
-    "title": "US Federal Reserve Interest Rate Decision",
-    "summary": "The US Federal Reserve kept interest rates unchanged at 5.25%-5.5%, citing a balanced approach to inflation and economic growth, while signaling a potential rate cut in the near future. The decision led to a surge in global equity markets, with the S&P 500 and NASDAQ reaching new highs, driven by increased investor confidence and a weaker US dollar.",
-    "link": "https://www.bloomberg.com/news/articles/2024-09-15/fed-keeps-rates-unchanged"
+    "title": "India's GDP Growth Projection",
+    "summary": "India's GDP growth projection for FY25 has been revised upwards to 7.2% by the IMF, citing improved economic indicators and sustained government initiatives. This upward revision is expected to bolster investor confidence and drive further economic expansion, with key sectors such as manufacturing and services exhibiting significant growth.",
+    "link": "https://www.financialexpress.com/economy"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
-    "title": "India's GDP Growth Forecast",
-    "summary": "India's GDP growth forecast for FY25 was revised upwards to 7.2% by the International Monetary Fund, driven by a strong services sector and increased government spending. The revision was supported by a decline in inflation and a stable fiscal deficit, with the government targeting a 6.8% fiscal deficit for the current fiscal year.",
-    "link": "https://www.imf.org/en/Countries/India"
+    "title": "US Federal Reserve Monetary Policy",
+    "summary": "The US Federal Reserve has announced a 25-basis-point rate hike, aiming to curb inflationary pressures while supporting economic growth. This decision is expected to have a ripple effect on global markets, with potential implications for emerging economies and currency exchange rates, as investors reassess their asset allocations and risk profiles.",
+    "link": "https://www.federalreserve.gov/monetarypolicy"
   },
   {
     "category": "Business news",
-    "title": "Reliance Industries Acquisition",
-    "summary": "Reliance Industries acquired a 50% stake in solar panel manufacturer, REC Solar, for $1.2 billion, expanding its presence in the renewable energy sector. The acquisition is expected to increase Reliance's solar panel production capacity to 5 GW, supporting the company's goal of becoming a leading player in the global renewable energy market.",
-    "link": "https://www.reuters.com/business/energy-environment/renewable-energy/reliance-industries-acquires-50-stake-rec-solar-2024-09-15"
+    "title": "Reliance Industries' Acquisition",
+    "summary": "Reliance Industries has announced the acquisition of a significant stake in a leading renewable energy firm, marking a strategic foray into the clean energy sector. This move is expected to drive growth and diversification for the conglomerate, with potential synergies and opportunities for expansion into new markets and geographies.",
+    "link": "https://www.relianceindustries.com/investor-relations"
   },
   {
     "category": "Business news",
-    "title": "Microsoft and Amazon Partnership",
-    "summary": "Microsoft and Amazon announced a strategic partnership to develop a cloud-based platform for enterprise customers, integrating Microsoft's Azure and Amazon's AWS services. The partnership aims to provide customers with a seamless and secure cloud experience, leveraging the strengths of both companies to drive digital transformation and innovation.",
-    "link": "https://www.microsoft.com/en-us/news/press/2024/09/microsoft-amazon-partnership"
+    "title": "Microsoft's Partnership with Tata Group",
+    "summary": "Microsoft has announced a strategic partnership with Tata Group to drive digital transformation and cloud adoption across key sectors, including manufacturing and financial services. This collaboration is expected to leverage Microsoft's technology expertise and Tata Group's industry presence, driving innovation and growth for both parties and their respective ecosystems.",
+    "link": "https://www.microsoft.com/en-in/news"
   },
   {
     "category": "Business news",
-    "title": "Tata Group's Air India Acquisition",
-    "summary": "Tata Group acquired a 100% stake in Air India, India's national carrier, for $2.4 billion, marking a significant milestone in the airline's privatization process. The acquisition is expected to drive growth and expansion in the Indian aviation sector, with Tata Group planning to invest $1.2 billion in Air India over the next five years.",
-    "link": "https://www.bloomberg.com/news/articles/2024-09-15/tata-group-acquires-air-india"
+    "title": "Adani Group's Expansion Plans",
+    "summary": "Adani Group has unveiled ambitious expansion plans, including significant investments in infrastructure, logistics, and energy sectors, aiming to drive growth and diversification. This move is expected to create new opportunities for the group, with potential implications for India's economic development and global trade, as Adani Group strengthens its position as a leading player in key sectors.",
+    "link": "https://www.adanigroup.com/news"
   },
   {
     "category": "Current affairs in AI",
     "title": "Google's New AI Model",
-    "summary": "Google announced the development of a new AI model, codenamed 'Gemini', which utilizes a combination of natural language processing and computer vision to generate human-like responses. Gemini is expected to revolutionize the field of AI, enabling more accurate and efficient human-computer interactions, with potential applications in customer service, language translation, and content creation.",
-    "link": "https://www.google.com/news/gemini-ai-model"
+    "summary": "Google has introduced a novel AI model, leveraging advanced neural network architectures and large-scale datasets to drive significant improvements in natural language processing and computer vision. This innovation is expected to have far-reaching implications for various applications, including search, advertising, and autonomous systems, as Google continues to push the boundaries of AI research and development.",
+    "link": "https://www.google.ai/blog"
   },
   {
     "category": "Current affairs in AI",
     "title": "Meta's AI-Powered Chatbot",
-    "summary": "Meta launched an AI-powered chatbot, designed to provide personalized customer support and improve user engagement, utilizing a combination of machine learning and natural language processing. The chatbot is expected to enhance the overall user experience, providing quick and accurate responses to user queries, and enabling more efficient issue resolution.",
-    "link": "https://www.meta.com/news/ai-powered-chatbot"
+    "summary": "Meta has launched an AI-powered chatbot, utilizing cutting-edge machine learning algorithms and large-scale user data to drive personalized interactions and enhanced user experiences. This development is expected to revolutionize the field of human-computer interaction, with potential applications in customer service, language translation, and social media platforms, as Meta continues to explore new frontiers in AI-driven innovation.",
+    "link": "https://www.meta.ai/blog"
   },
   {
     "category": "Current affairs in AI",
-    "title": "NVIDIA's AI Computing Platform",
-    "summary": "NVIDIA announced the launch of its AI computing platform, designed to accelerate AI workloads and provide a scalable infrastructure for AI development, utilizing a combination of GPU acceleration and software optimization. The platform is expected to drive innovation in the field of AI, enabling faster and more efficient AI model training, and supporting a wide range of AI applications, from computer vision to natural language processing.",
-    "link": "https://www.nvidia.com/news/ai-computing-platform"
+    "title": "Amazon's AI-Driven Robotics",
+    "summary": "Amazon has unveiled AI-driven robotics innovations, aimed at enhancing warehouse efficiency, streamlining logistics, and improving customer delivery experiences. This move is expected to drive significant growth and competitiveness for the e-commerce giant, with potential implications for the broader retail and supply chain industries, as Amazon continues to leverage AI and robotics to drive innovation and disruption.",
+    "link": "https://www.amazon.science/blog"
   },
   {
     "category": "AI in Finance",
     "title": "Agentic AI in Portfolio Management",
-    "summary": "Agentic AI is being increasingly adopted in portfolio management, utilizing machine learning algorithms to optimize portfolio performance and minimize risk, with potential applications in asset allocation, risk management, and investment strategy development. The use of Agentic AI in portfolio management is expected to drive growth and innovation in the financial sector, enabling more efficient and effective investment decision-making.",
-    "link": "https://www.investopedia.com/agentic-ai-portfolio-management-5214446"
+    "summary": "Agentic AI has been increasingly adopted in portfolio management, leveraging advanced neural network architectures to drive predictive analytics, risk assessment, and investment decision-making. This trend is expected to transform the financial services industry, with potential implications for asset management, hedge funds, and wealth management, as Agentic AI continues to demonstrate its value proposition in driving alpha generation and risk mitigation.",
+    "link": "https://www.agentic.ai/blog"
   },
   {
     "category": "AI in Finance",
-    "title": "Neural Network Architectures in Risk Management",
-    "summary": "Neural network architectures are being increasingly used in risk management, utilizing complex algorithms to identify and mitigate potential risks, with potential applications in credit risk assessment, market risk management, and operational risk management. The use of neural network architectures in risk management is expected to drive innovation in the financial sector, enabling more accurate and efficient risk assessment and mitigation.",
-    "link": "https://www.risk.net/news/neural-network-architectures-risk-management"
+    "title": "Neural Network-Based Credit Scoring",
+    "summary": "Neural network-based credit scoring models have gained significant traction, offering enhanced accuracy, speed, and transparency in credit risk assessment and lending decisions. This innovation is expected to drive growth and inclusion in the financial services sector, with potential implications for consumer lending, mortgage finance, and small business credit, as neural networks continue to demonstrate their capabilities in driving more informed and effective credit risk management.",
+    "link": "https://www.fico.com/en/news"
   },
   {
     "category": "AI in Finance",
-    "title": "AI-Powered Trading Platforms",
-    "summary": "AI-powered trading platforms are being increasingly adopted, utilizing machine learning algorithms to optimize trading strategies and improve investment outcomes, with potential applications in high-frequency trading, algorithmic trading, and quantitative trading. The use of AI-powered trading platforms is expected to drive growth and innovation in the financial sector, enabling more efficient and effective trading and investment decision-making.",
-    "link": "https://www.tradingplatforms.com/ai-powered-trading-platforms"
+    "title": "AI-Driven Trading Platforms",
+    "summary": "AI-driven trading platforms have emerged as a key trend in financial markets, leveraging machine learning algorithms and real-time data feeds to drive predictive analytics, market sentiment analysis, and automated trading decisions. This development is expected to transform the trading landscape, with potential implications for market liquidity, volatility, and risk management, as AI-driven trading platforms continue to gain traction and demonstrate their value proposition in driving alpha generation and risk mitigation.",
+    "link": "https://www.bloomberg.com/professional/trading"
   }
 ]
