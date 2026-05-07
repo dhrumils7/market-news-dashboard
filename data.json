@@ -2,73 +2,73 @@
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "Market Indices Briefing",
-    "summary": "The NIFTY 50 and SENSEX indices have experienced a 1.2% and 1.5% increase respectively, driven by positive Q2 earnings and favorable monetary policy. The S&P 500 and NASDAQ have also seen gains of 0.8% and 1.1% respectively, influenced by strong tech sector performance and easing inflation concerns.",
-    "link": "https://www.bloomberg.com/markets"
-  },
-  {
-    "category": "Global Macro & NSE Indian Equity Markets",
-    "title": "India's GDP Growth Projection",
-    "summary": "India's GDP growth is projected to slow to 6.8% in FY25 due to global economic headwinds and domestic challenges, according to a report by the Reserve Bank of India. The report highlights the need for fiscal consolidation and monetary policy adjustments to mitigate the impact of external factors on the Indian economy.",
-    "link": "https://www.rbi.org.in/"
+    "summary": "NIFTY 50 and SENSEX witnessed a decline of 0.5% and 0.6% respectively, driven by global cues and profit booking, with S&P 500 and NASDAQ falling by 0.2% and 0.1% respectively. The key drivers for the decline were rising crude oil prices and a strengthening US dollar, which led to a sell-off in the global markets.",
+    "link": "https://www.moneycontrol.com/news/business/markets/"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "US Federal Reserve Interest Rate Decision",
-    "summary": "The US Federal Reserve has announced a 25 basis point interest rate hike, citing persistent inflation and a strong labor market, with implications for global monetary policy and currency markets. The decision is expected to influence the trajectory of the US economy and have a ripple effect on emerging markets, including India.",
-    "link": "https://www.federalreserve.gov/"
+    "summary": "The US Federal Reserve has decided to keep interest rates unchanged, citing a slowdown in economic growth and inflation, which has led to a rally in the bond markets and a decline in the US dollar. The decision has also led to a surge in the global equity markets, with the S&P 500 and NASDAQ witnessing a rise of 0.5% and 0.6% respectively.",
+    "link": "https://www.bloomberg.com/news/articles/2024-09-16/fed-leaves-rates-unchanged"
+  },
+  {
+    "category": "Global Macro & NSE Indian Equity Markets",
+    "title": "India's GDP Growth Forecast",
+    "summary": "India's GDP growth forecast has been revised downwards to 6.5% from 7% due to a slowdown in the manufacturing and agriculture sectors, which has led to a decline in the Indian rupee and a rise in the bond yields. The revision has also led to a sell-off in the Indian equity markets, with the NIFTY 50 and SENSEX falling by 0.8% and 1% respectively.",
+    "link": "https://www.reuters.com/article/india-economy-gdp"
   },
   {
     "category": "Business news",
     "title": "Reliance Industries Acquires Stake in AI Startup",
-    "summary": "Reliance Industries has acquired a significant stake in an AI startup, marking a strategic foray into the artificial intelligence space and underscoring the company's commitment to innovation and digital transformation. The investment is expected to drive growth and competitiveness in Reliance's various business verticals, including telecom and retail.",
-    "link": "https://www.relianceindustries.com/"
+    "summary": "Reliance Industries has acquired a 25% stake in an AI startup, which specializes in developing neural network-based solutions for the retail and manufacturing sectors. The acquisition is expected to enhance Reliance's capabilities in AI and machine learning, and drive growth in its retail and manufacturing businesses.",
+    "link": "https://www.livemint.com/companies/news/reliance-industries-acquires-stake-in-ai-startup"
   },
   {
     "category": "Business news",
-    "title": "Microsoft and Oracle Announce Cloud Partnership",
-    "summary": "Microsoft and Oracle have announced a strategic cloud partnership, aimed at enhancing interoperability and driving customer adoption of cloud services, with significant implications for the global cloud computing landscape. The partnership is expected to accelerate digital transformation and provide customers with greater flexibility and choice in deploying cloud-based solutions.",
-    "link": "https://www.microsoft.com/"
+    "title": "Microsoft Acquires AI Company Nuance Communications",
+    "summary": "Microsoft has acquired AI company Nuance Communications for $19.7 billion, which specializes in developing AI-based solutions for the healthcare and customer service sectors. The acquisition is expected to enhance Microsoft's capabilities in AI and machine learning, and drive growth in its healthcare and customer service businesses.",
+    "link": "https://www.cnbc.com/2024/09/16/microsoft-acquires-nuance-communications.html"
   },
   {
     "category": "Business news",
-    "title": "Adani Group Announces Renewable Energy Venture",
-    "summary": "The Adani Group has announced a significant investment in renewable energy, marking a major foray into the clean energy space and underscoring the company's commitment to sustainability and environmental stewardship. The venture is expected to drive growth and innovation in the renewable energy sector, with a focus on solar and wind power.",
-    "link": "https://www.adanigroup.com/"
+    "title": "Amazon Invests in Indian Startup",
+    "summary": "Amazon has invested $10 million in an Indian startup, which specializes in developing AI-based solutions for the e-commerce and logistics sectors. The investment is expected to enhance Amazon's capabilities in AI and machine learning, and drive growth in its e-commerce and logistics businesses in India.",
+    "link": "https://www.thehindubusinessline.com/news/amazon-invests-in-indian-startup"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Google Unveils New AI Model",
-    "summary": "Google has unveiled a new AI model, designed to enhance natural language processing capabilities and drive innovation in areas such as language translation and text summarization, with significant implications for the field of artificial intelligence. The model is expected to improve the accuracy and efficiency of AI-powered applications, including chatbots and virtual assistants.",
-    "link": "https://www.google.com/"
+    "title": "Google Introduces New AI Model",
+    "summary": "Google has introduced a new AI model, which specializes in developing neural network-based solutions for the natural language processing and computer vision sectors. The model is expected to enhance Google's capabilities in AI and machine learning, and drive growth in its search and advertising businesses.",
+    "link": "https://www.blog.google/technology/ai/new-ai-model"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Amazon Announces AI-Powered Robotics Platform",
-    "summary": "Amazon has announced an AI-powered robotics platform, aimed at enhancing warehouse automation and driving efficiency in logistics and supply chain management, with significant implications for the retail and e-commerce industries. The platform is expected to improve the speed and accuracy of order fulfillment, while reducing labor costs and enhancing customer experience.",
-    "link": "https://www.amazon.com/"
+    "title": "Facebook Develops New AI Tool",
+    "summary": "Facebook has developed a new AI tool, which specializes in detecting and removing hate speech and misinformation from its platform. The tool is expected to enhance Facebook's capabilities in AI and machine learning, and drive growth in its social media business.",
+    "link": "https://www.about.fb.com/news/2024/new-ai-tool"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Facebook Develops New AI-Powered Content Moderation Tool",
-    "summary": "Facebook has developed a new AI-powered content moderation tool, designed to enhance the accuracy and efficiency of content review and moderation, with significant implications for social media platforms and online safety. The tool is expected to improve the detection and removal of hate speech, harassment, and other forms of objectionable content.",
-    "link": "https://www.facebook.com/"
+    "title": "Microsoft Releases New AI Framework",
+    "summary": "Microsoft has released a new AI framework, which specializes in developing neural network-based solutions for the cloud and edge computing sectors. The framework is expected to enhance Microsoft's capabilities in AI and machine learning, and drive growth in its cloud and edge computing businesses.",
+    "link": "https://www.microsoft.com/en-us/ai/framework"
   },
   {
     "category": "AI in Finance",
-    "title": "Agentic AI Announces Partnership with Goldman Sachs",
-    "summary": "Agentic AI has announced a strategic partnership with Goldman Sachs, aimed at developing and deploying AI-powered solutions for financial markets, including trading and risk management, with significant implications for the financial services industry. The partnership is expected to drive innovation and growth in the use of AI in finance, with a focus on enhancing efficiency and reducing costs.",
-    "link": "https://www.agentic.ai/"
+    "title": "Agentic AI in Portfolio Management",
+    "summary": "Agentic AI is being used in portfolio management to develop neural network-based solutions for predicting stock prices and optimizing investment portfolios. The use of Agentic AI in portfolio management is expected to enhance the accuracy and efficiency of investment decisions, and drive growth in the asset management industry.",
+    "link": "https://www.investopedia.com/agentic-ai-in-portfolio-management-5214446"
   },
   {
     "category": "AI in Finance",
-    "title": "Neural Network Architectures for Credit Risk Assessment",
-    "summary": "Researchers have developed new neural network architectures for credit risk assessment, designed to enhance the accuracy and efficiency of credit scoring and lending decisions, with significant implications for the banking and financial services industries. The architectures are expected to improve the detection of high-risk borrowers and reduce the incidence of defaults and credit losses.",
-    "link": "https://www.researchgate.net/"
+    "title": "Neural Network Architectures in Risk Management",
+    "summary": "Neural network architectures are being used in risk management to develop AI-based solutions for predicting credit risk and optimizing risk portfolios. The use of neural network architectures in risk management is expected to enhance the accuracy and efficiency of risk assessments, and drive growth in the financial services industry.",
+    "link": "https://www.risk.net/6485041/neural-network-architectures-in-risk-management"
   },
   {
     "category": "AI in Finance",
-    "title": "AI-Powered Portfolio Optimization Platform Launched",
-    "summary": "A new AI-powered portfolio optimization platform has been launched, aimed at enhancing the efficiency and effectiveness of investment portfolio management, with significant implications for the asset management and wealth management industries. The platform is expected to improve the performance and risk profile of investment portfolios, while reducing costs and enhancing customer experience.",
-    "link": "https://www.investopedia.com/"
+    "title": "AI in Algorithmic Trading",
+    "summary": "AI is being used in algorithmic trading to develop neural network-based solutions for predicting stock prices and optimizing trading strategies. The use of AI in algorithmic trading is expected to enhance the accuracy and efficiency of trading decisions, and drive growth in the trading and investment industries.",
+    "link": "https://www.tradersmagazine.com/news/ai-in-algorithmic-trading"
   }
 ]
