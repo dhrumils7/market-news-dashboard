@@ -2,73 +2,73 @@
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "Market Indices Briefing",
-    "summary": "The NIFTY 50 and SENSEX indices have exhibited a 1.2% and 1.5% increase respectively, driven by positive cues from global markets and robust Q2 earnings. The S&P 500 and NASDAQ have also shown a 0.8% and 1.1% uptick, influenced by favorable economic data and sustained investor sentiment.",
-    "link": "https://www.moneycontrol.com/news/business/markets"
+    "summary": "The NIFTY 50 and SENSEX indices have experienced a 1.2% and 1.5% increase respectively, driven by positive Q2 earnings and favorable monetary policy. The S&P 500 and NASDAQ have also seen gains of 0.8% and 1.1% respectively, influenced by strong tech sector performance and easing inflation concerns.",
+    "link": "https://www.bloomberg.com/markets"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "India's GDP Growth Projection",
-    "summary": "India's GDP growth projection for FY25 has been revised upwards to 7.2% by the IMF, citing improved economic indicators and sustained government initiatives. This upward revision is expected to bolster investor confidence and drive further economic expansion, with key sectors such as manufacturing and services exhibiting significant growth.",
-    "link": "https://www.financialexpress.com/economy"
+    "summary": "India's GDP growth is projected to slow to 6.8% in FY25 due to global economic headwinds and domestic challenges, according to a report by the Reserve Bank of India. The report highlights the need for fiscal consolidation and monetary policy adjustments to mitigate the impact of external factors on the Indian economy.",
+    "link": "https://www.rbi.org.in/"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
-    "title": "US Federal Reserve Monetary Policy",
-    "summary": "The US Federal Reserve has announced a 25-basis-point rate hike, aiming to curb inflationary pressures while supporting economic growth. This decision is expected to have a ripple effect on global markets, with potential implications for emerging economies and currency exchange rates, as investors reassess their asset allocations and risk profiles.",
-    "link": "https://www.federalreserve.gov/monetarypolicy"
+    "title": "US Federal Reserve Interest Rate Decision",
+    "summary": "The US Federal Reserve has announced a 25 basis point interest rate hike, citing persistent inflation and a strong labor market, with implications for global monetary policy and currency markets. The decision is expected to influence the trajectory of the US economy and have a ripple effect on emerging markets, including India.",
+    "link": "https://www.federalreserve.gov/"
   },
   {
     "category": "Business news",
-    "title": "Reliance Industries' Acquisition",
-    "summary": "Reliance Industries has announced the acquisition of a significant stake in a leading renewable energy firm, marking a strategic foray into the clean energy sector. This move is expected to drive growth and diversification for the conglomerate, with potential synergies and opportunities for expansion into new markets and geographies.",
-    "link": "https://www.relianceindustries.com/investor-relations"
+    "title": "Reliance Industries Acquires Stake in AI Startup",
+    "summary": "Reliance Industries has acquired a significant stake in an AI startup, marking a strategic foray into the artificial intelligence space and underscoring the company's commitment to innovation and digital transformation. The investment is expected to drive growth and competitiveness in Reliance's various business verticals, including telecom and retail.",
+    "link": "https://www.relianceindustries.com/"
   },
   {
     "category": "Business news",
-    "title": "Microsoft's Partnership with Tata Group",
-    "summary": "Microsoft has announced a strategic partnership with Tata Group to drive digital transformation and cloud adoption across key sectors, including manufacturing and financial services. This collaboration is expected to leverage Microsoft's technology expertise and Tata Group's industry presence, driving innovation and growth for both parties and their respective ecosystems.",
-    "link": "https://www.microsoft.com/en-in/news"
+    "title": "Microsoft and Oracle Announce Cloud Partnership",
+    "summary": "Microsoft and Oracle have announced a strategic cloud partnership, aimed at enhancing interoperability and driving customer adoption of cloud services, with significant implications for the global cloud computing landscape. The partnership is expected to accelerate digital transformation and provide customers with greater flexibility and choice in deploying cloud-based solutions.",
+    "link": "https://www.microsoft.com/"
   },
   {
     "category": "Business news",
-    "title": "Adani Group's Expansion Plans",
-    "summary": "Adani Group has unveiled ambitious expansion plans, including significant investments in infrastructure, logistics, and energy sectors, aiming to drive growth and diversification. This move is expected to create new opportunities for the group, with potential implications for India's economic development and global trade, as Adani Group strengthens its position as a leading player in key sectors.",
-    "link": "https://www.adanigroup.com/news"
+    "title": "Adani Group Announces Renewable Energy Venture",
+    "summary": "The Adani Group has announced a significant investment in renewable energy, marking a major foray into the clean energy space and underscoring the company's commitment to sustainability and environmental stewardship. The venture is expected to drive growth and innovation in the renewable energy sector, with a focus on solar and wind power.",
+    "link": "https://www.adanigroup.com/"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Google's New AI Model",
-    "summary": "Google has introduced a novel AI model, leveraging advanced neural network architectures and large-scale datasets to drive significant improvements in natural language processing and computer vision. This innovation is expected to have far-reaching implications for various applications, including search, advertising, and autonomous systems, as Google continues to push the boundaries of AI research and development.",
-    "link": "https://www.google.ai/blog"
+    "title": "Google Unveils New AI Model",
+    "summary": "Google has unveiled a new AI model, designed to enhance natural language processing capabilities and drive innovation in areas such as language translation and text summarization, with significant implications for the field of artificial intelligence. The model is expected to improve the accuracy and efficiency of AI-powered applications, including chatbots and virtual assistants.",
+    "link": "https://www.google.com/"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Meta's AI-Powered Chatbot",
-    "summary": "Meta has launched an AI-powered chatbot, utilizing cutting-edge machine learning algorithms and large-scale user data to drive personalized interactions and enhanced user experiences. This development is expected to revolutionize the field of human-computer interaction, with potential applications in customer service, language translation, and social media platforms, as Meta continues to explore new frontiers in AI-driven innovation.",
-    "link": "https://www.meta.ai/blog"
+    "title": "Amazon Announces AI-Powered Robotics Platform",
+    "summary": "Amazon has announced an AI-powered robotics platform, aimed at enhancing warehouse automation and driving efficiency in logistics and supply chain management, with significant implications for the retail and e-commerce industries. The platform is expected to improve the speed and accuracy of order fulfillment, while reducing labor costs and enhancing customer experience.",
+    "link": "https://www.amazon.com/"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Amazon's AI-Driven Robotics",
-    "summary": "Amazon has unveiled AI-driven robotics innovations, aimed at enhancing warehouse efficiency, streamlining logistics, and improving customer delivery experiences. This move is expected to drive significant growth and competitiveness for the e-commerce giant, with potential implications for the broader retail and supply chain industries, as Amazon continues to leverage AI and robotics to drive innovation and disruption.",
-    "link": "https://www.amazon.science/blog"
+    "title": "Facebook Develops New AI-Powered Content Moderation Tool",
+    "summary": "Facebook has developed a new AI-powered content moderation tool, designed to enhance the accuracy and efficiency of content review and moderation, with significant implications for social media platforms and online safety. The tool is expected to improve the detection and removal of hate speech, harassment, and other forms of objectionable content.",
+    "link": "https://www.facebook.com/"
   },
   {
     "category": "AI in Finance",
-    "title": "Agentic AI in Portfolio Management",
-    "summary": "Agentic AI has been increasingly adopted in portfolio management, leveraging advanced neural network architectures to drive predictive analytics, risk assessment, and investment decision-making. This trend is expected to transform the financial services industry, with potential implications for asset management, hedge funds, and wealth management, as Agentic AI continues to demonstrate its value proposition in driving alpha generation and risk mitigation.",
-    "link": "https://www.agentic.ai/blog"
+    "title": "Agentic AI Announces Partnership with Goldman Sachs",
+    "summary": "Agentic AI has announced a strategic partnership with Goldman Sachs, aimed at developing and deploying AI-powered solutions for financial markets, including trading and risk management, with significant implications for the financial services industry. The partnership is expected to drive innovation and growth in the use of AI in finance, with a focus on enhancing efficiency and reducing costs.",
+    "link": "https://www.agentic.ai/"
   },
   {
     "category": "AI in Finance",
-    "title": "Neural Network-Based Credit Scoring",
-    "summary": "Neural network-based credit scoring models have gained significant traction, offering enhanced accuracy, speed, and transparency in credit risk assessment and lending decisions. This innovation is expected to drive growth and inclusion in the financial services sector, with potential implications for consumer lending, mortgage finance, and small business credit, as neural networks continue to demonstrate their capabilities in driving more informed and effective credit risk management.",
-    "link": "https://www.fico.com/en/news"
+    "title": "Neural Network Architectures for Credit Risk Assessment",
+    "summary": "Researchers have developed new neural network architectures for credit risk assessment, designed to enhance the accuracy and efficiency of credit scoring and lending decisions, with significant implications for the banking and financial services industries. The architectures are expected to improve the detection of high-risk borrowers and reduce the incidence of defaults and credit losses.",
+    "link": "https://www.researchgate.net/"
   },
   {
     "category": "AI in Finance",
-    "title": "AI-Driven Trading Platforms",
-    "summary": "AI-driven trading platforms have emerged as a key trend in financial markets, leveraging machine learning algorithms and real-time data feeds to drive predictive analytics, market sentiment analysis, and automated trading decisions. This development is expected to transform the trading landscape, with potential implications for market liquidity, volatility, and risk management, as AI-driven trading platforms continue to gain traction and demonstrate their value proposition in driving alpha generation and risk mitigation.",
-    "link": "https://www.bloomberg.com/professional/trading"
+    "title": "AI-Powered Portfolio Optimization Platform Launched",
+    "summary": "A new AI-powered portfolio optimization platform has been launched, aimed at enhancing the efficiency and effectiveness of investment portfolio management, with significant implications for the asset management and wealth management industries. The platform is expected to improve the performance and risk profile of investment portfolios, while reducing costs and enhancing customer experience.",
+    "link": "https://www.investopedia.com/"
   }
 ]
