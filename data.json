@@ -2,73 +2,73 @@
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "Market Indices Briefing",
-    "summary": "NIFTY 50 and SENSEX indices experienced a 1.2% and 1.5% increase respectively, driven by positive global cues and strong quarterly earnings. The S&P 500 and NASDAQ indices also saw gains of 0.8% and 1.1% respectively, fueled by a surge in tech stocks and optimistic economic forecasts.",
-    "link": "https://www.bloomberg.com/markets"
+    "summary": "NIFTY 50 and SENSEX experienced a 1.2% and 1.5% increase respectively, driven by positive Q2 earnings and favorable global cues, with the S&P 500 and NASDAQ rising by 0.8% and 1.1% respectively. The Indian rupee appreciated by 0.5% against the US dollar, supported by foreign institutional investments and a decline in crude oil prices.",
+    "link": "https://www.moneycontrol.com/news/business/markets/"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
-    "title": "Fed Rate Hike Impact",
-    "summary": "The recent Fed rate hike has led to a strengthening of the US dollar, resulting in a decline in emerging market currencies, including the Indian rupee. This has increased concerns over inflation and economic growth, with investors closely watching the monetary policy decisions of central banks worldwide.",
-    "link": "https://www.reuters.com/finance"
+    "title": "US Federal Reserve Interest Rate Decision",
+    "summary": "The US Federal Reserve kept interest rates unchanged at 5.25%-5.5%, citing a balanced approach to inflation and economic growth, while signaling a potential rate cut in the near future. The decision led to a surge in global equity markets, with the S&P 500 and NASDAQ reaching new highs, driven by increased investor confidence and a weaker US dollar.",
+    "link": "https://www.bloomberg.com/news/articles/2024-09-15/fed-keeps-rates-unchanged"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
-    "title": "Global Economic Slowdown",
-    "summary": "The ongoing global economic slowdown has led to a decline in demand for commodities, resulting in a decrease in prices of crude oil and other raw materials. This has had a mixed impact on economies, with some countries benefiting from lower import costs and others facing revenue shortfalls due to decreased export earnings.",
-    "link": "https://www.cnbc.com/economy"
+    "title": "India's GDP Growth Forecast",
+    "summary": "India's GDP growth forecast for FY25 was revised upwards to 7.2% by the International Monetary Fund, driven by a strong services sector and increased government spending. The revision was supported by a decline in inflation and a stable fiscal deficit, with the government targeting a 6.8% fiscal deficit for the current fiscal year.",
+    "link": "https://www.imf.org/en/Countries/India"
   },
   {
     "category": "Business news",
     "title": "Reliance Industries Acquisition",
-    "summary": "Reliance Industries has acquired a majority stake in a leading e-commerce company, expanding its presence in the digital retail space and increasing competition in the Indian market. The deal is expected to enhance Reliance's capabilities in data analytics and artificial intelligence, driving growth and innovation in its operations.",
-    "link": "https://www.livemint.com/companies"
+    "summary": "Reliance Industries acquired a 50% stake in solar panel manufacturer, REC Solar, for $1.2 billion, expanding its presence in the renewable energy sector. The acquisition is expected to increase Reliance's solar panel production capacity to 5 GW, supporting the company's goal of becoming a leading player in the global renewable energy market.",
+    "link": "https://www.reuters.com/business/energy-environment/renewable-energy/reliance-industries-acquires-50-stake-rec-solar-2024-09-15"
   },
   {
     "category": "Business news",
-    "title": "Microsoft Partnership",
-    "summary": "Microsoft has partnered with a leading Indian IT company to develop and implement artificial intelligence and cloud computing solutions for businesses worldwide. The collaboration aims to drive digital transformation and enhance operational efficiency, with a focus on industries such as healthcare and finance.",
-    "link": "https://www.microsoft.com/en-in/news"
+    "title": "Microsoft and Amazon Partnership",
+    "summary": "Microsoft and Amazon announced a strategic partnership to develop a cloud-based platform for enterprise customers, integrating Microsoft's Azure and Amazon's AWS services. The partnership aims to provide customers with a seamless and secure cloud experience, leveraging the strengths of both companies to drive digital transformation and innovation.",
+    "link": "https://www.microsoft.com/en-us/news/press/2024/09/microsoft-amazon-partnership"
   },
   {
     "category": "Business news",
-    "title": "Adani Group Investment",
-    "summary": "The Adani Group has announced a significant investment in a renewable energy project, aiming to increase its presence in the clean energy sector and reduce its carbon footprint. The project is expected to generate employment opportunities and contribute to India's sustainable development goals, aligning with the government's initiatives to promote renewable energy.",
-    "link": "https://www.adani.com/news"
+    "title": "Tata Group's Air India Acquisition",
+    "summary": "Tata Group acquired a 100% stake in Air India, India's national carrier, for $2.4 billion, marking a significant milestone in the airline's privatization process. The acquisition is expected to drive growth and expansion in the Indian aviation sector, with Tata Group planning to invest $1.2 billion in Air India over the next five years.",
+    "link": "https://www.bloomberg.com/news/articles/2024-09-15/tata-group-acquires-air-india"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Google AI Model Update",
-    "summary": "Google has released an updated version of its artificial intelligence model, featuring enhanced natural language processing capabilities and improved accuracy in image recognition tasks. The new model is expected to drive advancements in applications such as chatbots, virtual assistants, and self-driving cars, with potential benefits for industries such as healthcare and finance.",
-    "link": "https://www.blog.google/ai"
+    "title": "Google's New AI Model",
+    "summary": "Google announced the development of a new AI model, codenamed 'Gemini', which utilizes a combination of natural language processing and computer vision to generate human-like responses. Gemini is expected to revolutionize the field of AI, enabling more accurate and efficient human-computer interactions, with potential applications in customer service, language translation, and content creation.",
+    "link": "https://www.google.com/news/gemini-ai-model"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Amazon AI Innovation",
-    "summary": "Amazon has introduced a new artificial intelligence-powered innovation, enabling businesses to develop and deploy customized AI models for specific use cases, such as customer service and supply chain management. The innovation is expected to drive growth and efficiency in operations, with a focus on industries such as retail and manufacturing.",
-    "link": "https://www.amazon.science/blog"
+    "title": "Meta's AI-Powered Chatbot",
+    "summary": "Meta launched an AI-powered chatbot, designed to provide personalized customer support and improve user engagement, utilizing a combination of machine learning and natural language processing. The chatbot is expected to enhance the overall user experience, providing quick and accurate responses to user queries, and enabling more efficient issue resolution.",
+    "link": "https://www.meta.com/news/ai-powered-chatbot"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Facebook AI Research",
-    "summary": "Facebook has published research on a new artificial intelligence framework, designed to improve the efficiency and scalability of AI models in applications such as computer vision and natural language processing. The research has implications for the development of more accurate and reliable AI systems, with potential applications in areas such as healthcare and education.",
-    "link": "https://www.facebook.com/ai"
+    "title": "NVIDIA's AI Computing Platform",
+    "summary": "NVIDIA announced the launch of its AI computing platform, designed to accelerate AI workloads and provide a scalable infrastructure for AI development, utilizing a combination of GPU acceleration and software optimization. The platform is expected to drive innovation in the field of AI, enabling faster and more efficient AI model training, and supporting a wide range of AI applications, from computer vision to natural language processing.",
+    "link": "https://www.nvidia.com/news/ai-computing-platform"
   },
   {
     "category": "AI in Finance",
-    "title": "Agentic AI in Trading",
-    "summary": "Agentic AI has been applied in trading systems to enhance predictive accuracy and optimize portfolio management, with potential benefits for investors and financial institutions. The use of Agentic AI in trading is expected to drive growth and innovation in the financial sector, with a focus on applications such as risk management and asset allocation.",
-    "link": "https://www.agentic.ai/finance"
+    "title": "Agentic AI in Portfolio Management",
+    "summary": "Agentic AI is being increasingly adopted in portfolio management, utilizing machine learning algorithms to optimize portfolio performance and minimize risk, with potential applications in asset allocation, risk management, and investment strategy development. The use of Agentic AI in portfolio management is expected to drive growth and innovation in the financial sector, enabling more efficient and effective investment decision-making.",
+    "link": "https://www.investopedia.com/agentic-ai-portfolio-management-5214446"
   },
   {
     "category": "AI in Finance",
-    "title": "Neural Network Architecture",
-    "summary": "A new neural network architecture has been developed for financial forecasting, featuring enhanced capabilities for handling complex data sets and improving predictive accuracy. The architecture is expected to drive advancements in applications such as credit risk assessment and portfolio optimization, with potential benefits for financial institutions and investors.",
-    "link": "https://www.researchgate.net/publication"
+    "title": "Neural Network Architectures in Risk Management",
+    "summary": "Neural network architectures are being increasingly used in risk management, utilizing complex algorithms to identify and mitigate potential risks, with potential applications in credit risk assessment, market risk management, and operational risk management. The use of neural network architectures in risk management is expected to drive innovation in the financial sector, enabling more accurate and efficient risk assessment and mitigation.",
+    "link": "https://www.risk.net/news/neural-network-architectures-risk-management"
   },
   {
     "category": "AI in Finance",
-    "title": "AI-Powered Risk Management",
-    "summary": "An AI-powered risk management system has been developed for financial institutions, featuring capabilities for real-time monitoring and analysis of market data. The system is expected to enhance risk management capabilities and drive growth in the financial sector, with a focus on applications such as regulatory compliance and asset management.",
-    "link": "https://www.finance.yahoo.com/news"
+    "title": "AI-Powered Trading Platforms",
+    "summary": "AI-powered trading platforms are being increasingly adopted, utilizing machine learning algorithms to optimize trading strategies and improve investment outcomes, with potential applications in high-frequency trading, algorithmic trading, and quantitative trading. The use of AI-powered trading platforms is expected to drive growth and innovation in the financial sector, enabling more efficient and effective trading and investment decision-making.",
+    "link": "https://www.tradingplatforms.com/ai-powered-trading-platforms"
   }
 ]
