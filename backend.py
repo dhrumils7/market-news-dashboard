@@ -175,7 +175,7 @@ Output a SINGLE valid JSON array. Do not include markdown formatting or extra te
 Every element MUST contain exactly these five keys:
 "category"  — one of: "Global Macro / NSE", "Business / M&A", "AI Current Affairs", "AI in Finance"
 "title"     — clean, concise headline (string)
-"summary"   — 2 factual sentences using ONLY the provided text (string)
+"summary"   — 2 factual sentences. CRITICAL: You MUST paraphrase and rewrite the summary in your own words. DO NOT copy the input text verbatim, or you will trigger a recitation filter. (string)
 "link"      — the original article URL (string)
 "date"      — ISO date string (string)
 
@@ -244,6 +244,11 @@ def main():
                     ]
                 ),
             )
+            
+            # CTO Diagnostic Logger
+            if response.candidates:
+                print(f"  [~] API Finish Reason: {response.candidates[0].finish_reason.name}")
+            
             raw_list = extract_json_array(response.text)
             print(f"[✓] JSON successfully generated and extracted!")
             break
