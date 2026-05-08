@@ -60,7 +60,7 @@ RSS_FEEDS = {
     ],
 }
 
-MAX_ITEMS_PER_FEED = 10
+MAX_ITEMS_PER_FEED = 15
 
 
 # --- SCHEMA ---
@@ -176,8 +176,10 @@ Every element MUST contain exactly these five keys:
 "link"      — the original article URL (string)
 "date"      — ISO date string (string)
 
-The FIRST item in "Global Macro / NSE" MUST be a market-indices briefing covering NIFTY 50, SENSEX, S&P 500, and NASDAQ.
-Aim for 3 to 4 items per category to ensure a complete, valid JSON output.
+CRITICAL REQUIREMENTS:
+1. You MUST include exactly 6 items for EVERY SINGLE ONE of the 4 categories. Do not skip any category.
+2. The FIRST item in "Global Macro / NSE" MUST be a market-indices briefing covering NIFTY 50, SENSEX, S&P 500, and NASDAQ.
+3. Do not stop generating until all 4 categories (24 items total) are in the JSON array.
 """
 
 def main():
