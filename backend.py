@@ -42,22 +42,32 @@ MODEL_ID    = "gemini-2.5-flash"
 OUTPUT_FILE = "data.json"
 MAX_RETRIES = 3
 RETRY_DELAY = 5
-ITEMS_PER_CATEGORY = 6
 
+# TARGET ITEMS PER CATEGORY
+TARGET_MIN = 3
+TARGET_MAX = 6
+
+# EXACT 6 CATEGORIES AND TARGETED RSS FEEDS
 RSS_FEEDS = {
-    "Global Macro / NSE": [
-        "https://news.google.com/rss/search?q=NIFTY+50+OR+SENSEX+OR+NSE+OR+BSE+stock+market&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=S%26P+500+OR+NASDAQ+OR+Federal+Reserve+OR+global+macro&hl=en&gl=US&ceid=US:en",
+    "Current Affairs - Global": [
+        "https://news.google.com/rss/search?q=global+geopolitics+OR+world+news+current+affairs&hl=en-US&gl=US&ceid=US:en",
     ],
-    "Business / M&A": [
-        "https://news.google.com/rss/search?q=merger+acquisition+India+OR+Indian+business+deal&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=merger+acquisition+global+corporate+deal+2025&hl=en&gl=US&ceid=US:en",
+    "Current Affairs - India": [
+        "https://news.google.com/rss/search?q=India+current+affairs+news+OR+Indian+politics+government&hl=en-IN&gl=IN&ceid=IN:en",
     ],
-    "AI Current Affairs": [
-        "https://news.google.com/rss/search?q=artificial+intelligence+OpenAI+Anthropic+Google+DeepMind&hl=en&gl=US&ceid=US:en",
+    "BizNews - Global": [
+        "https://news.google.com/rss/search?q=global+business+news+OR+international+markets+economy&hl=en-US&gl=US&ceid=US:en",
+        "https://news.google.com/rss/search?q=S%26P+500+OR+NASDAQ+stock+market+closing+price+today&hl=en-US&gl=US&ceid=US:en" # Added for global index prices
     ],
-    "AI in Finance": [
-        "https://news.google.com/rss/search?q=AI+fintech+banking+finance+machine+learning+trading&hl=en&gl=US&ceid=US:en",
+    "BizNews - India": [
+        "https://news.google.com/rss/search?q=India+business+news+OR+NSE+BSE+markets+economy&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=NIFTY+50+OR+SENSEX+stock+market+closing+price+today&hl=en-IN&gl=IN&ceid=IN:en" # Added for Indian index prices
+    ],
+    "Fintech - AI in Finance": [
+        "https://news.google.com/rss/search?q=AI+fintech+banking+finance+machine+learning&hl=en-US&gl=US&ceid=US:en",
+    ],
+    "AI - Global and India": [
+        "https://news.google.com/rss/search?q=artificial+intelligence+generative+AI+India+Global&hl=en-US&gl=US&ceid=US:en",
     ],
 }
 
@@ -99,7 +109,7 @@ def fetch_rss_for_category(category: str, urls: list) -> str:
                 link    = e.get("link", "#").strip()
                 pub     = e.get("published", today)
                 
-                # CTO FIX: Safe HTML stripping using Regex
+                # Safe HTML stripping using Regex
                 summary = re.sub(r'<[^>]+>', ' ', summary)
                 summary = re.sub(r'\s+', ' ', summary).strip()
 
@@ -141,7 +151,7 @@ def extract_json_array(text: str) -> list:
 # --- MAIN PIPELINE ---
 def main():
     print("=" * 58)
-    print("  NewsGrid Backend — Batch Processing Architecture")
+    print("  NewsGrid Backend — 6 Category Architecture")
     print("=" * 58)
 
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
@@ -163,15 +173,22 @@ def main():
             continue
             
         system_instruction = f"""You are a professional financial news editor.
-Output a SINGLE valid JSON array containing exactly {ITEMS_PER_CATEGORY} items.
+Output a SINGLE valid JSON array containing between {TARGET_MIN} and {TARGET_MAX} items. Extract as many high-quality items as you can.
 Every element MUST contain these five keys: "category", "title", "summary", "link", "date".
 The "category" key MUST be exactly: "{category}".
 Write a completely original 2-sentence summary. DO NOT copy-paste from the input text to avoid recitation filters.
-
-{"CRITICAL: The first item MUST be a market-indices briefing covering NIFTY 50, SENSEX, S&P 500, and NASDAQ." if category == "Global Macro / NSE" else ""}
+"""
+        # --- MARKET TICKER LOGIC ---
+        if category == "BizNews - India":
+            system_instruction += """
+CRITICAL: The VERY FIRST item in this array MUST be a Live Market Ticker. 
+- Set "title" to exactly "MARKET_TICKER".
+- For "summary", DO NOT write a paragraph. Instead, extract the prices and percentage changes for the indices from the text and format it as a single line exactly like this example: 
+  "NIFTY 50: 22,500 (+1.2%) | SENSEX: 74,000 (-0.5%) | S&P 500: 5,100 (+0.8%) | NASDAQ: 16,000 (+1.0%)"
+- Do not add any conversational text. Just output the formatted prices string.
 """
 
-        prompt = f"Today's date: {today}\n\nSelect the {ITEMS_PER_CATEGORY} most important stories from the following data and return the JSON array:\n\n{raw_rss}"
+        prompt = f"Today's date: {today}\n\nSelect between {TARGET_MIN} and {TARGET_MAX} of the most important stories from the following data and return the JSON array:\n\n{raw_rss}"
         
         category_success = False
         
@@ -195,7 +212,6 @@ Write a completely original 2-sentence summary. DO NOT copy-paste from the input
                 
                 batch_list = extract_json_array(response.text)
                 
-                # Verify we actually got items
                 if len(batch_list) > 0:
                     master_json_list.extend(batch_list)
                     print(f"  [✓] Successfully processed {len(batch_list)} items for {category}")
@@ -211,7 +227,6 @@ Write a completely original 2-sentence summary. DO NOT copy-paste from the input
         if not category_success:
             print(f"  [!] WARNING: Failed to generate data for {category} after all attempts. Moving to next category.")
             
-        # CTO FIX: Pause for 3 seconds between categories to avoid Google Rate Limits
         time.sleep(3)
 
     # VALIDATE AND SAVE
