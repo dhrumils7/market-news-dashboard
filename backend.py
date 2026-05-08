@@ -1,10 +1,11 @@
 """
-backend.py — Automated News Feed Generator (Clean Start)
+backend.py — Automated News Feed Generator (Self-Healing)
 -------------------------------------------
 1. Fetches raw headlines via feedparser from Google News RSS.
 2. Sends the raw text to Gemini 2.5 Flash for categorisation & summarisation.
 3. Validates output against Pydantic schema.
-4. Saves result as data.json.
+4. Auto-repairs truncated JSON if the API cuts off mid-generation.
+5. Saves result as data.json.
 """
 
 import json
@@ -116,24 +117,51 @@ def fetch_rss() -> str:
     return raw
 
 
-# --- JSON EXTRACTION ---
+# --- JSON EXTRACTION & REPAIR ---
 def extract_json_array(text: str) -> list:
-    # Bulletproof JSON extraction without Regex
     text = text.strip()
     
+    # Strip markdown fences safely without using literal triple backticks
+    fence_marker = "`" * 3
+    if text.startswith(fence_marker):
+        lines = text.split("\n")
+        if lines[0].startswith(fence_marker): lines.pop(0)
+        if lines and lines[-1].startswith(fence_marker): lines.pop(-1)
+        text = "\n".join(lines).strip()
+        
+    # Strategy 1: Direct parse
+    try:
+        parsed = json.loads(text)
+        if isinstance(parsed, list):
+            return parsed
+    except json.JSONDecodeError:
+        pass
+
+    # Strategy 2: Bracket extraction
     start_idx = text.find('[')
     end_idx = text.rfind(']')
-    
     if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
-        json_str = text[start_idx:end_idx+1]
         try:
-            parsed = json.loads(json_str)
+            parsed = json.loads(text[start_idx:end_idx+1])
             if isinstance(parsed, list):
                 return parsed
-        except json.JSONDecodeError as e:
-            raise ValueError(f"Found brackets but failed to decode JSON: {e}")
+        except json.JSONDecodeError:
+            pass
             
-    raise ValueError(f"Could not locate a JSON array in the response. Raw text snippet: {text[:200]}")
+    # Strategy 3: Truncated JSON Repair (The Magic Fix)
+    if start_idx != -1:
+        last_brace = text.rfind('}')
+        if last_brace > start_idx:
+            repaired_text = text[start_idx:last_brace+1] + "\n]"
+            try:
+                parsed = json.loads(repaired_text)
+                if isinstance(parsed, list):
+                    print("  [~] Notice: Successfully repaired truncated JSON response.")
+                    return parsed
+            except json.JSONDecodeError:
+                pass
+                
+    raise ValueError(f"Could not locate or repair JSON array. Raw text snippet: {text[:200]}")
 
 
 # --- GEMINI CALL ---
@@ -149,11 +177,12 @@ Every element MUST contain exactly these five keys:
 "date"      — ISO date string (string)
 
 The FIRST item in "Global Macro / NSE" MUST be a market-indices briefing covering NIFTY 50, SENSEX, S&P 500, and NASDAQ.
+Aim for 3 to 4 items per category to ensure a complete, valid JSON output.
 """
 
 def main():
     print("=" * 58)
-    print("  NewsGrid Backend — Clean Start (Gemini + RSS)")
+    print("  NewsGrid Backend — Self-Healing (Gemini + RSS)")
     print("=" * 58)
 
     # 1. Check API Key
@@ -189,6 +218,7 @@ def main():
                     system_instruction=SYSTEM_INSTRUCTION,
                     temperature=0.2,
                     max_output_tokens=8192,
+                    response_mime_type="application/json",
                 ),
             )
             raw_list = extract_json_array(response.text)
