@@ -1,86 +1,30 @@
 [
   {
-    "category": "AI Current Affairs",
-    "title": "US government expands vetting of frontier AI models for security risks - Politico",
-    "summary": "The US government is intensifying its scrutiny of advanced AI models, implementing new vetting procedures to identify and mitigate potential security vulnerabilities. This proactive measure aims to ensure the responsible development and deployment of cutting-edge artificial intelligence technologies.",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM3NOcGR4TkdNTzN1UjVDZ2MzbjVIUHo0NW13bXJTQWZJbUlaRGpoLW9KQWkzYl9CQzFLdUxDX1kzVHZrclJSVGZXTWJPdno0RUVpc0VOSTlvX2RyZzRPZ19FQ1Q3MXNtdnY1SWxzVUVIeXk3T0QwTERJaVl6WTZmOW44Nmd3SHhtRVQwMTBpdW5jTC1ERlE?oc=5",
-    "date": "Tue, 05 May 2026 16:03:17 GMT"
+    "category": "Fintech - AI in Finance",
+    "title": "How banks are using AI in financial crime and compliance - FinTech Global",
+    "summary": "Financial institutions are increasingly deploying artificial intelligence to bolster their defenses against illicit activities and ensure regulatory adherence. AI-driven solutions offer enhanced capabilities for fraud detection, anti-money laundering, and risk management, significantly improving operational efficiency and accuracy.",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYThPQ0FZQmJRM0VzbDFjMnpFMmRfTjRuNk5tY19xejF2dmg5QVJfSUFDRkpkby15OFlOZ2FZTFh5SVQyalliSVpueTBMdXJJcWRLY045c0ZNOUFCLThMMjJPLVJGVEVpejRLQnNvZlRnMlFpWWdvbFdTNWVkUloyamRhbDBLdE5lTjN1TlloZUZIbW1aMGc?oc=5",
+    "date": "Fri, 16 Jan 2026 08:00:00 GMT"
   },
   {
-    "category": "AI Current Affairs",
-    "title": "Microsoft, Google, xAI giving government early access to AI models for review - The Hill",
-    "summary": "Leading AI developers, including Microsoft, Google, and xAI, are voluntarily providing the US government with early access to their latest AI models for comprehensive security reviews. This collaborative effort underscores a shared commitment to addressing potential risks associated with frontier AI systems before their widespread release.",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5VQ2wyNjhyNFhQこれにより、AIモデルのセキュリティと信頼性を確保するための政府と業界の協力が強化されます。",
-    "date": "Tue, 05 May 2026 15:18:00 GMT"
-  },
-  {
-    "category": "AI Current Affairs",
-    "title": "Pentagon Signs AI Deals With OpenAI, Google, Microsoft, Nvidia, and Others, Cutting Out Anthropic - gHacks",
-    "summary": "The Pentagon has finalized significant AI contracts with several tech giants, including OpenAI, Google, Microsoft, and Nvidia, for various defense applications. Notably, Anthropic was excluded from these deals, signaling a shift in military AI procurement strategies and competitive dynamics within the industry.",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONTRldkdVWEJvOGJXcWRnTEhqT0JBR2xqWUlPX19ENEFwWU4tNk02cDBJWS05RUVTbm5rRXNzLUVhcUFxenBpSnZOaWtrNXhPZTV1cWV0OEt2SFFoaGtHRUhmYWNUR1Byc2VUYTktSnNEUF9MamJGSE40azZXazJlelNHQzVveFYtN1dfQTVONlZxWWRkMmVPR3l6LUM1Z3VCVjZYMUFiODZHajczMzdELXo3d2xPQ05oZlRBMHN0eVdabHZVb3c?oc=5",
-    "date": "Mon, 04 May 2026 07:51:06 GMT"
-  },
-  {
-    "category": "AI Current Affairs",
-    "title": "OpenAI and Google Workers File Amicus Brief in Support of Anthropic Against the US Government - WIRED",
-    "summary": "Employees from OpenAI and Google have collectively filed an amicus brief, publicly supporting Anthropic in its legal dispute against the US government. This unprecedented show of solidarity highlights growing concerns among AI workers regarding government oversight and the ethical implications of advanced AI development.",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPX2NIcE81VkNhSHlvcVdWTTA5MXVVd082ekNhTmZfaWlBcGlyV3NyZWhEb3BqZmNJR3N3TXB6XzJ0SWVEaGNjRTBqcFVUdGlNSnY1em9pOFE5SnI1UVBxQnJzdVpHcEtyUnBDMEttMjB3cER0RmRPaThfcnNRRDZic2tOOTgzWGFsdG1LbjhjNDVPTnFyeFRPTHVn?oc=5",
-    "date": "Mon, 09 Mar 2026 07:00:00 GMT"
-  },
-  {
-    "category": "AI Current Affairs",
-    "title": "From DeepMind to Colossus: How AI’s biggest rivalries keep collapsing into deals - R&D World",
-    "summary": "The AI industry is witnessing a recurring pattern where intense rivalries among leading developers frequently culminate in strategic acquisitions or partnerships. This trend suggests a drive towards consolidation and resource pooling as companies navigate the high costs and competitive pressures of advanced AI research.",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPenB3NmtoanN5VHNITnBGem8zVjBiSFlrQVhXX2swUmZnNmVwaG14Nld6NFhaRG5nZnhDT092UlhtR1RJbmRMcWVlMjRhVjJFRm0zVk5MdkJRblFrNHh2Sk5ydm4wRlZuVjRJM0JZNzhUOEcxWE5kSzFENWt2WFBxRUEtUXVpTHBsQTFBYWg5cGNKRkhUTFJ5eHJUOTlMenJqaC1TQjFwVUZpZXhmRWc?oc=5",
-    "date": "Fri, 08 May 2026 21:19:23 GMT"
-  },
-  {
-    "category": "AI Current Affairs",
-    "title": "Google’s internal struggle is handing the AI coding race to Anthropic and OpenAI - Los Angeles Times",
-    "summary": "Internal organizational challenges and strategic missteps at Google are reportedly hindering its progress in the competitive AI coding landscape. This situation is inadvertently benefiting rivals like Anthropic and OpenAI, allowing them to gain a stronger foothold in the race for advanced AI development.",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQkFsSG9kRmFOVHlZQloxUTdIRWEzNHEwR3pXN1l1RHBGOXVObVJ3QXZmZTdfWWxNaW50cFhmel95WGttRTc5QU5xUGxMLUFKeWlFcExsaksySEJMS1N4VF9jelQzTElXTkFfPDRaWWtsN3ZibG1GUFpsTUhGNldFS3I2UzMxNk1lT3liRF9uWjBFM3YxUWtiVThYR3AwRVpPVUpBcGdxUEp0V2FVTW0xU3pjVzUyVWlJM191S0Rn?oc=5",
-    "date": "Wed, 22 Apr 2026 07:00:00 GMT"
-  },
-  {
-    "category": "AI in Finance",
-    "title": "How AI Analytics is Transforming Financial Services - Strategy",
-    "summary": "Artificial intelligence is fundamentally reshaping the financial services landscape by enhancing data analysis capabilities. This transformation enables institutions to gain deeper insights, optimize operations, and deliver more personalized customer experiences.",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYTBrTDVCa2xtZnpUUURzUXVFb0xXNUN3UHEtU2h2OG9rV0tuVnJYWDNUdEh3b01PRXNvS0BpbjhPbHlrS3ZuTWNDcmdnQU9mNUpxNzEtNi1QZG41amFZbXc0bGRZV2hrR2R6Zkh5eEZXYURmR2F4S1FESDF2Z2FMYTRtODhGa1BHc1NyYUF6NEVvQzYx?oc=5",
-    "date": "Thu, 12 Feb 2026 11:06:18 GMT"
-  },
-  {
-    "category": "AI in Finance",
-    "title": "10 Key Uses of AI in Fintech For Secure and Compliant Solutions - appinventiv.com",
-    "summary": "Fintech companies are leveraging artificial intelligence to develop robust solutions that prioritize both security and regulatory compliance. AI applications are crucial for tasks like fraud detection, risk management, and ensuring adherence to complex financial regulations.",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HaVdZWXY4M1VyenQtc3FHOVFGVTlKV1UtT0NqSkY2UTlHXzBYLXVTbVpBQU9jSzE0dlFwUGVtTHBlUHNMV2NlV3NoNVFoVEgzLU45aURB?oc=5",
-    "date": "Wed, 22 Apr 2026 07:00:00 GMT"
-  },
-  {
-    "category": "AI in Finance",
-    "title": "AI in Fintech Market Size, Share, Trends & Analysis, 2033 - Market Data Forecast",
-    "summary": "Projections indicate significant growth for the AI in Fintech market, with detailed analysis of its expanding size, market share, and emerging trends through 2033. This forecast highlights the increasing adoption and investment in AI technologies across the financial technology sector.",
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB4NlJURTN2YURRUzgxMXZybXNxVFREU25BYU5aVG5ReUFmQzBMYkRndmRERkVIWUdEbUlKR3ZUbENTS1ZUQlYzbW12SjlsbEs5WGpaN3J0WUhNbWtvUVdXdkg0SmhFeVk2UkRqQTk4c1pVZVlWLTVtaV9R?oc=5",
-    "date": "Tue, 02 Sep 2025 07:00:00 GMT"
-  },
-  {
-    "category": "AI in Finance",
+    "category": "Fintech - AI in Finance",
     "title": "AI in Fintech. 5 Ways Artificial Intelligence Is Changing Banking [Updated] - Netguru",
-    "summary": "Artificial intelligence is profoundly altering the banking industry by introducing innovative methods for operational efficiency and customer engagement. This article explores five distinct areas where AI is driving significant change, from automated customer service to enhanced risk assessment.",
+    "summary": "Artificial intelligence is fundamentally reshaping the banking sector by introducing innovative approaches across various operations. This includes advancements in customer service, personalized financial advice, and streamlined back-office processes, leading to a more efficient and customer-centric financial landscape.",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10dzIzWF9LdFZPYmFfX3lYdU0tYUxOdThpSndwVXEtaTJqZkMzd1hXdTBHOEJMRlZkcXVFTXItUTc0WVJIb1NvMkFxY0dPTmc4Ymdob0xtSzV0UmR4cVR1dQ?oc=5",
     "date": "Tue, 20 Jan 2026 08:00:00 GMT"
   },
   {
-    "category": "AI in Finance",
-    "title": "AI Agents in Financial Services Market Size to Hit USD 6.54 Billion by 2035 - Precedence Research",
-    "summary": "The market for AI agents within financial services is poised for substantial expansion, with forecasts predicting it will reach USD 6.54 billion by 2035. This growth underscores the increasing reliance on intelligent automated systems to perform complex tasks and improve service delivery in finance.",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8zTk04enBacTFnRGhBYU54LS1wcFJGZmZlQUtQdVIzQTZjbGlpbWkzZTlWQ2pubmZFSnI4clNYY1VyeVgtaUN0ZzdWbVBGblZTX0hVREUyQVhVOFhKZVgxSjF5R3VGY2c5X1dzVmhUb0V4c0RiVnNzc0xWb3hmdw?oc=5",
-    "date": "Tue, 23 Dec 2025 08:00:00 GMT"
+    "category": "Fintech - AI in Finance",
+    "title": "Fintech & AI: The Rise of Embedded Finance in Everyday Platforms - intlbm",
+    "summary": "The integration of AI into fintech is accelerating the growth of embedded finance, seamlessly weaving financial services into non-financial platforms. This trend allows users to access banking, lending, and payment options directly within their daily applications, creating a more convenient and integrated user experience.",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVjZtbnNQTVZvVFBIbERrQzh4VHZkbmZZR0t4LWtPYkZiTUN1WHZFTk5RVXduemlkWEFMNl8zWURmMFBnMFBTZDFTRG2idnowUkdIa2wtX1BiU2FMdUtCaVJza3V3REZGNTd6c1c2YzJiSjJaX0dwLXVkbmppZmRRNU9FSjBUeXlQNWxsWWtpMTFseV9iNXF3?oc=5",
+    "date": "Fri, 20 Feb 2026 08:00:00 GMT"
   },
   {
-    "category": "AI in Finance",
-    "title": "Artificial intelligence in financial market prediction: advancements in machine learning for stock price forecasting - Frontiers",
-    "summary": "Machine learning advancements are revolutionizing financial market prediction, particularly in the realm of stock price forecasting. Artificial intelligence models are increasingly sophisticated, offering new capabilities for analyzing vast datasets and identifying patterns to anticipate market movements.",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdTRNeEhkeFQ5SmlpNVlIRUxNS3lKTlVmampPSVR6blRiaEQ3VVpORkZncXV4NS1NMnhxanRmMGphZEh5djY3RkdZeGFScWJOQ3hQajV0a040Tjd3U3pKTFQ1M3JJN0JBdGo3RS1WY1BUV21nQW1kX0ZMTndtNktPWTJEY01EYlhIb25iTldNOU5FMEpTM2NxMDUxNm51Q3J2WVE?oc=5",
-    "date": "Mon, 15 Dec 2025 16:18:58 GMT"
+    "category": "Fintech - AI in Finance",
+    "title": "AI In FinTech Statistics By Growth And Future Trends (2026) - Bayelsa Watch",
+    "summary": "Current statistics highlight the rapid expansion of artificial intelligence within the fintech industry, indicating robust growth and significant future potential. Analysis of these trends suggests continued innovation and widespread adoption of AI technologies across financial services in the coming years.",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtMUlLNWJMVTJldWE0V1JmSGJFSlJpY3FDc0FPLUg5TFJ2MmtyRE5iTnlmRFE3VkFPM0EzZkpWTHhjOV92QnBWQUtwTGdEOHRGSzdUMVU0Z0ZOX3ZpcUhZ?oc=5",
+    "date": "Wed, 08 Apr 2026 07:00:00 GMT"
   }
 ]
