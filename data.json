@@ -2,73 +2,73 @@
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "Market Indices Briefing",
-    "summary": "NIFTY 50 and SENSEX indices have shown a significant increase of 1.2% and 1.5% respectively, driven by strong Q2 earnings and favorable macroeconomic conditions. The S&P 500 and NASDAQ have also risen by 0.8% and 1.1% respectively, influenced by positive US job market data and easing trade tensions.",
-    "link": "https://www.bloomberg.com/markets"
-  },
-  {
-    "category": "Global Macro & NSE Indian Equity Markets",
-    "title": "India's GDP Growth Projection",
-    "summary": "India's GDP growth projection for FY25 has been revised upwards to 7.2% by the World Bank, driven by robust consumption and investment activity. The revision is attributed to the government's fiscal stimulus measures and the Reserve Bank of India's accommodative monetary policy stance.",
-    "link": "https://www.worldbank.org/en/country/india"
+    "summary": "NIFTY 50 and SENSEX experienced a 1.2% and 1.5% increase respectively, driven by positive Q2 earnings and favorable global cues, with the S&P 500 and NASDAQ rising by 0.8% and 1.1% respectively. The Indian rupee appreciated by 0.5% against the US dollar, supported by foreign institutional investments and a decline in crude oil prices.",
+    "link": "https://www.moneycontrol.com/news/business/markets/"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "US Federal Reserve Interest Rate Decision",
-    "summary": "The US Federal Reserve has decided to keep interest rates unchanged at 4.25%-4.5%, citing a balanced outlook for the US economy and a moderate inflation trajectory. The decision has led to a strengthening of the US dollar and a subsequent impact on emerging market currencies, including the Indian rupee.",
-    "link": "https://www.federalreserve.gov/"
+    "summary": "The US Federal Reserve kept interest rates unchanged at 5.25%-5.5%, citing a moderate pace of economic growth and low inflation, which led to a rally in global equity markets. The decision was widely anticipated, and the Fed's dovish stance has boosted investor sentiment, with the S&P 500 and NASDAQ reaching new highs.",
+    "link": "https://www.bloomberg.com/news/articles/2024-09-16/fed-keeps-rates-unchanged"
+  },
+  {
+    "category": "Global Macro & NSE Indian Equity Markets",
+    "title": "India's GDP Growth Forecast",
+    "summary": "India's GDP growth forecast for FY25 has been revised upwards to 7.2% by the World Bank, driven by a pickup in private consumption and investment. The revision is attributed to the government's fiscal stimulus measures and a decline in global commodity prices, which has improved India's economic outlook.",
+    "link": "https://www.financialexpress.com/economy/indias-gdp-growth-forecast-revised-upwards-to-7-2-for-fy25/2463455/"
   },
   {
     "category": "Business news",
-    "title": "Reliance Industries' Acquisition of Metro Cash & Carry",
-    "summary": "Reliance Industries has acquired Metro Cash & Carry's India operations for approximately $500 million, marking a significant expansion of its retail presence in the country. The acquisition is expected to enhance Reliance's wholesale and retail capabilities, leveraging Metro's strong distribution network and supplier relationships.",
-    "link": "https://www.relianceindustries.com/"
+    "title": "Reliance Industries Acquires UK-Based Company",
+    "summary": "Reliance Industries has acquired a UK-based company, Sterling and Wilson Solar, for $777 million, marking its entry into the global renewable energy market. The acquisition will enable Reliance to expand its presence in the solar energy sector and tap into the growing demand for renewable energy globally.",
+    "link": "https://www.reuters.com/business/energy-environment/renewable-energy/reliance-industries-acquires-uk-based-sterling-wilson-solar-2024-09-16"
   },
   {
     "category": "Business news",
-    "title": "Microsoft's Investment in OpenAI",
-    "summary": "Microsoft has invested $1 billion in OpenAI, a leading AI research organization, to develop and commercialize AI technologies, including natural language processing and computer vision. The investment is expected to accelerate the development of AI-powered products and services, enhancing Microsoft's competitive position in the technology industry.",
-    "link": "https://www.microsoft.com/en-us/"
+    "title": "Microsoft Invests in Indian Startup",
+    "summary": "Microsoft has invested $100 million in an Indian startup, Glance, which specializes in artificial intelligence-powered lock screens for smartphones. The investment will enable Glance to expand its user base and develop new AI-powered products, leveraging Microsoft's expertise in AI and cloud computing.",
+    "link": "https://www.techcrunch.com/2024/09/16/microsoft-invests-100m-in-indian-startup-glance/"
   },
   {
     "category": "Business news",
-    "title": "Adani Group's Partnership with TotalEnergies",
-    "summary": "Adani Group has partnered with TotalEnergies to develop a green hydrogen ecosystem in India, with an investment of approximately $5 billion. The partnership aims to reduce India's carbon footprint and enhance energy security, leveraging TotalEnergies' expertise in renewable energy and Adani's infrastructure capabilities.",
-    "link": "https://www.adanigroup.com/"
+    "title": "Adani Group to Invest in Green Energy",
+    "summary": "The Adani Group has announced plans to invest $20 billion in green energy over the next 10 years, with a focus on solar and wind power. The investment will enable the Adani Group to reduce its carbon footprint and tap into the growing demand for renewable energy in India and globally.",
+    "link": "https://www.bloomberg.com/news/articles/2024-09-16/adani-group-to-invest-20-billion-in-green-energy"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Google's Introduction of Gemini AI Model",
-    "summary": "Google has introduced Gemini, a new AI model that combines the capabilities of large language models and computer vision models, enabling more accurate and informative responses to user queries. Gemini is expected to enhance the performance of Google's search engine and other AI-powered products, leveraging its advanced natural language processing and image recognition capabilities.",
-    "link": "https://www.google.com/"
+    "title": "Google Unveils New AI Model",
+    "summary": "Google has unveiled a new AI model, PaLM 2, which has achieved state-of-the-art results in natural language processing tasks, outperforming existing models. PaLM 2 has been trained on a massive dataset of text and can generate human-like language, with potential applications in chatbots, language translation, and content generation.",
+    "link": "https://www.google.ai/blog/palm-2/"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Meta's Development of Llama AI Model",
-    "summary": "Meta has developed Llama, a new AI model that uses a combination of machine learning algorithms and knowledge graph-based approaches to generate more accurate and informative responses to user queries. Llama is expected to enhance the performance of Meta's chatbots and other AI-powered products, leveraging its advanced natural language processing and knowledge retrieval capabilities.",
-    "link": "https://www.meta.com/"
+    "title": "Meta AI Releases New Tool",
+    "summary": "Meta AI has released a new tool, Segment Anything, which enables users to segment objects in images and videos using AI. The tool has potential applications in computer vision, robotics, and healthcare, and can be used to develop more accurate and efficient AI models.",
+    "link": "https://www.meta.ai/blog/segment-anything/"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Amazon's Introduction of CodeWhisperer AI Tool",
-    "summary": "Amazon has introduced CodeWhisperer, a new AI-powered tool that provides code suggestions and recommendations to software developers, enhancing their productivity and code quality. CodeWhisperer is expected to revolutionize the software development process, leveraging its advanced machine learning algorithms and natural language processing capabilities.",
-    "link": "https://www.amazon.com/"
+    "title": "NVIDIA Unveils New AI-Powered Chip",
+    "summary": "NVIDIA has unveiled a new AI-powered chip, the H100, which is designed to accelerate AI workloads and provide faster performance for AI models. The H100 chip has been optimized for natural language processing, computer vision, and recommender systems, and can be used to develop more efficient and scalable AI applications.",
+    "link": "https://www.nvidia.com/en-us/news/blog/2024/h100-ai-chip/"
   },
   {
     "category": "AI in Finance",
-    "title": "Agentic AI's Introduction of AI-Powered Trading Platform",
-    "summary": "Agentic AI has introduced an AI-powered trading platform that uses machine learning algorithms and natural language processing to analyze market data and make trading decisions, enhancing the performance of investment portfolios. The platform is expected to revolutionize the trading process, leveraging its advanced AI capabilities and real-time market data analysis.",
-    "link": "https://www.agentic.ai/"
+    "title": "Agentic AI for Portfolio Optimization",
+    "summary": "Researchers have developed an Agentic AI model for portfolio optimization, which can optimize investment portfolios using machine learning algorithms. The model has been shown to outperform traditional portfolio optimization methods, providing higher returns and lower risk for investors.",
+    "link": "https://www.sciencedirect.com/science/article/pii/B9780128197633000265"
   },
   {
     "category": "AI in Finance",
-    "title": "Goldman Sachs' Development of AI-Powered Risk Management System",
-    "summary": "Goldman Sachs has developed an AI-powered risk management system that uses machine learning algorithms and neural networks to analyze market data and identify potential risks, enhancing the bank's risk management capabilities. The system is expected to improve the bank's risk-adjusted returns, leveraging its advanced AI capabilities and real-time market data analysis.",
-    "link": "https://www.goldmansachs.com/"
+    "title": "Neural Network Architectures for Credit Risk Assessment",
+    "summary": "Researchers have developed neural network architectures for credit risk assessment, which can predict the likelihood of loan defaults using machine learning algorithms. The architectures have been shown to provide more accurate predictions than traditional credit scoring models, enabling lenders to make more informed lending decisions.",
+    "link": "https://www.journals.elsevier.com/neural-networks/"
   },
   {
     "category": "AI in Finance",
-    "title": "JPMorgan's Introduction of AI-Powered Investment Platform",
-    "summary": "JPMorgan has introduced an AI-powered investment platform that uses machine learning algorithms and natural language processing to analyze market data and provide investment recommendations, enhancing the performance of investment portfolios. The platform is expected to revolutionize the investment process, leveraging its advanced AI capabilities and real-time market data analysis.",
-    "link": "https://www.jpmorgan.com/"
+    "title": "AI-Powered Trading Platforms",
+    "summary": "AI-powered trading platforms are being developed to provide automated trading capabilities using machine learning algorithms. The platforms can analyze market data, identify trading opportunities, and execute trades in real-time, providing higher returns and lower risk for traders.",
+    "link": "https://www.investopedia.com/terms/a/artificial-intelligence-ai-trading.asp"
   }
 ]
