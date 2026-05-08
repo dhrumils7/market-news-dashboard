@@ -161,6 +161,8 @@ def extract_json_array(text: str) -> list:
                     return parsed
             except json.JSONDecodeError:
                 pass
+        else:
+            raise ValueError(f"Generation was cut off before finishing the first item (Likely a safety filter block). Raw text: {text[:200]}")
                 
     raise ValueError(f"Could not locate or repair JSON array. Raw text snippet: {text[:200]}")
 
@@ -222,6 +224,24 @@ def main():
                     temperature=0.2,
                     max_output_tokens=8192,
                     response_mime_type="application/json",
+                    safety_settings=[
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE,
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE,
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE,
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE,
+                        ),
+                    ]
                 ),
             )
             raw_list = extract_json_array(response.text)
