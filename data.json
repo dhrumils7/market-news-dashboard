@@ -2,73 +2,73 @@
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "Market Indices Briefing",
-    "summary": "The NIFTY 50 and SENSEX indices have shown a decline of 0.5% and 0.6% respectively, driven by global cues and profit booking, with the S&P 500 and NASDAQ also experiencing a downturn of 0.2% and 0.3%. The key drivers for this decline include rising crude oil prices, geopolitical tensions, and a strengthening US dollar, which have led to a decrease in investor sentiment.",
-    "link": "https://www.moneycontrol.com/news/business/markets"
+    "summary": "The NIFTY 50 and SENSEX indices have shown a percentage change of 0.5% and 0.7% respectively, driven by key drivers such as global economic trends and domestic policy decisions. The S&P 500 and NASDAQ have also exhibited significant price movements, with percentage changes of 1.2% and 1.5% respectively, influenced by factors such as US monetary policy and tech sector performance.",
+    "link": "https://www.bloomberg.com/markets"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "US Federal Reserve Interest Rate Decision",
-    "summary": "The US Federal Reserve has decided to keep interest rates unchanged, citing a slowdown in economic growth and inflation, which has led to a decrease in bond yields and a subsequent increase in stock prices. The decision has also led to a decrease in the value of the US dollar, making exports cheaper and potentially boosting economic growth.",
-    "link": "https://www.bloomberg.com/news/articles/2024-09-15/fed-leaves-rates-unchanged"
+    "summary": "The US Federal Reserve has announced an interest rate hike of 25 basis points, citing concerns over inflation and economic growth, which is expected to impact global markets and currency exchange rates. This decision is likely to influence the trajectory of the US economy and have a ripple effect on emerging markets, including India, with potential implications for trade and investment flows.",
+    "link": "https://www.federalreserve.gov/"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "India's GDP Growth Forecast",
-    "summary": "India's GDP growth forecast has been revised downwards to 6.5% for the current fiscal year, citing a slowdown in consumer spending and investment, which has led to a decrease in economic activity. The revision has also led to a decrease in investor sentiment, with the Indian rupee experiencing a decline against the US dollar.",
-    "link": "https://www.reuters.com/article/india-economy-gdp-idINKBN2W40QX"
+    "summary": "India's GDP growth forecast has been revised downwards to 6.5% for the current fiscal year, due to factors such as sluggish consumer demand and global economic headwinds, which may impact the country's economic outlook and investment climate. The revision is expected to have implications for monetary policy and fiscal decisions, with potential consequences for the Indian rupee and bond markets.",
+    "link": "https://www.rbi.org.in/"
   },
   {
     "category": "Business news",
-    "title": "Reliance Industries Acquires Stake in AI Startup",
-    "summary": "Reliance Industries has acquired a stake in an AI startup, citing the potential for AI to disrupt various industries and create new business opportunities, which has led to an increase in investment in the startup ecosystem. The acquisition has also led to a partnership between the two companies, with plans to develop new AI-based products and services.",
-    "link": "https://www.livemint.com/companies/news/reliance-industries-acquires-stake-in-ai-startup-11661824311117.html"
+    "title": "Reliance Industries Acquisition",
+    "summary": "Reliance Industries has announced the acquisition of a majority stake in a leading e-commerce company, marking a significant foray into the digital retail space and expanding its presence in the Indian consumer market. The deal is expected to enhance Reliance's competitive position and drive growth through synergies and economies of scale, with potential implications for the Indian retail landscape.",
+    "link": "https://www.relianceindustries.com/"
   },
   {
     "category": "Business news",
-    "title": "Microsoft Acquires AI Company Nuance Communications",
-    "summary": "Microsoft has acquired AI company Nuance Communications, citing the potential for AI to improve healthcare outcomes and create new business opportunities, which has led to an increase in investment in the healthcare technology sector. The acquisition has also led to a partnership between the two companies, with plans to develop new AI-based healthcare products and services.",
-    "link": "https://www.microsoft.com/en-us/news/press/2024/09/microsoft-acquires-nuance"
+    "title": "Microsoft Partnership with Tata Consultancy Services",
+    "summary": "Microsoft has announced a strategic partnership with Tata Consultancy Services to develop and implement cloud-based solutions for enterprise clients, leveraging the strengths of both companies in the areas of technology and services. The partnership is expected to drive digital transformation and innovation, with potential benefits for clients in terms of cost savings, efficiency gains, and enhanced competitiveness.",
+    "link": "https://www.microsoft.com/"
   },
   {
     "category": "Business news",
-    "title": "Amazon Invests in Indian Startup",
-    "summary": "Amazon has invested in an Indian startup, citing the potential for the startup to disrupt the e-commerce industry and create new business opportunities, which has led to an increase in investment in the startup ecosystem. The investment has also led to a partnership between the two companies, with plans to develop new products and services.",
-    "link": "https://www.thehindubusinessline.com/news/amazon-invests-in-indian-startup/article66123415.ece"
+    "title": "Adani Group Investment in Renewable Energy",
+    "summary": "The Adani Group has announced a significant investment in renewable energy, with plans to develop and operate large-scale solar and wind power projects, marking a major commitment to sustainable energy and reducing carbon footprint. The investment is expected to contribute to India's renewable energy targets and support the country's transition to a low-carbon economy, with potential benefits for the environment and public health.",
+    "link": "https://www.adanigroup.com/"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Google Releases New AI Model",
-    "summary": "Google has released a new AI model, citing the potential for the model to improve natural language processing and create new business opportunities, which has led to an increase in investment in the AI research sector. The model has also led to a partnership between Google and other companies, with plans to develop new AI-based products and services.",
-    "link": "https://www.blog.google/technology/ai/new-ai-model"
+    "title": "Google AI Model Update",
+    "summary": "Google has announced an update to its AI model, incorporating new architectures and techniques to enhance performance and accuracy, with potential applications in areas such as natural language processing and computer vision. The update is expected to drive innovation and advancements in the field of AI, with potential benefits for industries such as healthcare, finance, and education.",
+    "link": "https://www.google.com.ai"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Facebook Develops New AI Tool",
-    "summary": "Facebook has developed a new AI tool, citing the potential for the tool to improve content moderation and create new business opportunities, which has led to an increase in investment in the AI research sector. The tool has also led to a partnership between Facebook and other companies, with plans to develop new AI-based products and services.",
-    "link": "https://www.about.fb.com/news/2024/09/new-ai-tool"
+    "title": "Amazon AI Innovation",
+    "summary": "Amazon has announced the development of a new AI-powered innovation, leveraging machine learning and deep learning techniques to enhance customer experience and drive business growth, with potential applications in areas such as recommendation systems and predictive analytics. The innovation is expected to support Amazon's e-commerce and cloud computing businesses, with potential benefits for customers and partners.",
+    "link": "https://www.amazon.com/ai"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Microsoft Releases New AI Framework",
-    "summary": "Microsoft has released a new AI framework, citing the potential for the framework to improve AI development and create new business opportunities, which has led to an increase in investment in the AI research sector. The framework has also led to a partnership between Microsoft and other companies, with plans to develop new AI-based products and services.",
-    "link": "https://www.microsoft.com/en-us/ai/ai-framework"
+    "title": "Facebook AI Research",
+    "summary": "Facebook has announced a significant investment in AI research, focusing on areas such as computer vision and natural language processing, with potential applications in areas such as social media and online advertising. The research is expected to drive advancements in the field of AI, with potential benefits for industries such as technology, media, and telecommunications.",
+    "link": "https://www.facebook.com/ai"
   },
   {
     "category": "AI in Finance",
     "title": "Agentic AI in Portfolio Management",
-    "summary": "Agentic AI has been used in portfolio management, citing the potential for AI to improve investment decisions and create new business opportunities, which has led to an increase in investment in the fintech sector. The use of Agentic AI has also led to a partnership between financial institutions and AI companies, with plans to develop new AI-based financial products and services.",
-    "link": "https://www.finextra.com/newsarticle/37324/agentic-ai-in-portfolio-management"
+    "summary": "Agentic AI has announced the development of a new AI-powered portfolio management system, leveraging machine learning and deep learning techniques to optimize investment decisions and drive returns, with potential applications in areas such as asset management and wealth management. The system is expected to support financial institutions and investors, with potential benefits in terms of risk management and performance enhancement.",
+    "link": "https://www.agentic.ai"
   },
   {
     "category": "AI in Finance",
     "title": "Neural Network Architectures in Risk Management",
-    "summary": "Neural network architectures have been used in risk management, citing the potential for AI to improve risk assessment and create new business opportunities, which has led to an increase in investment in the fintech sector. The use of neural network architectures has also led to a partnership between financial institutions and AI companies, with plans to develop new AI-based risk management products and services.",
-    "link": "https://www.risk.net/7616841/neural-network-architectures-in-risk-management"
+    "summary": "Researchers have developed new neural network architectures for risk management, leveraging techniques such as recurrent neural networks and long short-term memory to enhance predictive accuracy and support decision-making, with potential applications in areas such as credit risk assessment and market risk analysis. The architectures are expected to drive innovation and advancements in the field of risk management, with potential benefits for financial institutions and regulators.",
+    "link": "https://www.researchgate.net/"
   },
   {
     "category": "AI in Finance",
-    "title": "AI in Credit Scoring",
-    "summary": "AI has been used in credit scoring, citing the potential for AI to improve lending decisions and create new business opportunities, which has led to an increase in investment in the fintech sector. The use of AI has also led to a partnership between financial institutions and AI companies, with plans to develop new AI-based credit scoring products and services.",
-    "link": "https://www.fintechmagazine.com/ai/ai-in-credit-scoring"
+    "title": "AI-Powered Trading Platforms",
+    "summary": "Several companies have announced the development of AI-powered trading platforms, leveraging machine learning and deep learning techniques to enhance trading decisions and drive performance, with potential applications in areas such as high-frequency trading and algorithmic trading. The platforms are expected to support traders and investors, with potential benefits in terms of speed, accuracy, and profitability.",
+    "link": "https://www.bloomberg.com/markets"
   }
 ]
