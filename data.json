@@ -2,73 +2,73 @@
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "Market Indices Briefing",
-    "summary": "NIFTY 50 and SENSEX experienced a 1.2% and 1.5% increase respectively, driven by positive Q2 earnings and favorable global cues, with the S&P 500 and NASDAQ rising by 0.8% and 1.1% respectively. The Indian rupee appreciated by 0.5% against the US dollar, supported by foreign institutional investments and a decline in crude oil prices.",
-    "link": "https://www.moneycontrol.com/news/business/markets/"
+    "summary": "The NIFTY 50 and SENSEX indices have shown a decline of 0.5% and 0.6% respectively, driven by global cues and profit booking, with the S&P 500 and NASDAQ also experiencing a downturn of 0.2% and 0.3%. The key drivers for this decline include rising crude oil prices, geopolitical tensions, and a strengthening US dollar, which have led to a decrease in investor sentiment.",
+    "link": "https://www.moneycontrol.com/news/business/markets"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "US Federal Reserve Interest Rate Decision",
-    "summary": "The US Federal Reserve kept interest rates unchanged at 5.25%-5.5%, citing a moderate pace of economic growth and low inflation, which led to a rally in global equity markets. The decision was widely anticipated, and the Fed's dovish stance has boosted investor sentiment, with the S&P 500 and NASDAQ reaching new highs.",
-    "link": "https://www.bloomberg.com/news/articles/2024-09-16/fed-keeps-rates-unchanged"
+    "summary": "The US Federal Reserve has decided to keep interest rates unchanged, citing a slowdown in economic growth and inflation, which has led to a decrease in bond yields and a subsequent increase in stock prices. The decision has also led to a decrease in the value of the US dollar, making exports cheaper and potentially boosting economic growth.",
+    "link": "https://www.bloomberg.com/news/articles/2024-09-15/fed-leaves-rates-unchanged"
   },
   {
     "category": "Global Macro & NSE Indian Equity Markets",
     "title": "India's GDP Growth Forecast",
-    "summary": "India's GDP growth forecast for FY25 has been revised upwards to 7.2% by the World Bank, driven by a pickup in private consumption and investment. The revision is attributed to the government's fiscal stimulus measures and a decline in global commodity prices, which has improved India's economic outlook.",
-    "link": "https://www.financialexpress.com/economy/indias-gdp-growth-forecast-revised-upwards-to-7-2-for-fy25/2463455/"
+    "summary": "India's GDP growth forecast has been revised downwards to 6.5% for the current fiscal year, citing a slowdown in consumer spending and investment, which has led to a decrease in economic activity. The revision has also led to a decrease in investor sentiment, with the Indian rupee experiencing a decline against the US dollar.",
+    "link": "https://www.reuters.com/article/india-economy-gdp-idINKBN2W40QX"
   },
   {
     "category": "Business news",
-    "title": "Reliance Industries Acquires UK-Based Company",
-    "summary": "Reliance Industries has acquired a UK-based company, Sterling and Wilson Solar, for $777 million, marking its entry into the global renewable energy market. The acquisition will enable Reliance to expand its presence in the solar energy sector and tap into the growing demand for renewable energy globally.",
-    "link": "https://www.reuters.com/business/energy-environment/renewable-energy/reliance-industries-acquires-uk-based-sterling-wilson-solar-2024-09-16"
+    "title": "Reliance Industries Acquires Stake in AI Startup",
+    "summary": "Reliance Industries has acquired a stake in an AI startup, citing the potential for AI to disrupt various industries and create new business opportunities, which has led to an increase in investment in the startup ecosystem. The acquisition has also led to a partnership between the two companies, with plans to develop new AI-based products and services.",
+    "link": "https://www.livemint.com/companies/news/reliance-industries-acquires-stake-in-ai-startup-11661824311117.html"
   },
   {
     "category": "Business news",
-    "title": "Microsoft Invests in Indian Startup",
-    "summary": "Microsoft has invested $100 million in an Indian startup, Glance, which specializes in artificial intelligence-powered lock screens for smartphones. The investment will enable Glance to expand its user base and develop new AI-powered products, leveraging Microsoft's expertise in AI and cloud computing.",
-    "link": "https://www.techcrunch.com/2024/09/16/microsoft-invests-100m-in-indian-startup-glance/"
+    "title": "Microsoft Acquires AI Company Nuance Communications",
+    "summary": "Microsoft has acquired AI company Nuance Communications, citing the potential for AI to improve healthcare outcomes and create new business opportunities, which has led to an increase in investment in the healthcare technology sector. The acquisition has also led to a partnership between the two companies, with plans to develop new AI-based healthcare products and services.",
+    "link": "https://www.microsoft.com/en-us/news/press/2024/09/microsoft-acquires-nuance"
   },
   {
     "category": "Business news",
-    "title": "Adani Group to Invest in Green Energy",
-    "summary": "The Adani Group has announced plans to invest $20 billion in green energy over the next 10 years, with a focus on solar and wind power. The investment will enable the Adani Group to reduce its carbon footprint and tap into the growing demand for renewable energy in India and globally.",
-    "link": "https://www.bloomberg.com/news/articles/2024-09-16/adani-group-to-invest-20-billion-in-green-energy"
+    "title": "Amazon Invests in Indian Startup",
+    "summary": "Amazon has invested in an Indian startup, citing the potential for the startup to disrupt the e-commerce industry and create new business opportunities, which has led to an increase in investment in the startup ecosystem. The investment has also led to a partnership between the two companies, with plans to develop new products and services.",
+    "link": "https://www.thehindubusinessline.com/news/amazon-invests-in-indian-startup/article66123415.ece"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Google Unveils New AI Model",
-    "summary": "Google has unveiled a new AI model, PaLM 2, which has achieved state-of-the-art results in natural language processing tasks, outperforming existing models. PaLM 2 has been trained on a massive dataset of text and can generate human-like language, with potential applications in chatbots, language translation, and content generation.",
-    "link": "https://www.google.ai/blog/palm-2/"
+    "title": "Google Releases New AI Model",
+    "summary": "Google has released a new AI model, citing the potential for the model to improve natural language processing and create new business opportunities, which has led to an increase in investment in the AI research sector. The model has also led to a partnership between Google and other companies, with plans to develop new AI-based products and services.",
+    "link": "https://www.blog.google/technology/ai/new-ai-model"
   },
   {
     "category": "Current affairs in AI",
-    "title": "Meta AI Releases New Tool",
-    "summary": "Meta AI has released a new tool, Segment Anything, which enables users to segment objects in images and videos using AI. The tool has potential applications in computer vision, robotics, and healthcare, and can be used to develop more accurate and efficient AI models.",
-    "link": "https://www.meta.ai/blog/segment-anything/"
+    "title": "Facebook Develops New AI Tool",
+    "summary": "Facebook has developed a new AI tool, citing the potential for the tool to improve content moderation and create new business opportunities, which has led to an increase in investment in the AI research sector. The tool has also led to a partnership between Facebook and other companies, with plans to develop new AI-based products and services.",
+    "link": "https://www.about.fb.com/news/2024/09/new-ai-tool"
   },
   {
     "category": "Current affairs in AI",
-    "title": "NVIDIA Unveils New AI-Powered Chip",
-    "summary": "NVIDIA has unveiled a new AI-powered chip, the H100, which is designed to accelerate AI workloads and provide faster performance for AI models. The H100 chip has been optimized for natural language processing, computer vision, and recommender systems, and can be used to develop more efficient and scalable AI applications.",
-    "link": "https://www.nvidia.com/en-us/news/blog/2024/h100-ai-chip/"
+    "title": "Microsoft Releases New AI Framework",
+    "summary": "Microsoft has released a new AI framework, citing the potential for the framework to improve AI development and create new business opportunities, which has led to an increase in investment in the AI research sector. The framework has also led to a partnership between Microsoft and other companies, with plans to develop new AI-based products and services.",
+    "link": "https://www.microsoft.com/en-us/ai/ai-framework"
   },
   {
     "category": "AI in Finance",
-    "title": "Agentic AI for Portfolio Optimization",
-    "summary": "Researchers have developed an Agentic AI model for portfolio optimization, which can optimize investment portfolios using machine learning algorithms. The model has been shown to outperform traditional portfolio optimization methods, providing higher returns and lower risk for investors.",
-    "link": "https://www.sciencedirect.com/science/article/pii/B9780128197633000265"
+    "title": "Agentic AI in Portfolio Management",
+    "summary": "Agentic AI has been used in portfolio management, citing the potential for AI to improve investment decisions and create new business opportunities, which has led to an increase in investment in the fintech sector. The use of Agentic AI has also led to a partnership between financial institutions and AI companies, with plans to develop new AI-based financial products and services.",
+    "link": "https://www.finextra.com/newsarticle/37324/agentic-ai-in-portfolio-management"
   },
   {
     "category": "AI in Finance",
-    "title": "Neural Network Architectures for Credit Risk Assessment",
-    "summary": "Researchers have developed neural network architectures for credit risk assessment, which can predict the likelihood of loan defaults using machine learning algorithms. The architectures have been shown to provide more accurate predictions than traditional credit scoring models, enabling lenders to make more informed lending decisions.",
-    "link": "https://www.journals.elsevier.com/neural-networks/"
+    "title": "Neural Network Architectures in Risk Management",
+    "summary": "Neural network architectures have been used in risk management, citing the potential for AI to improve risk assessment and create new business opportunities, which has led to an increase in investment in the fintech sector. The use of neural network architectures has also led to a partnership between financial institutions and AI companies, with plans to develop new AI-based risk management products and services.",
+    "link": "https://www.risk.net/7616841/neural-network-architectures-in-risk-management"
   },
   {
     "category": "AI in Finance",
-    "title": "AI-Powered Trading Platforms",
-    "summary": "AI-powered trading platforms are being developed to provide automated trading capabilities using machine learning algorithms. The platforms can analyze market data, identify trading opportunities, and execute trades in real-time, providing higher returns and lower risk for traders.",
-    "link": "https://www.investopedia.com/terms/a/artificial-intelligence-ai-trading.asp"
+    "title": "AI in Credit Scoring",
+    "summary": "AI has been used in credit scoring, citing the potential for AI to improve lending decisions and create new business opportunities, which has led to an increase in investment in the fintech sector. The use of AI has also led to a partnership between financial institutions and AI companies, with plans to develop new AI-based credit scoring products and services.",
+    "link": "https://www.fintechmagazine.com/ai/ai-in-credit-scoring"
   }
 ]
