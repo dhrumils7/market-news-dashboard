@@ -1,27 +1,14 @@
-# .github/workflows/update_news.yml
-#
-# Automated News Feed Updater
-# ----------------------------
-# Runs every 6 hours (and on manual dispatch).
-# Executes backend.py → generates data.json → commits back to main.
-#
-# REQUIRED SETUP:
-#   Repo → Settings → Secrets and variables → Actions
-#   Secret name : GEMINI_API_KEY
-#   Secret value: your Google Gemini API key
-
 name: Update News Feed
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # 00:00 / 06:00 / 12:00 / 18:00 UTC
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
   update-feed:
     name: Generate & Commit data.json
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
 
@@ -36,7 +23,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: pip install google-genai pydantic feedparser
 
       - name: Run backend.py
@@ -48,11 +35,13 @@ jobs:
         run: |
           git config --local user.name  "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          
           git add data.json
+          
           if git diff --cached --quiet; then
-            echo "No changes in data.json — skipping commit."
+            echo "No changes detected in data.json. Skipping commit."
           else
-            git commit -m "chore: automated news update [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+            git commit -m "chore: automated news feed update [$(date -u +'%Y-%m-%d %H:%M UTC')]"
             git push origin main
-            echo "data.json committed and pushed."
+            echo "data.json committed and pushed successfully."
           fi
