@@ -1,10 +1,11 @@
 """
-backend.py — Automated News Feed Generator (Batch Processing)
+backend.py — Automated News Feed Generator (Rate-Limit Aware)
 -------------------------------------------
 1. Fetches raw headlines via feedparser.
 2. Safely strips HTML from Google News RSS.
 3. Sends data to Gemini 2.5 Flash ONE CATEGORY AT A TIME.
-4. Merges the results, validates, and saves to data.json.
+4. Auto-pauses on 429 Quota Exceeded errors.
+5. Merges the results, validates, and saves to data.json.
 """
 
 import json
@@ -41,7 +42,7 @@ except ImportError:
 MODEL_ID    = "gemini-2.5-flash"
 OUTPUT_FILE = "data.json"
 MAX_RETRIES = 3
-RETRY_DELAY = 5
+RETRY_DELAY = 10 # Base delay for normal errors
 
 # TARGET ITEMS PER CATEGORY
 TARGET_MIN = 3
@@ -57,11 +58,11 @@ RSS_FEEDS = {
     ],
     "BizNews - Global": [
         "https://news.google.com/rss/search?q=global+business+news+OR+international+markets+economy&hl=en-US&gl=US&ceid=US:en",
-        "https://news.google.com/rss/search?q=S%26P+500+OR+NASDAQ+stock+market+closing+price+today&hl=en-US&gl=US&ceid=US:en" # Added for global index prices
+        "https://news.google.com/rss/search?q=S%26P+500+OR+NASDAQ+stock+market+closing+price+today&hl=en-US&gl=US&ceid=US:en" 
     ],
     "BizNews - India": [
         "https://news.google.com/rss/search?q=India+business+news+OR+NSE+BSE+markets+economy&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=NIFTY+50+OR+SENSEX+stock+market+closing+price+today&hl=en-IN&gl=IN&ceid=IN:en" # Added for Indian index prices
+        "https://news.google.com/rss/search?q=NIFTY+50+OR+SENSEX+stock+market+closing+price+today&hl=en-IN&gl=IN&ceid=IN:en" 
     ],
     "Fintech - AI in Finance": [
         "https://news.google.com/rss/search?q=AI+fintech+banking+finance+machine+learning&hl=en-US&gl=US&ceid=US:en",
@@ -109,7 +110,6 @@ def fetch_rss_for_category(category: str, urls: list) -> str:
                 link    = e.get("link", "#").strip()
                 pub     = e.get("published", today)
                 
-                # Safe HTML stripping using Regex
                 summary = re.sub(r'<[^>]+>', ' ', summary)
                 summary = re.sub(r'\s+', ' ', summary).strip()
 
@@ -151,7 +151,7 @@ def extract_json_array(text: str) -> list:
 # --- MAIN PIPELINE ---
 def main():
     print("=" * 58)
-    print("  NewsGrid Backend — 6 Category Architecture")
+    print("  NewsGrid Backend — Rate-Limit Aware Architecture")
     print("=" * 58)
 
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
@@ -221,13 +221,23 @@ CRITICAL: The VERY FIRST item in this array MUST be a Live Market Ticker.
                     raise ValueError("JSON array was empty.")
                     
             except Exception as e:
-                print(f"  [!] Attempt {attempt} failed for {category}: {e}")
-                if attempt < MAX_RETRIES: time.sleep(RETRY_DELAY)
+                error_msg = str(e)
+                print(f"  [!] Attempt {attempt} failed for {category}: {error_msg}")
+                
+                if attempt < MAX_RETRIES:
+                    # SMART RATE LIMIT HANDLING
+                    if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
+                        print("  [~] Quota limit hit. Sleeping for 60 seconds to reset limit...")
+                        time.sleep(60)
+                    else:
+                        time.sleep(RETRY_DELAY)
                 
         if not category_success:
             print(f"  [!] WARNING: Failed to generate data for {category} after all attempts. Moving to next category.")
             
-        time.sleep(3)
+        # BASE DELAY: Wait 15 seconds between every category to keep Google happy
+        print("  [~] Taking a 15-second breather before the next category...")
+        time.sleep(15)
 
     # VALIDATE AND SAVE
     print("\n[~] Validating final merged dataset...")
