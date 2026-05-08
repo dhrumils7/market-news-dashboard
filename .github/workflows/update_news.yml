@@ -2,7 +2,8 @@ name: Update News Feed
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    # Runs once every 24 hours at 06:00 UTC (11:30 AM IST)
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -15,17 +16,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      # ── Step 2: Set up Python ─────────────────────────────────────────────────
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # ── Step 3: Install dependencies ─────────────────────────────────────────
       - name: Install Python dependencies
         run: pip install google-genai pydantic feedparser
 
-      # ── Step 4: Run the backend script ───────────────────────────────────────
       - name: Run backend.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -41,7 +42,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes detected in data.json. Skipping commit."
           else
-            git commit -m "chore: automated news feed update [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+            git commit -m "chore: daily news feed update [$(date -u +'%Y-%m-%d %H:%M UTC')]"
             git push origin main
             echo "data.json committed and pushed successfully."
           fi
