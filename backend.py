@@ -2,14 +2,16 @@
 backend.py — Automated News Feed Generator (Batch Processing)
 -------------------------------------------
 1. Fetches raw headlines via feedparser.
-2. Sends data to Gemini 2.5 Flash ONE CATEGORY AT A TIME to prevent timeouts.
-3. Merges the results, validates, and saves to data.json.
+2. Safely strips HTML from Google News RSS.
+3. Sends data to Gemini 2.5 Flash ONE CATEGORY AT A TIME.
+4. Merges the results, validates, and saves to data.json.
 """
 
 import json
 import os
 import sys
 import time
+import re
 import traceback
 from datetime import datetime, timezone
 from pathlib import Path
@@ -97,11 +99,12 @@ def fetch_rss_for_category(category: str, urls: list) -> str:
                 link    = e.get("link", "#").strip()
                 pub     = e.get("published", today)
                 
-                if "<" in summary and ">" in summary:
-                    summary = summary.split("<")[0] + summary.split(">")[-1]
+                # CTO FIX: Safe HTML stripping using Regex
+                summary = re.sub(r'<[^>]+>', ' ', summary)
+                summary = re.sub(r'\s+', ' ', summary).strip()
 
                 lines.append(f"TITLE: {title}")
-                lines.append(f"SUMMARY: {summary[:200]}")
+                lines.append(f"SUMMARY: {summary[:250]}")
                 lines.append(f"LINK: {link}")
                 lines.append(f"DATE: {pub}")
                 lines.append("---")
@@ -155,15 +158,15 @@ def main():
         print(f"\n[~] Processing Category: {category}")
         
         raw_rss = fetch_rss_for_category(category, urls)
-        if not raw_rss:
-            print(f"  [!] Skipping {category} - No RSS data found.")
+        if len(raw_rss) < 50:
+            print(f"  [!] Skipping {category} - Not enough RSS data found.")
             continue
             
         system_instruction = f"""You are a professional financial news editor.
 Output a SINGLE valid JSON array containing exactly {ITEMS_PER_CATEGORY} items.
 Every element MUST contain these five keys: "category", "title", "summary", "link", "date".
 The "category" key MUST be exactly: "{category}".
-Paraphrase the "summary" to be 2 factual sentences in your own words.
+Write a completely original 2-sentence summary. DO NOT copy-paste from the input text to avoid recitation filters.
 
 {"CRITICAL: The first item MUST be a market-indices briefing covering NIFTY 50, SENSEX, S&P 500, and NASDAQ." if category == "Global Macro / NSE" else ""}
 """
@@ -207,6 +210,9 @@ Paraphrase the "summary" to be 2 factual sentences in your own words.
                 
         if not category_success:
             print(f"  [!] WARNING: Failed to generate data for {category} after all attempts. Moving to next category.")
+            
+        # CTO FIX: Pause for 3 seconds between categories to avoid Google Rate Limits
+        time.sleep(3)
 
     # VALIDATE AND SAVE
     print("\n[~] Validating final merged dataset...")
