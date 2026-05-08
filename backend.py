@@ -60,6 +60,7 @@ RSS_FEEDS = {
     ],
 }
 
+# INCREASED: Fetching 15 articles per link to give Gemini plenty of options
 MAX_ITEMS_PER_FEED = 15
 
 
@@ -164,7 +165,7 @@ def extract_json_array(text: str) -> list:
     raise ValueError(f"Could not locate or repair JSON array. Raw text snippet: {text[:200]}")
 
 
-# --- GEMINI CALL ---
+# --- GEMINI CALL (WITH UPDATED PROMPT) ---
 SYSTEM_INSTRUCTION = """You are a professional financial news editor.
 You will receive raw RSS headlines and summaries.
 Output a SINGLE valid JSON array. Do not include markdown formatting or extra text.
