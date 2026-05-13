@@ -1,184 +1,212 @@
 [
   {
     "category": "Current Affairs - Global",
-    "title": "9 Current Conflicts in the World Today and Their Effects on Global Hunger - World Food Program USA",
-    "summary": "This report highlights the numerous ongoing conflicts worldwide and their devastating impact on food security. It underscores how these crises exacerbate global hunger, pushing vulnerable populations further into destitution.",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPV3VaS0FLckdfVGlTai1wNGRvU0lkM2VpbmFSY1QzZGdSZ0d6aVYyNmpnWEZyT2xmVnJKX0VIUE9ISDhIWTlDSE5Fbk1tbGI5WXlSd25vbEljVXVpcHhFSHoyYnY0TTJOYTZhQVNIVWEzQ19BTk9QLWl6OHhkbUYtOVVodTVDRFYweFE?oc=5",
-    "date": "2026-05-05"
-  },
-  {
-    "category": "Current Affairs - Global",
-    "title": "What role is China playing in global geopolitical transformations? - Al Jazeera",
-    "summary": "China's increasing influence is significantly reshaping the global geopolitical landscape. The article explores how Beijing's economic and diplomatic strategies are altering traditional power dynamics and international alliances.",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQS3VhZklfZEQtZWFZUFRaUU44ZDlqa3FuVkM3TlJ3RzBHRDdTZ3RwRmEtRFRkM1BNSEE0bndBeHY0NzBQNHpGU0RlSWdrUlVSdVBaVnMxSk5DVUFuNmdwX3h5T2JWUzRtSUJ4a1A5Z2RzYnVQdGt0c25TTl9xRUpGRXdnWFBnRzN6ZF8xUDVESzIzMHBYV0NMc3IzdWpIZWlxbFdwUGxaQ0dyQdIBrwFBVV95cUxOZ1htMkdCSDFvUkRwUXItY2lMaW1KRjhZaW5oQ1lVN2ZQNjhVc0dWYUFMUnFMcUVPRElPUkU1bG9BMVp2czlFYzk5S1lQRk9OOV9adUFoNVZzQlFxMmVqcmhHek9lMDE1NkVsdjVKOGZlVVBWdkxfS2VqalZNXzRhTnZnTUlnOFktZkd4WDB3aWx1QnRwSHNfSFdIbmc1OXJ2T1V0WmdJcDRxU3Zlc29R?oc=5",
-    "date": "2026-01-26"
-  },
-  {
-    "category": "Current Affairs - Global",
     "title": "The World This Week | US Supreme Court strikes down Trump’s global tariffs, tensions with Iran reach a tipping point, India-Israel elevate ties - The Indian Express",
-    "summary": "This week saw major global developments, including the US Supreme Court's decision to overturn Trump-era global tariffs. Concurrently, escalating tensions with Iran reached a critical juncture, while India and Israel strengthened their bilateral relationship.",
-    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNeFFsY2s2cDNWSURDZzlyVVY1TmJ5dmJlUF9EU25sUWZDN1JraUpkMUlUXzMxV0gtZGJtTHJXazFOU2JsYk90VnNTMWp5MlpWUzZvOEp6b0NyM2NxVl91U3l0Y3VlQW85RlRFRTJNZFU5R2xGUUFWV0FoMHlIa2d5b2pseGFoaFdPRlFNc0lacnZwVkh0eWUwTDlRRHZFdi0yaFdwOTgwQ1ctQjM5REJVRzM1V3dZT1V3MXRRanU0QWF0SDdDT3k5U2JxQjBjOXVhd2J6U01pY29jZEU2UnVxTEhNeWljS1l0UHZxZTBJVdIB9gFBVV95cUxNWnVta3N2NUFqX1FKVkVOTjZORkRPMGcyTTVjcWZ2RDJzc0hDemRiYndXMk1uV0lLNVVuSXI2Ujd1U3R1c3h1ZGxvX1dYT1g3Nkp2QktSTkFGMy02N04zVWlqTWFkQXN5WW5FZGZrRkgtVk5xdF9LUkM3U2xWS3Bqd2p3M2pETUxoc3RmQUpOdDZaTEx4NkV4aWROeFgweThNZ0NrX0h0TU5YcHFjSU00MVJGUjViMFBOX2hzSmNWUHl6amJHWVA1alpnRmFiSG91Zk5YZUFIdW15QlNaSzJiUDAtQkx5dGhlMGlteXZYTVRVU3pMd0E?oc=5",
-    "date": "2026-02-28"
+    "summary": "Major global developments unfolded, including the US Supreme Court's decision to overturn Trump-era global tariffs, which will likely reshape international trade. Simultaneously, geopolitical tensions with Iran escalated significantly, while India and Israel deepened their strategic partnership.",
+    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNeFFsY2s2cDNWSURDZzlyVVY1TmJ5dmJlUF9EU25sUWZDN1JraUpkMUlUXzMxV0gtZGJtTHJXazFOU2JsYk90VnNTMWp5MlpWUzZvOEp6b0NyM2NxVl91U3l0Y3VlQW85RlRFRTJNZFU5R2xGUUFWV0FoMHlIa2d5b2pseGFoaFdPRlFNc0lacnZwVkh0eWUwTDlRRHZFdi0yaFdwOTgwQ1ctQjM5REJVRzM1V3dZT1V3MXRRanU0QWF0SDdDT3k5U2JxQjBjOXVhd2J6U01pY29jZEU2UnVxTEhNeWljS1l0UHZxZTBJVdIB9gFBVV95cUxNWnVta3N2NUFqX1FKVkVOTjZORkRPMGcyTTVjcWZ2RDJzc0hDemRiYndXMk1uV0lLNVVuSXI2Ujd1U3R1c3h1ZGxvX1dYT1g3Nkp2QktSTkFGMy02N04zVWlqTWFkQXN5WW5FZGZrRkgtVk5xdF9LUkM3U2xWS3Bqd2p3M2pETUxoc3RmQUpOdDZaYUx4NkV4aWROeFgweThNZ0NrX0h0TU5YcHFjSU00MVJGUjViMFBOX2hzSmNWUHl6amJHWVA1alpnRmFiSG91Zk5YZUFIdW15QlNaSzJiUDAtQkx5dGhlMGlteXZYTVRVU3pMd0E?oc=5",
+    "date": "Sat, 28 Feb 2026 08:00:00 GMT"
   },
   {
     "category": "Current Affairs - Global",
-    "title": "From Japan to Israel, elections are reshaping global politics - Australian Broadcasting Corporation",
-    "summary": "Electoral outcomes across various nations, from Japan to Israel, are profoundly influencing the trajectory of global politics. These democratic processes are leading to new leadership and policy directions that ripple across international relations.",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOX21wVWpQQTI5OVFHRlp6TnFMQXlLUzdhTnk3R3IzWUdTdE5fbjhFdkxzRzNNM3NQNXFpeGlGSEViTkEwWjZXY3pJWFRhUHlLWVBpNnFpMGRYMDF5X1ZQck85ZHl3SnIwNk9qMVlaUTRYMUxBcER3MDhZX1BDUDJPX3dHT3BUWmtDZ0JLU3JxdkRkWTYtNkhIa1RMZkVWRHg2SFNz?oc=5",
-    "date": "2026-02-13"
+    "title": "What you need to know about Iran today, with Laura Tingle - Australian Broadcasting Corporation",
+    "summary": "A recent report offers critical insights into the complex and evolving situation within Iran, providing essential context for understanding its current trajectory. This analysis helps to clarify the internal dynamics and external pressures shaping the nation's future.",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTGVDZjk2UmxyLXg1RUJiS2hnUzl4OWd3UjVpVXZGSE1sS1lRNG9PcnI2S0ZpMTQtZHZnYmpTSlkyUmgwcVNJSjAxRGExNXRKbGEwMkE0YVJLdWQ3c0t1QWtRMkRSSFNtaWlvdXR6XzR0LUliUTlyOS1Ed01wRF9UYU5DUDZEM2h4d2N5U2wzZU1pZlFhUU9teG56cVBNUQ?oc=5",
+    "date": "Thu, 12 Mar 2026 07:00:00 GMT"
   },
   {
     "category": "Current Affairs - Global",
     "title": "Global Cooperation Is Changing, Not Declining: World Economic Forum - Vision IAS",
-    "summary": "A recent World Economic Forum analysis suggests that global cooperation is evolving rather than diminishing. The report indicates a shift in the nature and mechanisms of international collaboration in response to contemporary challenges.",
+    "summary": "The World Economic Forum has issued a report suggesting that global cooperation is not diminishing but rather undergoing a significant transformation. This perspective highlights new modalities and priorities for international collaboration in addressing shared challenges.",
     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOaVBTUlRybTZBLXpQZ0VkN1l4N2JEVUxpUWpzWlJsdEVNRWNjbWJmT0JxSlpON3lZdGhGa3plS0hPSnJieC01Y3E1UFF2SC1sRnI1eF9oTjFmeHdEWVltd212TFRMdmhNa0dhMHk4OEN1b2Y3UkpVdUl4dl91WktjRjBVTjVjUVZlYWxVNzBnZWl6ZFp4VklkWlF0azdHQWRMb1JHTkVhNDdlVnJiSVREaXZ5cVlvSkhCbWhNQ3hLMllhMUQ4ZVpSdE54Sy1yWlNhVFY3WTIwQ1pUSml4UkstMDN3?oc=5",
-    "date": "2026-03-24"
+    "date": "Tue, 24 Mar 2026 07:00:00 GMT"
   },
   {
     "category": "Current Affairs - Global",
-    "title": "WHO issues global guideline on the use of GLP-1 medicines in treating obesity - World Health Organization (WHO)",
-    "summary": "The World Health Organization has released its inaugural global guidelines for using GLP-1 medicines in obesity treatment. This landmark guidance aims to standardize approaches and improve public health outcomes worldwide.",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeTZxWWZXQmVISXhfeHZwRzFrbHo4M1ZlNXc0VzZkR0xfa05wZ0Y4RldxVUl4aENONWhRSC1IZEp0SEtmZ1F0NV9uQm42RHFCNjNkZ2cxTnpoNHdTR3hjZ2I1b1J6NVdPaHkwT2MyRnh4YkI5Y0xxSEdWODlIbk45SEtVN2hRTTA2N09weHcxcXBiV2dJQ3R6UkM2U1hpN3hma2ZuaXBkT3ktZThvdDJueG4yY2tBY3NKS3c?oc=5",
-    "date": "2025-12-01"
+    "title": "What role is China playing in global geopolitical transformations? - Al Jazeera",
+    "summary": "An in-depth analysis explores the profound impact of China's growing influence on the shifting landscape of global geopolitics. The report examines how Beijing's economic power and strategic initiatives are fundamentally altering international relations and power structures.",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQS3VhZklfZEQtZWFZUFRaUU44ZDlqa3FuVkM3TlJ3RzBHRDdTZ3RwRmEtRFRkM1BNSEE0bndBeHY0NzBQNHpGU0RlSWdrUlVSdVBaVnMxSk5DVUFuNmdwX3h5T2JWUzRtSUJ4a1A5Z2RzYnVQdGt0c25TTl9xRUpGRXdnWFBnRzN6ZF8xUDVESzIzMHBYV0NMc3IzdWpIZWlxbFdwUGxaQ0dyQdIBrwFBVV95cUxOZ1htMkdCSDFvUkRwUXItY2lMaW1KRjhZaW5oQ1lVN2ZQNjhVc0dWYUFMUnFMcUVPRElPUkU1bG9BMVp2czlFYzk5S1lQRk9OOV9adUFoNVZzQlFxMmVqcmhHek9lMDE1NkVsdjVKOGZlVVBWdkxfS2VqalZNXzRhTnZnTUlnOFktZGd4WDB3aWx1QnRwSHNfSFdIbmc1OXJ2T1V0WmdJcDRxU3Zlc29R?oc=5",
+    "date": "Mon, 26 Jan 2026 08:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - Global",
+    "title": "From Japan to Israel, elections are reshaping global politics - Australian Broadcasting Corporation",
+    "summary": "Recent elections held across diverse nations, from Japan to Israel, are proving instrumental in redefining the global political environment. These democratic shifts are introducing new leadership and policy directions that carry substantial international implications.",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOX21wVWpQQTI5OVFHRlp6TnFMQXlLUzdhTnk3R3IzWUdTdE5fbjhFdkxzRzNNM3NQNXFpeGlGSEViTkEwWjZXY3pJWFRhUHlLWVBpNnFpMGRYMDF5X1ZQck85ZHl3SnIwNk9qMVlaUTRYMUxBcER3MDhZX1BDUDJPX3dHT3BUWmtDZ0JLU3JxdkRkWTYtNkhIa1RMZkVWRHg2SFNz?oc=5",
+    "date": "Fri, 13 Feb 2026 08:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - India",
+    "title": "Governor Role in Hung Assembly - Vajiram & Ravi",
+    "summary": "The constitutional position of the Governor becomes critically important in scenarios where no single party secures a clear majority in state elections. Their discretionary powers in inviting parties to form a government and proving majority are often subject to intense scrutiny and debate.",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0ZFI4OWFrakp3OW5aaWVEOVloSTZSSzFxQVlrWUVZdzRmSGpCeFcwR2c2aGNPeWtxSVNiUDc3a3lHbXd0emxuNmhha0oybTFTR3ZUYUJtSVJLZk16SHg0a2hHRERJSDlNem85QUJSWkJjc0cxd21kcnZhUW9zZmc?oc=5",
+    "date": "Sun, 10 May 2026 06:13:30 GMT"
   },
   {
     "category": "Current Affairs - India",
     "title": "IT rules: India proposes new digital rules to regulate news and political posts on social media - BBC",
-    "summary": "India is introducing new digital regulations aimed at governing the content shared on social media platforms. These proposed rules specifically target news and political discussions, potentially impacting online expression and information dissemination.",
+    "summary": "India has introduced new regulations aimed at governing the content shared on social media platforms, specifically targeting news and political discourse. These proposed digital rules seek to establish a framework for accountability and content moderation within the online sphere.",
     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RGtNb0xCUXNueGdvTnQweHBRZi1RdXBRZF9SV3V3REVWU0xic0Q0S3RwVUhXcGtxWWtZUEZTZ1ZvaG5WWkYyNE5HcWFxLWxyOXNBN0pzeEtfUQ?oc=5",
-    "date": "Fri, 10 Apr 2026 07:00:00 GMT"
+    "date": "Thu, 09 Apr 2026 07:00:00 GMT"
   },
   {
     "category": "Current Affairs - India",
     "title": "MeitY secretary says every social media user posting on current affairs can come under I&B oversight - ThePrint",
-    "summary": "A senior government official has indicated that all social media users discussing current affairs might fall under the purview of the Information & Broadcasting Ministry. This statement suggests a broad interpretation of new digital rules, extending oversight to individual online activities.",
+    "summary": "A senior official from the Ministry of Electronics and Information Technology has indicated that all social media users discussing current affairs could potentially fall under the purview of the Ministry of Information and Broadcasting. This statement highlights the broad scope and potential implications of the recently proposed digital content regulations for individual users.",
     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUXdCLVY2d2ppOWVsR0NfZHlqd1pGbWJLLUNYLS1Xd0Fpc0RnUUVOUElFcDJ2emZma0VLRklkbGNCTHJXX3diRFh2MG1TR2UxcElTUFlJQnc2VmpMWGhSU2hxd05TektGSnhxWndSNV8xYjl0cV9yYm8zZ1FBZU1lUVVMY1pkZFQ1SkdwSWd0MmtNb3FoXzBnQzlkX1lCdGJVTm10Z1VORWJ1ZkRrM0ZqNElvaHZYeHlfeVpaNENjSFdrV3dQbmpwNnkwOTl0WXlRNmxMODNORlAtVDE2V3fSAeMBQVVfeXFMTTc0RFBzYWNrVFNyZzBnNzZUTG1mMTJYei1XOWN5UWtjN21mNi1TeDBlSjIzU3JFTFF2X3lBZ0o1YW1Uc0tLcGRIZHhmMzZ2R2lkU0xvRGdjc2FxTFB3aUVZR2dQZ3A3SzV0UnRxTjB6Y1RHeEJGNTdSWmZpSnFKQnA3YjdvbFZkTWM3SUlvbW95M2czZUlERnAzNzFvX3lKNGl2YUFWNzhLQTV6SWR5WmdwYnJscjFYaldkRkVENTBkX0xwdjBLcFE1OC1UeDV2M1VxMWFWYnNCa1NEandlTFJhWUk?oc=5",
     "date": "Tue, 07 Apr 2026 07:00:00 GMT"
   },
   {
-    "category": "Current Affairs - India",
-    "title": "Communalism in India, Meaning, Causes, Effects, UPSC Notes - Vajiram & Ravi",
-    "summary": "This article delves into the concept of communalism within India, exploring its fundamental meaning and historical roots. It further analyzes the various causes contributing to its prevalence and examines the profound societal effects it generates.",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9yTUZyWm5LampVUmlkbmhDZ1dwT3NrUjR3TzBwc2NDdEtYRnVSamNDU283MHBaWXo1NG1oZ2tvWmNQbDI2YjgyQ1dMQWtDbjFqM2JCVGNMZWwtV3RCUnc?oc=5",
-    "date": "Fri, 01 May 2026 07:00:00 GMT"
-  },
-  {
-    "category": "Current Affairs - India",
-    "title": "National Party in India, List, Symbol, Significance, Key Details - Vajiram & Ravi",
-    "summary": "The piece provides a comprehensive overview of national political parties in India, detailing their official recognition and electoral symbols. It highlights the significance of these parties in the country's democratic framework and offers key insights into their operational aspects.",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DMm1FNlVKNjJzaUxxQXRsZVZLLW80VzhHRmlmNUN2c2sxamJlSEJINXFGZW9XRVJCcm00TzR6Uk1NbDV6QW9TRTRYWDFtMnNhdDduNVU5eWRKdWNraERKVUo2cGlWN3lhSVY3S193ODFrTlFVUlE?oc=5",
-    "date": "Wed, 15 Apr 2026 07:00:00 GMT"
+    "category": "BizNews - Global",
+    "title": "Oil prices today: Crude slips after three-day rally as markets track Iran ceasefire and Donald Trump-Xi J - The Times of India",
+    "summary": "Crude oil prices experienced a slight decline today, following a three-day upward trend. This movement reflects market reactions to ongoing developments in the Iran ceasefire negotiations and anticipated discussions between Donald Trump and Xi Jinping.",
+    "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNXzdfeTVHbzRZODZyRG1Fc2pvMGh2YnRMbnM0eV9CN3pySmhrclg1X0YyVlZabnZvM3VYMWpSM1RIUlpnQ2J2Qzl3NzN6V3dyRXFMbmVnMzlPdEhUU3JneVVNalJDWHU3SEprbHRvUDlweVVaM1RQRVJCajc0V29jREdncEZGWjNxa00tT254YWx1RGdteUQzejFQUTBHRE43aGltXzhCVW13U1VpSHZqUl9Nckg4SV9RSThfMmYxRHRJNGlIWjZlaWRwZUlXMTlaSHJ0MGxkX0ZPN3lxd0g3bVUtT2RHUFB6eGx6MVZhdmZrNFJaVHZnQk1pZmpUOE5hWjE3Y3A3N0JHaDBiMlloLWNRTk1td3hxWTV0RUdrZWYwUlVlZWkzM1BxR2ZKQllubnVFZ1BZdWVQajNJQnpyZVNMV1I2Z9IBywJBVV95cUxNek5rZ2ZZOE9uUFVfUHJDb0ZLVUU4ejFhdEY1U0twZWtpYkdOdzZsWUZRWEVobVpUazBORGVJdTAwamhGMzBzdWxhNVZBaVltSEQweWZNUEprQjlkRjRjSkY0a0xaejRCT3JiT2NkR2FydlZYbkZjbDFob09wMkk1dUc1UXJYTjN1WmkzUEFWTG1wOGxWa1JGdEwtS0VjMWwySUdQWERHcFpodHBuQmxZWXRTOEhKZzlJWFJjVGFVd3FuWkZCaUJQZmNvOWo1V285bHZpYTJvRWFaYzZzUi1xaE5FVGFPSHptWmU5R09nRWRKWC03Y0ZkeFFxUnFsZE5uWmpjaWhUdXRZWEZ2Z2xkbnN5VFg5YmJxRlI4NUk0YkRvSFZ6dUZMeDFwMFdjT3lJdDdOb3ZBTXpzR0wyejk5Ung0T25JY3dEcTY4?oc=5",
+    "date": "Wed, 13 May 2026 02:11:00 GMT"
   },
   {
     "category": "BizNews - Global",
-    "title": "May 12 Market Recap: S&P 500 and Nasdaq Hit All-Time Highs, Yet Only 30% of Stocks Rise; Today’s CPI Release Coincides with Trump’s Beijing Visit - 深潮TechFlow",
-    "summary": "Today's market recap shows the S&P 500 and Nasdaq reaching new all-time highs, even as only a minority of individual stocks advanced. This performance coincides with the release of key CPI data and President Trump's visit to Beijing, adding layers of complexity to investor sentiment.",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE82WUdXbm9WdVVwTlVSd19Sb0djZExvSWY0VWJLOEV1aWJTTGozUktOTFduNlNybDFtMFFJYnJlZklBcDlmbWVZR3g5aHZ6eFN3UkE0UWNaTlBFdw?oc=5",
-    "date": "Tue, 12 May 2026 01:24:26 GMT"
+    "title": "Foreign outflow worries ‘overstated’: S&P confident about India amid Middle East crisis; says economy ‘fu - The Times of India",
+    "summary": "S&P Global has expressed strong confidence in India's economic resilience, asserting that concerns over foreign capital outflows are exaggerated. This optimistic outlook persists despite the ongoing geopolitical instability in the Middle East.",
+    "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNT216YmgweGdRSC1TNHV4a1lTZUpScFVVdlRVTTlsNWtQY2k5WUVTdUpnTGhvbjB5OEVhd1F4SjJjTEY5YWN3LVB4V0t4dDR2OHVDbmNVaVNvb2FHeHl5MGtTby1rOVVYN0FaTTcyRTNJd1NUZ2lCZERHTl9FVThzRno4U2xvbmpYc1N3dUZoTkJqU2xNVWFWLUR1VzRNenA5SlpBcjdZdnlpR21PYVdldmpROWk0NW5HaVNxMlpEQ3NBeHJrNGMycUwwY0JEU0J0bUlEMXVDM1oxNHc4cmRPdENUb2lDdHRkZkVlZ3VtM1JsNWt1OFVTMkIxQ2xoUkM4QzZkeThDOGdFLVRXalJxREpKUlJHR3FGdUZubk1PQTdDZDhTV1JTZ0pBONIBsAJBVV95cUxOMHJibnVpUXRIY0F2WXk3Mm0zSC1XSXVnRE5nWUFWM1ZxMGE1UFoxR2JRazNXSlQwTnJiaVlqS3FCZWw2QXJLX2R4OEZoaEIyTG9wUkVHcHFSQ2tZRDJmbzNlZWFOSEVDQ0FPV1J3X2ZQMm9HS19kbTd2bHJUbnpHb0E3QXBsR2h4X0V3Y0szQmdEVjh6R3QxYXVwc0w2NjdUeFZlNHBlU1M3UUJWQnZ4QUdmN2dDMzczb3dJbHZ2b3VpZ3hWN2JLVnhkZ0o0OGdQdDJneWk1WmVpank4eHMwSmprRHpEelNCendtR1dnOXNWeGlWemhZRHRSSmRrTjdrU3RsN2p3VlRxVVYxMlV0eW1CVXBISHBmOU1Lbm15dTZYaENMTkYtTVdsckpyN1BD?oc=5",
+    "date": "Wed, 13 May 2026 07:14:00 GMT"
   },
   {
     "category": "BizNews - Global",
-    "title": "Stock market today: S&P 500, Dow futures fall as Trump rejects 'totally unacceptable' Iran peace proposal—Micron Technologies, Moderna in focus - MSN",
-    "summary": "US stock market futures experienced a decline following President Trump's rejection of a peace proposal concerning Iran, signaling heightened geopolitical tensions. Investors are closely monitoring the situation, with specific attention on companies like Micron Technologies and Moderna amidst the uncertainty.",
-    "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNX0gzY0dHRmpRMEJDSVR2WFZ0OHhncU1PNC1MeGtBeUt4aEtWSFVjWndOV2t4eENPZUh4bW9JS0ZtVndtYTdNQjRIcEFoYmhFQ05TZnFQNE9ZWFhIUTBvcUxLZnpta3J4VGNsNWF1NlZMeWxaUmo3SlFXVzd2X0FKYkVVQU54eW04bGJVWkZhOEJyNGlXRG5qOHJZS0JsWWZrdDdpenpSYVp1UVhUaGdmdm9GbHNWSTJoblhMU1lwN0tRd3VscFRCODRLRmlPRDl6WmhWTFdHUlM3eGd2b05fY19uWDBraEZQNENzNlViQm9PSnBVNkhNcmhlT1p2Z1RoMV9ZY3VRSmF6ZlBsUjc2cGtLUkpMbUZPQk1BbXV3YTNza1Q1MTdEazVpZ2drbkp0cjQyQTlUUWhyRWVy?oc=5",
-    "date": "Mon, 11 May 2026 12:56:15 GMT"
+    "title": "US stocks today: S&P 500, Nasdaq end lower as inflation, Iran tensions weigh - The Economic Times",
+    "summary": "Major U.S. stock indices, including the S&P 500 and Nasdaq, concluded the trading day with losses. Investor sentiment was negatively impacted by persistent inflation concerns and escalating geopolitical tensions surrounding Iran.",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPeHVYVi03SVZkbWI3bS02VUh3ekVUOFp0RXBWNjYtbmRwTFFJZHpsblZkSURqcjVkekZXRjRoQ3pRYjhma2Q0S2d4eUdoZlJLa2JfbWhETXZULTJlS3poa0ticUtuY041S2xGWlZWcER1YjF1bG9ZajRfVG9rVnctbzdUWkxjUUhOQ2l4OTN5X1luSkhNYkhZaWVoWkdkOGxPZl9DR3dreGhmalBFaUQtRUhTZkhYSzFGWGZZeFE3eC13dHAxSllQZEJxWVlHM1FLSnYyVXNEWEZrem1ZMi1ncFhuZ9IB6AFBVV95cUxQZHNvbGdfaVFsUzNsdVZ1VERzdE5TSEdXR1ZCMXBnSE1GSkUwMGNCVnBCWjNZejQzVUM4TnpoQ3dKbWNzaktvN1dmZG50TjNtU29US19yemNpbTNaY0VETDQyTUtNYzF2NjRRd3JhZVdDNGRvazNibmhLN0tPQXhUeEZWZWdpZy1GYk02anFwRU1UVzB2ejR3NVRUSzFQWWl0RDh2Tlk4eFVMRGNnUHlaOHNhbFl6b3pjRU5iSDd0b1NkOC1ISTB2OUw5bm9aQ0ZKTzFqMkQxQVJja29jMlZnRWVlSUFZRkNm?oc=5",
+    "date": "Tue, 12 May 2026 20:04:46 GMT"
+  },
+  {
+    "category": "BizNews - Global",
+    "title": "The stock market isn't ignoring Iran. It's rising for these three very real reasons - CNBC",
+    "summary": "Despite widespread geopolitical concerns, the stock market continues its upward trajectory, driven by specific underlying factors. Analysts suggest that strong corporate earnings, robust consumer spending, and technological advancements are fueling this resilience.",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPckhWbFM5YVhRY2RRQ0w2QjViY3daLVFWWURPQXBUZlVocGgxWWNabFZzbzZWcnVRT2c1SnlPQzJYVXltenR0THVvLXFFZDNEV2VGVUlhMm9CaFZPaDNMcU9NUlBaa2JkZGFiNHN1THpMM0N3OEtoV0FGckdYOVotOFNOSkFEWmRWVnBGOHQwN1JVYTBKYTE2SkgyeEZYdFFMaWZOZU4taU9nRFd5V3FudUs3OFl2VVdr0gG-AUFVX3lxTFBCeTNEUGlvblhnYTN6aFlvS055SGFRN1J3X0trdFhPZzcyeFFWeng4WXNlc3l3enRXV0hZTm1aYkFveWZTTldRcTRaUmxydk1LakR2QzFNVnFybUJubENVaXlvQ1ZUZ1BiRWRCS3hTcE9XX2pGelVqWEZqaUEwWVFYaTE0Z0RDSmtiSXNEUkhhdXpBel85enpUblAwZ0JLUUhXeVhQdlZFSm5JdVdEdHlLaDNsZ3N3Y3FKWU9HTGc?oc=5",
+    "date": "Tue, 12 May 2026 17:40:08 GMT"
   },
   {
     "category": "BizNews - Global",
     "title": "'Bending, not breaking': Goldman Sachs explains why the war in Iran hasn't derailed the global economy - Yahoo Finance",
-    "summary": "Goldman Sachs analyzes the global economy's resilience despite the ongoing conflict in Iran. The firm suggests that while the war has caused some disruptions, it has not led to a widespread economic collapse.",
+    "summary": "Goldman Sachs analysts contend that the ongoing conflict in Iran has not significantly disrupted the global economy. They highlight the economy's ability to adapt and absorb shocks, demonstrating remarkable resilience in the face of geopolitical instability.",
     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPSGxLSWRrQXJPazhyMkx2X2ptV2pfOExKOEx4aGdwVzRoSjRYSkk0bVM4dkdhRzRkdE1jVjAxclN1TEQ3T3Z4TE5OYkU3bnNmUllrWVVzQzBCNGpuWDJfT0RCU1QtbXA0Ykg1Y2dJMGxueURCZUlZeEFRamFEdmpBNWhIWFEwN29CT3pFUWNiT3JzcHFwdWk3NzJMZjNCYUpuV2JDUjdqYTJDS2NjSGcwU2xNYy1wd0pDbUs1ZVA5d0VKVFhZVlNaVlh6Q1c4aVpZSzg0eXB3enNqdGZDeHBORGxhMllVQWFkTFE?oc=5",
     "date": "Mon, 11 May 2026 13:35:42 GMT"
   },
   {
     "category": "BizNews - Global",
     "title": "China’s Next-Generation Industrial Policy - Rhodium Group",
-    "summary": "Rhodium Group explores China's evolving industrial strategy, focusing on its next-generation policies. This analysis highlights the country's efforts to innovate and compete in key technological sectors globally.",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9FQ2pFaV9RWnI4VHVMNFVpLURTaGtuTUZJWWj1UmY3RGhjQ0lMTjFHRXNweTl3TXpwUFp1ZlhRdVpmNS03emUxNzdPQ0F0THd3dnRRVWMzeUh5bDhGb05maG5Ta1VIZjRiMGdpd2Zudml6cWp2?oc=5",
+    "summary": "China is actively developing a new phase of industrial policy aimed at enhancing its global economic competitiveness. This strategy focuses on fostering innovation and strengthening domestic industries to secure future growth.",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9FQ2pFaV9RWnI4VHVMNFVpLURTaGtuTUZJWWo1UmY3RGhjQ0lMTjFHRXNweTl3TXpwUFp1ZlhRdVpmNS03emUxNzdPQ0F0THd3dnRRVWMzeUh5bDhGb05maG5Ta1VIZjRiMGdpd2Zudml6cWp2?oc=5",
     "date": "Mon, 11 May 2026 07:54:36 GMT"
-  },
-  {
-    "category": "BizNews - Global",
-    "title": "Singapore flags weaker tourism spending as global travel industry faces uncertainty - CNBC",
-    "summary": "Singapore has indicated a potential downturn in tourism expenditure, reflecting broader uncertainties within the global travel sector. This forecast suggests that international travel remains vulnerable to ongoing economic and geopolitical challenges.",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb2xtSEI4bzBjeUg4UFNQakI5cnRqb3hMS1F1M292WnpRcVFwaUh2SVJnbmw3YnBpRktoeWdweHNzUlBzSUZDTUs4Y2FYN25MaElZVmdJM0JfUlAyMld4ZG1MamZwUFZLc1FsZjJoc1BQc0RSZG01QVFJNnJrZHR0T24zOW5FbGp4YmdvWXNOOVhTMUxFU09qbGNIaDcxLXNsS2fSAacBQVVfeXFMT3lOSkY4VnNnRS1Sc255TXpLc2hzVV95cnI2SklEREgxYWZHdmZ6VE5Yd2dPRlU1MWpDcHZiUG02ZDlaaC1TWWoyMnJJVndnMnZSUHNERENqejktdU9uX1UySGxrZy1vcW8xWC1qTnFNbFplVFRSbG9HOHZIeE1QMnRjc2o1akR3ZnZRM3VXa013bnZremRkaGFsOEhmZWRvTUxaSG42MEE?oc=5",
-    "date": "Mon, 11 May 2026 05:00:44 GMT"
-  },
-  {
-    "category": "BizNews - Global",
-    "title": "UK Economic Concerns: 7 Shocking Market Risks - Brussels Morning Newspaper",
-    "summary": "The UK economy is currently facing several significant market risks that could impact its stability. These concerns highlight potential vulnerabilities and challenges for investors and policymakers alike.",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kWEx2VG1GUXlFSGIwamFFQVVXNTY4TngzcGZFeWRXZTR3REJtUFd5SEwxRk9BWXN1elpCNDB5Tjl1aUozaVRiaHF0UEROR2pzQTF2V0xTVGsxTlhFMm9UQXI1cVJuVjJhZ2RhaQ?oc=5",
-    "date": "Tue, 12 May 2026 07:29:19 GMT"
   },
   {
     "category": "BizNews - India",
     "title": "MARKET_TICKER",
-    "summary": "NIFTY 50: 23,550 (-1.3%) | SENSEX: 73,800 (-1.2%) | S&P 500: 5,150 (+0.2%) | NASDAQ: 16,100 (+0.5%)",
+    "summary": "NIFTY 50: 23,379 (+0.3%) | SENSEX: 79,920 (+0.15%) | S&P 500: 5,200 (+0.5%) | NASDAQ: 16,300 (+0.7%)",
     "link": "#",
+    "date": "2026-05-13"
+  },
+  {
+    "category": "BizNews - India",
+    "title": "Indian Stock Market Suffers Massive Losses Over Four Days",
+    "summary": "Indian investors faced significant financial setbacks as the stock market experienced a sharp downturn over four consecutive trading sessions. This prolonged period of decline resulted in a staggering loss of Rs 16.77 lakh crore in market capitalization.",
+    "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxON0Rhd0pPRXNhVjg4VlJSN3ZnbnptNzBKYUs4RmwxbkdpeHNuYXZuQWl3RkVnd080RG1oazQ5ZUVHakxWT2VXbVp1MWpwTUZLTVkxYVN6bVVEeEhFMnAxV280cklIMlh6UjlYWkt1c1JER0toYWdXU1ZFYW1zdlMwdXE4MmdoTnBoVDVHOUtyQzR4UVJDOTNHNFlBaGFGZU05VmRYcG5VcnE0RGJ1NHU5T1VBLUpiVVVHLVp0UUlZLVYyVU1pUzVLMjd4Y0NUeDlBMG9qSmkfcUE1SVRVa2xSd3F6T2p6MmRHWldpYmVBZll4dDd3QUNUZC1iczIzSmxOU1N1Tk92MHl2NXA2dEY1cHNzZGFyNDYxdTJIcjd4NnF1T0s5SnfSAasCQVVfeXFMT2hyTjMyLWZxbFdveGktckNtb1NuZDFxdi1BNGhWeW9IOW5mdnNZdTdSX1NScFE5R0ZuQ0FSMXhlcGt6aUZjZW1LZmExNzd5Z0NwM3puTEhocTg1QmRsc0lFMTNRaGMyYTFuWVhKcTZuM3NCeEFCQjhRVF9YbDRMN1lwcm80NWMtQVpxRWJ6Snh0NUw4UzBqUGNfTVQzOGZ3enFiRkhaOE1hNEszakdQWEwybi1xbzRFUG5fSEVpckJENkhuNGZCZFhwZ0c0enJSWVA0YldoUHViUnk1ajNYVlN0UUcwazdwbW9HTjVUdkIxYUwxWDNmY2tTRnhWOHJKcHRqbTRPc1R5cDdYaFNLVTFQQ2tvQTdOOWtUS1lVVFk0MUxIWVRlTG9iSzA?oc=5",
     "date": "2026-05-12"
   },
   {
     "category": "BizNews - India",
-    "title": "Why is stock market crashing today? Sensex drops over 1,000 points - Rs 6.4 lakh crore investors wealth w - The Times of India",
-    "summary": "Indian benchmark indices experienced a significant downturn today, with the Sensex plummeting over 1,000 points and Nifty also seeing sharp declines. This broad market correction led to a substantial erosion of investor wealth across the board.",
-    "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNM25XaXg5OFBVU3VFRm1VdU9ZbkNXS3NrVGhEUzcwUTNGR0dUblB2REk3OE9ST3dteFltcXotOW9GUEhWYkRyUklKbllnNjF0azZ5MzBqbkthTHRqOGZTYWZLSWFVNElGWXRnVktrN29fb3FfNUZyWXdKMndOV2VKcTdyMDlXZ0dkdWM3SkZHOWZ6NDdJaGtHcmlodHhiV2VSUnBwdFZuLUpoUmlUVjcyN3RBRjhTWEsyX0tHSFNIU09aOC13QU5FWUpVNEtmWktacGZ4T2lxUTUzc0hsLTdQTzZ3NnRERC1MQXNUYnhhNWJiMlM1OXZwSGZGdE00NlRYdEcxVVJpcVBOczVMUEJTMVYza0tGdVlTdTM5UEFBM3IwQ1BhbVJCRmltMlNKblhSd25NaExR0gG7AkFVX3lxTE9zdi13RE1vbkFOajBJaERPME9WMWlmZTNWS2J5aWVKbG1VVGs5ZDBYcGtBMEZfajBJRnd4Wm91VGlyT3pFNm14T2RzVG5XbXRLaDhxZmNEbUJubEk0d3pWMjVVNHhzd3hFaWNMTzZWekt1UFJBZjVUbURBa1B4UW80WE5BclRXX2FKbE5rQ2VsYnc4SjFUeE9lUzRtemdFbko5NmY4R3JEc1Btc0JsNU83elhCTjd3Y19ITG1WaWR1S1B4aUU2cXpEWS1WR21yTlMxaURCVXdwZ1FidEExSzVfbEJ0TXhlZFZQNVhZYWRIUUZYMUI0cXlCekFnYm9abWhKNjc0WW5hdFkxNm0yOEhrd3p4d2RDbnNqT3Vwb2FIQWNUUG5qSS1oUDdYemNRaWZzb0g4WmE0OGxvdw?oc=5",
+    "title": "Sensex Plunges Over 1,400 Points in Major Market Crash",
+    "summary": "The Indian stock market experienced a significant downturn, with the Sensex index plummeting by more than 1,400 points during the trading session. This sharp decline led to substantial investor wealth erosion, totaling over Rs 10 lakh crore.",
+    "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNM25XaXg5OFBVU3VFRm1VdU9ZbkNXS3NrVGhEUzcwUTNGR0dUblB2REk3OE9ST3dteFltcXotOW9GUEhWYkRyUklKbllnNjF0azZ5MzBqbkthTHRqOGZTYWZLSWFVNElGWXRnVktrN29fb3FfNUZyWXdKMndOV2VKcTdyMDlXZkdkdWM3SkZHOWZ6NDdJaGtHcmlodHhiV2VSUnBwdFZuLUpoUmlUVjcyN3RBRjhTWEsyX0tHSFNIU09ZOC13QU5FWUpVNEtmWktacGZ4T2lxUTUzc0hsLTdQTzZ3NnRERC1MQXNUYnhhNWJiMlM1OXZwSGZGdE00NlRYdEcxVVJpcVBOczVMUEJTMVYza0tGdVlTdTM5UEFBM3IwQ1BhbVJCRmltMlNKblhSd25NaExR0gG7AkFVX3lxTE9zdi13RE1vbkFOajBJaERPME9WMWlmZTNWS2J5aWVKbG1VVGs5ZDBYcGtBMEZfajBJRnd4Wm91VGlyT3pFNm14T2RzVG5XbXRLaDhxZmNEbUJubEk0d3pWMjVVNHhzd3hFaWNMTzZWekt1UFJBZjVUbURBa1B4UW80WE5BclRXX2FKbE5rQ2VsYnc4SjFUeE9lUzRtemdFbko5NmY4R3JEc1Btc0JsNU83elhCTjd3Y19ITG1WaWR1S1B4aUU2cXpEWS1WR21yTlMxaURCVXdwZ1FidEExSzVfbEJ0TXhlZFZQNVhZYWRIUUZYMUI0cXlCekFnYm9abWhKNjc0WW5hdFkxNm0yOEhrd3p4d2RDbnNqT3Vwb2FIQWNUUG5qSS1oUDdYemNRaWZzb0g4WmE0OGxvdw?oc=5",
     "date": "2026-05-12"
   },
   {
     "category": "BizNews - India",
-    "title": "From Gift Nifty, US-Iran peace talks to crude oil prices: 10 key things that changed for Indian stock market overnight - Mint",
-    "summary": "Several global and domestic factors influenced the Indian stock market's opening today, including movements in Gift Nifty and ongoing geopolitical developments. Rising crude oil prices and the status of US-Iran peace talks were among the crucial overnight cues impacting investor sentiment.",
-    "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPQ0RGdElFVHU0UDUyMU03V1RjUTBxdmRRWGFqdTh6SDdFcjE2bUhxZjdieXctRzkyYTJIR3Q0ZHh0YzJKYnFKV3I2QXBEWE1ac0laZXFiRTI2ZEZ0dDVWNGpVQVVkUEp5SENPMGFYQkx2MVN0d0stS3Bja2dEWjJSUkRrcGszZkowaWFrc0RLOU1nSlYwZWNBbHN5QVZGNTBwQUtNWTF5UkNXMkxaaHdjb283X3pVbkUydkotc1QtMGdncklkbE5tWUpGZmF0aEZ6T2c3X1VlLXp6eHhNcTl6NlhpRVJBNmQ5OXltTXRkT25OcEEwVURVOXk0OVZERlc0aWFCTDVWajVUYzdsQ0FiU2tIRFTSAZoCQVVfeXFMTTFkcHdOX19wVHd6aHFoV1dfcWpITTlYRGJlUlhrV195Sk9yazkxZVFtX1hDOG90dzZqV2d1SU9uR1czVGFZOFB3eFlaMGpoUEw3aFMyM1Naai13SHFYXzJCSVh3ZkNzbi0yYkd6SE9rOWVBNTdqMUNJckYzbUZDNGhiWWdaZGluZTdmSEg3dURleXk4enBKcjFta1RBcDZ2QW1jVGdRMXo0STBZQ2R2MEkzQmZ1VTVpcVZFMjUtLVo2aVkxYzJEU29idVdpSUs1eUFxMklqNEoyWFUyTFduUllKV2d5QnhaSXhoMU9iSndma2hkSVFlcGV1clZkTS01MnVBVExDbUlxYUhQYWp2dEJkdHpsbncyT0JB?oc=5",
-    "date": "2026-05-12"
+    "title": "Global Factors Influence Indian Stock Market Overnight",
+    "summary": "Several international and domestic developments, including movements in Gift Nifty, US inflation data, and changes in MSCI indices, significantly impacted the Indian stock market. Additionally, fluctuations in global oil prices played a crucial role in shaping investor sentiment and trading activity.",
+    "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQQ2VOTnBheFZCNzduZl9NbWFKcENmdXdiMnV4by1zMW0wU2xlWldKODhzaVI4cTRyYVFYRFczVWlfal9hYUZ4NTg1YnZic3J0eklVeThyRXFvX0Q1MVdTWXBnZWN1bFI4ZHhNUDJwOG1BbzVjTVNFM2k4REthR3loSldJRGhNTkNWaXVndzV5eVk4X3JTb0FQNDRIMEdlcTBOSXlWMjRESEFIZFdyOXN6ckhLOHU5TUVsdmpLS1R3Y2FNTUVBZ04td05LUVBzbHByLW91bVZEWkxEQ0YxWEVKVVZsSE5hcUhZU3c1Sm5oVThjQnpySm1hbzRrTzY2N0FUOUJMT0NuOXlwVjVqRHBueFVB0gGXAkFVX3lxTE5BT3djd3V3V2o0VjdQV0dZX05JLXBuX3oyRXB1THE2UUh5YnllQ0Zock9TdkIwbllySFhmSE1DSURJbHFQYW8tQlc3UXdwR2tubEJZZklIczgzRnNtNnNhekVPb1plRXdfMk8xWG50ZnhXemlMX0paV1VHd1Y0UG9MdFZHc2NFak1GTUdIeC1kcGtZcFFaOG5kVUpxM1BESERreUZacHZUZzk3cFBkX3VFeGNUR0NBNUVpdjZHSTlvV2k3aFF4ZGVPV1FqaXZzcHg2M0lGRUZLZ0VkbjR0NmFLTkprdUdvWVNnazRiNmdLZ2RrRl9rb3A0bE1kWmFpSUlQVmkzVjBuOWNWOXVSWkFVb1FsNzk2SQ?oc=5",
+    "date": "2026-05-13"
   },
   {
     "category": "BizNews - India",
-    "title": "Breakout stocks to buy or sell: Sumeet Bagadia recommends five shares to buy today — 12 May 2026 - Mint",
-    "summary": "A market expert has identified five specific stocks exhibiting breakout patterns, suggesting potential buying opportunities for investors today. These recommendations are based on technical analysis and current market trends, offering guidance for intraday trading.",
-    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQMUZyM3RJMDVwV283aF9yOWNnY3VOQ1hvaWNINXV6dnZiaHhySlFiYXlKWTFlZ21IeXZmTUlOOWV5SVFoR1JSNEdoX01KeXZkdHpkU1lEaFRqRjZ4bzRGMjFXTUxjVXV6YzB4d3ljcTV5OVJEMGxLOXVobmlWZk96TE1RY1RTU2V1bjFrQjZHZlV2TVUteWFpalkxUjlfS0pOdjdYRDlFSy1HYXBSRlJFRHhKY29jZGxWZ3c3UGpINGxTSjJPSk5iQkFta0hrYVBmc090RVlJSHJ1a1lEUEVTX0w1Tzh1cWdUS2hrQTA4TTV5QUp2S0HSAfsBQVVfeXFMTU1fU21NSXRyY0lFV2dGZXBKM2V2djlTUnh4SkRvT1BtRHNBNjUtT213dURNMzdiOThiVWVWazlBa19zRTUtQ0o4MkZwUEZWc05jdVkwVTNVOVJwQ290SlJFZnloYWVlSUlOZ29LMmY2eTk0bXdWdmhXakNGZ25zVHg5TVJTZEtMRGZDRzltdDQyZWRrZE1RT2NkMU5JVFlBN3d3alR2amFsYjA0TUU2b29IeVlvbmZZcGhDMTF6RXRPSU9JUzRmcjYxM1UwR3BiQnBPSUtxZTNPQUU2WUNUcjRRZWZlNWpIZlI3Z01ORzVKSTVVSHBMOFhJN3c?oc=5",
-    "date": "2026-05-12"
+    "title": "Key Indian Stocks to Monitor for Today's Trading Session",
+    "summary": "Investors are advised to keep a close watch on several prominent Indian companies, including Bharti Airtel, Tata Motors, and Vodafone Idea, as they are expected to be active in today's market. These shares are likely to experience significant trading volumes and price movements based on recent news and corporate developments.",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQZ2lEWHgwb1BRS1VPMkNhQkRiNVNOSUFISElKMWdzN3doSnBfSE1td3ZYdG5wSFFfWTQxNmhMN284cEpZbkx6amJ0MnIzaGI3ZWN2TkVmbWtsOW1WMnJ1T3lOUzV6M2xvQUpRSTVBaGZBdngyRW5UZ2JrTkdIWTMyS2J4MGl1VzVKZGp6SVF4MDdBRGw4T056Mzh6WmY3R29wNXFLay1USnIwYWtFaEZ3dW15WWdjWkk4MFpYYWJfZW5aS1I0WE1COHVKQ2VsOEVtcThTakVWckpDaElyeTRKbjJCS1JEVjVsR0Y0WdIB8gFBVV95cUxOaDZlaWxZc3Z4MDJkNVE5cTBjM053c3p3SnBud1drT3VmSkpBVy1XeC1Genl2cUlXV2JxbDQ0XzNWQ1N6TUxyMDNVa3hUZE91QzliQ0hiVng0WnhSN1J0TGtGUnkxa1pWQlVVelNyT1JYMW4wSWlYc3NMS1M3TU52aS1TcGV0Wk40Q3VvREQxSGxDLUlCTTNfY2FydWUyQUE0OGJVV0hpUUZxRnMxSXR5UGpMZDJhamFZSFpKeDByNXhkS2hVODhKQU1DTEdTSFJIMFNsdlp4X1VDeVFCb0tsY0hQWURLQjM1U3JLZmhOMDNBdw?oc=5",
+    "date": "2026-05-13"
   },
   {
     "category": "BizNews - India",
-    "title": "Stocks to watch: Tata Power, Dixon Tech, Indian Hotels among 10 shares in focus today - Mint",
-    "summary": "Several prominent companies, including Tata Power, Dixon Technologies, and Indian Hotels, are expected to be under investor scrutiny during today's trading session. These stocks are likely to react to recent news, earnings reports, or sector-specific developments.",
-    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNakNjRkMzYW9zXzZOa2ltWWZzMXpuTEwxRFdBdEhFbm15eEgxVTBvMWFSRHd1Q2kwMS1LREpTcVBsM3hCN0E2QmtUbEx2LWFSOE85Q0hwYUhhRFdfNENfY1dtME5DZGs0MGhXOVJ4UnVTUXlRQkFjM3pmWThiamZRNS1OZ2pqNzJ6N3Nnc2d3bWtNY1pGYUNXTlJ2NUlhUGtyRHZJTmZrQXEyc2ZiOFNleEtpLWdlWkJCbXZIcG5RdDZNbEVuMkRfUnFpTkV1Yk41VnFZUE5LMEdJSHR0OFB3alVDSjFKOVHSAewBQVVfeXFMUHEyc2FVZWw2dm9EM2Y4R3NMUlNWMklDM25DSEt6WVVqSTVOc1IyMUdHNm1mZThjTEtlcmk1ckRnZHRXbzhuYUN4S1h2M2RyNW5mTkMxUWlVdWUxQ3hhN29HYWN4MmpCVTNob1BYY0FnOEhVY1NLaldha2JoODdCbW1WQWU2RDZDbjktdG9wMGtzQUVEVTc4V25NbW1xbVdRWnJpbTJaUjAxcnlZbzNxc0UtLXFXTzhFSXYwR0dDcURJRWlpTW9KUHBkYk53M19YdTFrZ3hDaHhNMjk4dlNCV0RmNGhjMS1sdVZ2NXY?oc=5",
-    "date": "2026-05-12"
+    "title": "Indian Markets Show Signs of Recovery as Rupee Strengthens",
+    "summary": "The Indian stock market experienced a modest rebound, with the Sensex gaining 120 points and the Nifty climbing above the 23,400 mark. This positive movement was partly attributed to the Indian rupee's recovery from its historic low against major currencies.",
+    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQck9SZ1dRa09FSnZpcU9fQzQ4MDVFVnBtdDB6MFkyVERIam1NOWV4QTkyamxhbkxtQlp4MUVoWEphd2NZa3kxOTFtYTM4QmZUZFJETi15XzY0UGhuNTBjWU83LUVBc2FRZmVkZXk2YWJBLVFJU0dtbXhBblYyRER2VUNFdFhaMkowR0pRdG51YktlWFNyNUpjMDEwdmxRNW9yMG5HMEtndG9QYlNIUmkwNkhOTEdBVngzTVd2OFNNWi16d0ZneEpwZU5OZmVIbVZEZkNwT1Rlb3h5b0dFQlExV0pXeFE0MmZlVTF2aXlWVGhnMDFWUzNhVy1aQXFueDU10gGAAkFVX3lxTFByT1JnV1FrT0VKdmlxT19DNDgwNUVWcG10MHowWTJUREhqbU05ZXhBOTJqbGFuTG1CWngxRWhYSmF3Y1lreTE5MW1hMzhCZlRkUkROLXlfNjRQaG41MGNZTzctRUFzYVFmZWRleTZhYkEtUUlTR21teEFuVjJERHZVQ0V0WFoySjBHSlF0bnViS2VYU3I1SmMwMTB2bFE1b3IwbkcwS2d0b1BiU0hSaTA2SE5MR0FWeDNNV3Y4U01aLXp3Rmd4SnBlTk5mZUhtVkRmQ3BPVGVveHlvR0VCUTFXSld4UTQyZmVVMXZpeVZUaGcwMVZTM2FXLVpBcW54NTU?oc=5",
+    "date": "2026-05-13"
   },
   {
     "category": "Fintech - AI in Finance",
     "title": "10 Key Uses of AI in Fintech For Secure and Compliant Solutions - appinventiv.com",
-    "summary": "Artificial intelligence is revolutionizing the fintech sector by enhancing security protocols and ensuring regulatory adherence. These advanced AI applications streamline operations, detect fraud, and personalize customer experiences while maintaining robust compliance frameworks.",
+    "summary": "Artificial intelligence is revolutionizing the fintech sector by offering robust solutions for enhanced security and regulatory adherence. These innovations span various functions, from fraud detection to personalized financial advice, ensuring both efficiency and trustworthiness in digital financial services.",
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HaVdZWXY4M1VyenQtc3FHOVFGVTlKV1UtT0NqSkY2UTlHXzBYLXVTbVpBQU9jSzE0dlFwUGVtTHBlUHNMV2NlV3NoNVFoVEgzLU45aURB?oc=5",
     "date": "Wed, 22 Apr 2026 07:00:00 GMT"
   },
   {
     "category": "Fintech - AI in Finance",
-    "title": "AI In FinTech Statistics By Growth And Future Trends (2026) - Bayelsa Watch",
-    "summary": "Recent statistics highlight the significant growth trajectory of AI within the fintech industry, projecting substantial future expansion. This analysis delves into key trends and market indicators shaping the adoption and evolution of artificial intelligence in financial technology through 2026.",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtMUlLNWJMVTJldWE0V1JmSGJFSlJpY3FDc0FPLUg5TFJ2MmtyRE5iTnlmRFE3VkFPM0EzZkpWTHhjOV92QnBWQUtwTGdEOHRGSzdUMVU0Z0ZOX3ZpcUhZ?oc=5",
-    "date": "Wed, 08 Apr 2026 07:00:00 GMT"
+    "title": "How banks are using AI in financial crime and compliance - FinTech Global",
+    "summary": "Banks are increasingly deploying artificial intelligence to combat sophisticated financial crimes and streamline complex regulatory compliance processes. AI-powered systems can analyze vast datasets to identify suspicious patterns, significantly improving the detection of fraud and money laundering while reducing manual effort.",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYThPQ0FZQmJRM0VzbDFjMnpFMmRfTjRuNk5tY19xejF2dmg5QVJfSUFDRkpkby15OFlOZ2FZTFh5SVQyalliSVpueTBMdXJJcWRLY045c0ZNOUFCLThMMjJPLVJGVEVpejRLQnNvZlRnMlFpWWdvbFdTNWVkUloyamRhbDBLdE5lTjN1TlloZUZIbW1aMGc?oc=5",
+    "date": "Fri, 16 Jan 2026 08:00:00 GMT"
   },
   {
     "category": "Fintech - AI in Finance",
     "title": "Fintech & AI: The Rise of Embedded Finance in Everyday Platforms - intlbm",
-    "summary": "The integration of AI is accelerating the proliferation of embedded finance, seamlessly weaving financial services into non-financial platforms. This trend allows users to access banking, lending, and payment solutions directly within their daily digital interactions, driven by intelligent automation.",
+    "summary": "The integration of AI into fintech is driving the rapid expansion of embedded finance, seamlessly weaving financial services into non-financial platforms. This trend allows users to access banking, lending, and payment solutions directly within their daily digital experiences, making financial interactions more intuitive and accessible.",
     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVjZtbnNQTVZvVFBIbERrQzh4VHZkbmZZR0t4LWtPYkZiTUN1WHZFTk5RVXduemlkWEFMNl8zWURmMFBnMFBTZDFTRzJidnowUkdIa2wtX1BiU2FMdUtCaVJza3V3REZGNTd6c1c2YzJiSjJaX0dwLXVkbmppZmRRNU9FSjBUeXlQNWxsWWtpMTFseV9iNXF3?oc=5",
     "date": "Fri, 20 Feb 2026 08:00:00 GMT"
   },
   {
     "category": "Fintech - AI in Finance",
-    "title": "How AI Analytics is Transforming Financial Services - Strategy",
-    "summary": "AI-powered analytics are fundamentally reshaping the financial services landscape by providing deeper insights into market dynamics and customer behavior. These sophisticated tools enable institutions to make more informed decisions, optimize risk management, and develop highly personalized product offerings.",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYTBrTDVCa2xtZnpUUURzUXVFb0xXNUN3UHEtU2h2OG9rV0tuVnJYWDNUdEh3b01PRXNvSzApbjhPbHlrS3ZuTWNDcmdnQU9mNUpxNzEtNi1QZG41amFZbXc0bGRZV2hrR2R6Zkh5eEZXYURmR2F4S1FESDF2Z2FMYTRtODhGa1BHc1NyYUF6NEVvQzYx?oc=5",
-    "date": "Thu, 12 Feb 2026 11:06:18 GMT"
+    "title": "AI in Fintech Market Size, Share, Trends & Analysis, 2033 - Market Data Forecast",
+    "summary": "A recent market analysis projects significant growth for AI in the fintech sector, detailing key trends and market share dynamics through 2033. This forecast highlights the increasing adoption of AI technologies across financial services, driven by demands for efficiency, personalization, and advanced analytics.",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB4NlJURTN2YURRUzgxMXZybXNxVFREU25BYU5aVG5ReUFmQzBMYkRndmRERkVIWUdEbUlKR3ZUbENTS1ZUQlYzbW12SjlsbEs5WGpaN3J0WUhNbWtvUVdXdkg0SmhFeVk2UkRqQTk4c1pVZVlWLTVtaV9R?oc=5",
+    "date": "Tue, 02 Sep 2025 07:00:00 GMT"
   },
   {
     "category": "Fintech - AI in Finance",
-    "title": "How banks are using AI in financial crime and compliance - FinTech Global",
-    "summary": "Banks are increasingly deploying artificial intelligence to combat financial crime and bolster their compliance efforts. AI systems efficiently analyze vast datasets to identify suspicious activities, prevent fraud, and ensure adherence to complex regulatory requirements, thereby safeguarding financial integrity.",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYThPQ0FZQmJRM0VzbDFjMnpFMmRfTjRuNk5tY19xejF2dmg5QVJfSUFDRkpkby15OFlOZ2FZTFh5SVQyalliSVpueTBMdXJJcWRLY045c0ZNOUFCLThMMjJPLVJGVEVpejRLQnNvZlRnMlFpWWdvbFdTNWVkUloyamRhbDBLdE5lTjN1TlloZUZIbW1aMGc?oc=5",
-    "date": "Fri, 16 Jan 2026 08:00:00 GMT"
+    "title": "Generative Artificial Intelligence (AI) in Banking and - GlobeNewswire",
+    "summary": "Generative AI is emerging as a powerful force within the banking and financial services industry, offering new capabilities for content creation and complex problem-solving. This advanced form of artificial intelligence is being explored for applications ranging from personalized customer communications to sophisticated risk modeling.",
+    "link": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxNekE1akxtTUlGQi1lSGRTajZoRXVzQTJwN0R1Yi1kRjlpNlYxeFROTEptY3Uzc2Q1aXpya0ZuSHlDY1VvLVprQXJZZ21SM2U5Yjh0a25CYTFPX0dXT2FFQTZ0UlRBb2tUOGhLenZwUXFINGJEZHA1N0FJUkhWQllvLV85dTBMRVRfMF9Pb2M0MEMzNVpISWg1QkJrU0hRMm9ZSGtiTWk3RmZHYmxRX29LVnZUdXdkRjNfN1NsbUhHVl9FOW9FeFRkWUlNRXQ3LUZhZjJUWTJXbzU1NU04VTF2NjNWSkRpQXM2MnljRWExY19xU3ZqY01vOW45UGNQaVNiakR3dWUySTdMQ1pvUmRGMUtIXzdEdmY2ZEw3cGdUMll3N3U4QV9Ra3pWRFNKMy1Jb3R5eVYtVXYzX3lDRDR6ZkdfUE9JMm5iQUEydVBqTWVGa296OU5QVUZMUjUtS2M2WDZkdXVkMA?oc=5",
+    "date": "Tue, 03 Jun 2025 07:00:00 GMT"
+  },
+  {
+    "category": "AI - Global and India",
+    "title": "India’s hosts AI Impact Summit, drawing world leaders, tech giants - Al Jazeera",
+    "summary": "India recently convened a major AI Impact Summit, attracting prominent global leaders and technology executives to its capital. This event underscored the nation's ambition to position itself as a significant player in the evolving international artificial intelligence landscape.",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQlZBdmR2a2RBM1FGaWpuS2kxMENjYlBuNXpDdHRUVmlCYU1tNWlmUEVBQUlHUDJEa1J3TW5INldHY0YwUFFBcXVGZldpaE1jei1iOE9PNHNNNExJVGtCSExqYXl2MXJ6aDVIR1R4ZEdka3JUT2RzZllFVVZwbU96UjNOY1pOMUluai1teEFQbXFWemc3SGwwSlFvRENyVHVva3Vzczdn0gGrAUFVX3lxTE9sRHhEek8yVnU3dEw5T3V0bndfQmltdENibUNHLVpDZ0JkdVJEakxaRHE3Y0NUQVhudjRpVFJXeW12anRuZzRYalBtNXBvOXJING45ZExTZXloY2xxYmtNMTF0ZDhZdWE3NXFZSTdkY3diOUJrdTktR29fMS1TQmdQX2JfQ0p3MmRCMFk0SjdBeGZBVVl1RTVodzNJWGxHX05jS2Qxc2VMT09LSQ?oc=5",
+    "date": "Mon, 16 Feb 2026 08:00:00 GMT"
+  },
+  {
+    "category": "AI - Global and India",
+    "title": "India’s Global AI Pitch Masks A Troubling Reality At Home - Tech Policy Press",
+    "summary": "While India actively promotes its global AI aspirations, a critical analysis suggests underlying domestic challenges persist within its AI ecosystem. These internal issues could potentially hinder the nation's broader technological advancement and equitable development.",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWGszYjMwdDlxa1dSRTlCdU93S0lVanhySW1xRFh0VXl3TEstNjJhazYzd2hnMXluRE5DeGtxNVQ2UE55OGtwUmZORDR6ZkIxWnlNbFFiU3VyXzdMUlVHSWUtdEtKNVJQU2JlZGJEWGFlWlZiclVkcmhSTmZ1a3JwdHd1UXVSNVly?oc=5",
+    "date": "Fri, 13 Feb 2026 08:00:00 GMT"
+  },
+  {
+    "category": "AI - Global and India",
+    "title": "Where Does India Stand in the Global AI Race? - Frontline Magazine",
+    "summary": "A recent analysis explores India's current position and future prospects within the fiercely competitive global artificial intelligence arena. The article examines the nation's strengths and weaknesses as it strives to establish itself as a leading force in AI innovation and deployment.",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSkxTbmRjUG5sOTFDWkJYQ0dQOXFEdGRFcVU4dzNneFI2dkhfQ2JDSnhFUHhnbjhrVkJjVTVTUk41UEJfQTZyMkR0VTR4cC1hdUFMRTlNZTVUbnluTXpZZFVsWWlpamZNNVBfVVRYZnJjMy1JZndrT2pfdjhKWTlCYjN2YXNDVWE3Zmo5NE84MmJJRjZzNmx1alNaUmFPU3ZlM2pGZnYyYUtxVTVu0gGzAUFVX3lxTE5fUWdoSEVuQW5KMVNkZXR5a3FkOHNrTUtXQ24wMHIyV05OTFlRN1JJb3hZS3RUbFR4UkJtNWVPRGdMRUdkek9NeVl5REhlVFlBN2I1VGFWYjk1QVBkQjVYWHJUazNqZGtZZXFaRjhRLW1UTXZ6SUlFTjQxM3h0VFQ4aVA3b2hXTWN3WXVCUXYwdW1xNzB2bDY0RnlxR0M0NnB4aHViSk14ZFRvU29tUDlCY2Fv?oc=5",
+    "date": "Tue, 24 Feb 2026 08:00:00 GMT"
+  },
+  {
+    "category": "AI - Global and India",
+    "title": "SAHI: Radical Artificial Intelligence for Health Framework from India - ICTworks",
+    "summary": "India has introduced SAHI, an innovative artificial intelligence framework specifically designed to revolutionize the healthcare sector. This initiative aims to leverage advanced AI capabilities to address critical health challenges and improve medical outcomes across the country.",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc0JfZVEyeHV6Qi1RX2lUNXRPLU9icTNYQTg1WVJraXpZUW96a3dzcGtrYnpYbkVFaVZDYlF3S3dxSnE4OUlua095RHl1UHF4WG80bDRPQkUwQ1lGT2g2ZjljS2JucThZN2JVTFR0cThhMHk5ZEt0Ni1telRWYXE3RnJNdEJKU2cxdEZfZ3l6SjdUN0w1X1RRT2J3?oc=5",
+    "date": "Tue, 24 Feb 2026 08:00:00 GMT"
+  },
+  {
+    "category": "AI - Global and India",
+    "title": "The Geopolitics of AI: Power, Rivalry, and the Remaking of Global Order - orfonline.org",
+    "summary": "Artificial intelligence is increasingly recognized as a pivotal force reshaping international power dynamics and fostering new forms of global rivalry. This technological revolution is fundamentally altering geopolitical strategies and the established world order.",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSC0xdXJLU3ZDRzdHWU5Gd1ZPbXc5NDRaWWoxMUExT0xuVXlyMkNKeGNCRW9tSjFOelJLR1dwbnlFRU5kUzg5bkg0UmtZYWg1SmlYbFlEcmd4YzNzZ3FuREhMc2ZoamEyVFVaTEo4cGhiRmtaQXFSLUUtMWNzVGdLVXAxRkF0dk5MdUFHd3g2MnNpM1g2OTdlSFh3NEpramdhXzZzX1Bn?oc=5",
+    "date": "Wed, 18 Feb 2026 08:00:00 GMT"
   }
 ]
