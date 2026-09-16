@@ -1,72 +1,212 @@
 [
   {
-    "category": "BizNews - India",
-    "title": "MARKET_TICKER",
-    "summary": "NIFTY 50: 23,140 (-1.5%) | SENSEX: 76,222 (-1.0%)",
-    "link": "N/A",
-    "date": "2026-09-15"
+    "category": "Current Affairs - Global",
+    "title": "While Australia Debates Migration, the World Competes for Talent - Medianet News Hub",
+    "summary": "Nations globally are increasingly vying for skilled professionals, creating a competitive landscape for human capital. This international struggle for talent unfolds as Australia simultaneously grapples with its own internal discussions surrounding migration policies.",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPby1fMjBCWk1LdDBqbDFkcVQ3aDJzS1FodkUtcW9OdEl6bTEyejJzR0ZzMkxSTDlXNFowbHJzc0tMWDhqMzdyN3lESWVoZUNSamFteWJtVkx6MlR4UEhLNjVNUVZONVhtSUlJRGoxNFkxNE5OMkJDU3VnWkltb0RUOUU5bGlqSFlrMTRxX3VSVGt2Wm5oeG9yQ1ZSX21NbGZNWXN5NXVZUlhSM05UNjh3SA?oc=5",
+    "date": "Tue, 15 Sep 2026 00:45:08 GMT"
+  },
+  {
+    "category": "Current Affairs - Global",
+    "title": "The Gargantuan Lie That is Collapsing The World’s Climate - Home ❧ Current Affairs",
+    "summary": "A critical examination suggests that widespread misinformation and denial are significantly hindering efforts to address the escalating global climate crisis. This narrative implies that a fundamental untruth is contributing to the planet's environmental degradation.",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcnl3R1FVVFdiYWRuZWxYNmFKRWFxV09SQ2U4Q3hORXM1WlBzRVBCenBQelMxdHFja3l6QjE3RHhLMmN1Tnh4QUZ3UEwzR2VfYkJJdk9JWHJxZGllQjdqUzhITjByR2Z4T0hMbU9fR2hESW5FUzZ0UndQRHpPNl81TEMyWVpwd1BadWVjSHpBeUQzeThHOXFwTHk2Ums?oc=5",
+    "date": "Thu, 06 Aug 2026 07:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - Global",
+    "title": "World News in Brief: Rafah crossing reopens, gender inequality worsens global water crisis, rights defenders in Colombia - UN News",
+    "summary": "Key international developments include the reopening of the Rafah crossing, offering a crucial humanitarian pathway. Concurrently, gender disparities are exacerbating the global water crisis, while human rights advocates in Colombia continue their vital work.",
+    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE42QmtTdmdBRmxlU1JkNlYwVy1OT2REajlCQ3pqSEQzSmNFSGZzcndCUGxSQzVBMWpPRTVlVEVTSkRhZ3NGSlJfM1JUUFBWRWM2SlRDRVRxTQ?oc=5",
+    "date": "Thu, 19 Mar 2026 07:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - India",
+    "title": "IT rules: India proposes new digital rules to regulate news and political posts on social media - BBC",
+    "summary": "India has introduced new digital regulations aimed at overseeing content shared on social media platforms. These rules specifically target news and political posts, signaling a move towards greater government control over online discourse.",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51RGtNb0xCUXNueGdvTnQweHBRZi1RdXBRZF9SV3V3REVWU0xic0Q0S3RwVUhXcGtxWWtZUEZTZ1ZvaG5WWkYyNE5HcWFxLWxyOXNBN0pzeEtfUQ?oc=5",
+    "date": "Fri, 10 Apr 2026 07:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - India",
+    "title": "India: New foreign funding rules tighten control over civil society and undermine the right to freedom of association - Amnesty International",
+    "summary": "Amnesty International reports that India has implemented stricter regulations concerning foreign funding for civil society organizations. Critics argue these measures significantly curtail the freedom of association and increase government oversight of NGOs.",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbXlCNFNTTktIdVlMYko3Qjl1VXZWTGEtTExLWjNILUh3cVlLbS1Ec1pINnh3VFhmTHJ0SVo5NUIxUXM4NHZkdGdNdS1CeGNsbTd2emFUeW9xYzZKRlZScjFuY0FZVFpEb3RsT1NoZ0VZcWJ6a0Y3bHA1dXJ4V3RUMmxyZ0JvWF9MdFF5RWt0UU94TE9sZlI5ZVhpYm0wVHZzS2pScmxFWV9raThiVXRMWjVxUkFwUVNVc2ppWlVlUVVNTkk?oc=5",
+    "date": "Fri, 17 Jul 2026 07:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - India",
+    "title": "MeitY secretary says every social media user posting on current affairs can come under I&B oversight - ThePrint",
+    "summary": "A senior official from the Ministry of Electronics and Information Technology has indicated that all social media users discussing current events could fall under the purview of the Information and Broadcasting Ministry. This statement suggests an expanded scope of government monitoring over online content and individual expression.",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUXdCLVY2d2ppOWVsR0NfZHlqd1pGbWJLLUNYLS1Xd0Fpc0RnUUVOUElFcDJ2emZma0VLRklkbGNCTHJXX3diRFh2MG1TR2UxcElTUFlJQnc2VmpMWGhSU2hxd05TektGSnhxWndSNV8xYjl0cV9yYm8zZ1FBZU1lUVVMY1pkZFQ1SkdwSWd0MmtNb3FoXzBnQzlkX1lCdGJVTm10Z1VORWJ1ZkRrM0ZqNElvaHZYeHlfeVpaNENjSFdrV3dQbmpwNnkwOTl0WXlRNmxMODNORlAtVDE2V3fSAeMBQVVfeXFMTTc0RFBzYWNrVFNyZzBnNzZUTG1mMTJYei1XOWN5UWtjN21mNi1TeDBlSjIzU3JFTFF2X3lBZ0o1YW1Uc0tLcGRIZHhmMzZ2R2lkU0xvRGdjc2FxTFB3aUVZR2dQZ3A3SzV0UnRxTjB6Y1RHeEJGNTdSWmZpSnFKQnA3YjdvbFZkTWM3SUlvbW95M2czZUlERnAzNzFvX3lKNGl2YUFWNzhLQTV6SWR5WmdwYnJscjFYaldkRkVENTBkX0xwdjBLcFE1OC1UeDV2M1VxMWFWYnNCa1NEandlTFJhWUk?oc=5",
+    "date": "Tue, 07 Apr 2026 07:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - India",
+    "title": "How the Tenth Schedule regulates political defections - The Indian Express",
+    "summary": "The Tenth Schedule of the Indian Constitution plays a crucial role in preventing political defections among elected representatives. This constitutional provision aims to ensure stability in legislative bodies by penalizing members who switch parties.",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTVA1NzY4VE9EMmVabXh5UGtMN2hDdTFKVXhwXzlfYi1hMTM3czNGWkJ5NlItVmQySDMyVXU4OHhXWFMzYzgtVmJ5M0RibmdVVGJJLWM2U2dMdXI2NldITmdPTFdhSEk4c0JWdWhCYlVzRjBlYmlGQ0Q0VU14a1M1SV90dWhIRnBnemFlR21tSU9CZUE3WV9XSlVTMVlQTlBramFwU0Mzck9BYm1HcHAydzlXV1F1T0ZqT1FWTDFkQmlsSmpTM25KWHNSMlRPc2vSAdYBQVVfeXFMTU5ua0trLWhhQzU3RkszZl82c25WbHlQcXByMkVFVTZEa1JzMlRIZ1NQakNBNWlvdklEWEtoN2RQanY0c0xoQ3NFbFpTaWIybUdVaThzR1VFdW5rVzl5SzFLQ1o5a3J5YXEzZm96dG11eDBYWTJvdWVMTFd6T0VyWENETzIzNFlwY3plLXVYSWVOVG9BR0Zkem93cVl5bjNnS2dCNnRSWURQYkh2TWFYYnQ1Q1V2bU95eG05dnlaOUg0aEEtMVZxeURrTENob3BBRldIMEotQQ?oc=5",
+    "date": "Tue, 02 Jun 2026 07:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - India",
+    "title": "Why the vitality of pressure groups in a democracy remains incontestable - The Indian Express",
+    "summary": "Pressure groups are essential components of a functioning democracy, acting as vital intermediaries between citizens and the government. Their continued relevance lies in their ability to advocate for specific interests and influence public policy.",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPb2VJTDhDMG9KNXFObm13MkVZcWRpMEZYRGpPQmtCSXRvTEg3bHNGVmJHWFJtQUZlTExYM1JlTy1nSEZSTnRvSjl6M3pXajF4UkpQTGlkSlk4T0lRdVdDYW5nbjd1bktRZ1J2Mzk5SkNQWkhiZUphdktwWHZVZHJsSzJqSHM2aWc3bEVYaWdjVGRaSmhNQUdaRE94emRKUVYtbWxDS1JUc05MLURWWndkRDB4N1pzSmsxMnhkVG1DbEFLVDc4UGxhR2dxQVJCd3ZONEJ6Ylc2M1k2NlljOTVpVVdCUEljbmxh0gHvAUFVX3lxTE9HRlhYaXZWRjE1MjV6dEJXdG1VREFmSUZoY2dzVEM2RUNwdmdyUmxhRDdabkR0dmhzMGYtLUxVREs0TjFnZm4taFE4M01FclVpdDVJSUh5bUM3U3VBODJPUWQxQVBwOW10NnpBS2JIZVduSU5ZWXY2NG0xd0JGLUViSUlVRm9Wek5rU28zWnNETjJYNGJFV3dMckVJa1J6MmtKS0Z0TkxGbGMxRE5pcUlXQmlXS2ZEMmhUeEhYMHB0X0p2QURnRFk5bS1xTzFlMGltb21IRzlnbTZYR3l1ekJmdlludjJQWEZVQUo2eUln?oc=5",
+    "date": "Tue, 28 Jul 2026 07:00:00 GMT"
+  },
+  {
+    "category": "Current Affairs - India",
+    "title": "India-Nepal Relations - Vision IAS",
+    "summary": "The relationship between India and Nepal is a critical aspect of South Asian geopolitics, characterized by deep historical and cultural ties. Ongoing diplomatic efforts and economic cooperation continue to shape the bilateral dynamics between the two neighboring nations.",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYkt6SDlDRVdGc1VnQWx6RTVMQ1M1VkpnUzFBUTVxOGpPOXl0dk9IVnZ2cEVvdXJaUGxXc0g5cjlpN29zOTRFNzNXUGJTRllrWm1RU214WmVxYVJJdmVPZDE5Y3R4U3lIWlUwVWlVZXF0QjNYR2R2N0FfQUk5QjFObUpQUkw1cll5RGFYdHVzb3RlZjRhclNQdndKT2twTGlxa05tOEhmZkxTSk1BTGprNm1R?oc=5",
+    "date": "Fri, 22 May 2026 07:00:00 GMT"
+  },
+  {
+    "category": "BizNews - Global",
+    "title": "10-year Treasury yield hits 5%, critical threshold for US economy and markets - cnn.com",
+    "summary": "Rising Treasury yields signal investor concern about inflation and economic stability, potentially increasing borrowing costs for businesses and consumers. This benchmark rate reaching 5% could significantly influence investment decisions and market sentiment worldwide.",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE91dmcwS01EcUI0YWxEZ3JjZFJKSXlPUXVVNE12b3NMd0FtX0p5ckVmRHhEdTNYMUpNSVVfT0ZqVjNkZUhkTWVrSGloV2dJY3JhYWw5bEtrZy0xd3NXTVdJbXR0RFllMEJCbWRyOHFkOXdpR0Fzb0E?oc=5",
+    "date": "Mon, 14 Sep 2026 14:21:05 GMT"
+  },
+  {
+    "category": "BizNews - Global",
+    "title": "Bank of England chief warns new AI models threaten global financial stability - CNBC",
+    "summary": "The head of the Bank of England has issued a stark warning about the potential for advanced AI models to destabilize the global financial system. He highlighted risks such as increased market volatility and systemic vulnerabilities if these technologies are not properly regulated.",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSTRMZGtDQUtqY2t3NzFpS18yMk9NQ05FdjUyenBKNi1famRNZ3YzOFh5ajczamhSQWNoVDE4TnQ1ZGNXcGJIVmUyM1ExcHVYVldPN2FEb2JHUDFJMWtXbVlOTzhLZW1WdHljclhfRnNpUVdyM3J0Rkg4WnN2eDY2TWdrNDl6amPSAYwBQVVfeXFMUFpNdktJV2lxOU94WXlEWTVXRk1Ib0FJOFZaRnZEWE9NdzNpNHcydTRTMFR6VGFoWklfUnlaVHRwODdNbi1kVTh4cXl2NEZCdS1CanpyLVUtU0tudTltV3pDdk42al9OYmZ2U1dRTWtOemlHQzdEbzk4eGZuQXZKSUluSTE1Z2xTcjVPM1k?oc=5",
+    "date": "Mon, 31 Aug 2026 07:00:00 GMT"
+  },
+  {
+    "category": "BizNews - Global",
+    "title": "India's rising market power reshapes global debate over its trade policies - business-standard.com",
+    "summary": "India's growing economic influence is prompting a reevaluation of its trade policies on the international stage. As a major emerging market, its approach to global commerce is increasingly impacting worldwide economic discussions and trade agreements.",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQ3F3cDE2dzZmbm5qMkhLMm5QN2ZoLVZOUnJnbEYySWhodjBqVWk0c1B3NkJDY0diWjRGQnVPMXpwdlJkODMzWEJOWlZvRDE2MW9md08xRC1EbU81dEljaFpxVW1LR0phMlZUM25RdDl1SDBjeDJCOE5XeVNMVTBzUXA1ZVlDVXRQRF9rY1FyTlBwSmZyRXNQMk02S0Z3SUtycVNsaWg4cXo1WTVoM25HOEtQa0Y3cDhxcVdlYUFqNHZ3Wk43U1Y3MdIBzgFBVV95cUxNZHZoQ2JFcjVJTnlkMkFtV0l5MHp4U0p1eEo5dkFORjVsLVYxNXNsNm5ueFpzNXhXN2MyS1RxdUZhaGpCdFdrQW4yYVFncDRCeFNtU1NVa3dKeTBSVzM5djdFMS0xUjBYMWF0dERzNnJJZmI3RXg5Mk41UF8zYUpWZGFRcmdWRjVHVjhncy1XN3ZIWFhNUHp5eTMzWm1mb1JyS2FscjhVam1aVHhtSnhMWG1FcGRXWDFZTUF0SjhtbjNzUVd4S1I0d3YwejR5UQ?oc=5",
+    "date": "Tue, 15 Sep 2026 17:44:59 GMT"
+  },
+  {
+    "category": "BizNews - Global",
+    "title": "Stock Market Today: S&P 500, Dow and Nasdaq Futures Fall as Brent Hovers Near $107 and FOMC Commences Two - Benzinga",
+    "summary": "US stock futures are declining as oil prices remain elevated and the Federal Open Market Committee begins its two-day meeting. Investors are closely watching for any indications of future monetary policy amidst concerns over inflation and energy costs.",
+    "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxPUGk4NExHhEY5b3ZTZDk3eUpEa2hHMjA3Yjh6Szd6Z2xKSFZrQnkzcFR2QmsyWUhBSlI5d0NYRUx5amZZZEUzTVYtVEpDQkZPRlM4c1JZXzFHNVZYaWwzQXRfSFdVSUlGNEJTb2dodGpxdnBzX3FGejh4aGtIZlVFQ0RVYUZEYU9SNFMwR25wZFd2WWFpTGpyOWMxSkFxWG0tZDRoMzdhMGduWHJTdnFJdkZ5YzY1TTVGOXJtM1M1OGRUa1c0WkhNTUdlaGFIUGxVZmhELWtpX0dhV2VFalJBZXpCeFUzQjVvMUZwb2ZLRWpSS0ZvYVVlT1ZITEZTMFk3SUx4S3ZhR3lMcExSLVJtRmMyX0pjaS1Vdm5PdzB3?oc=5",
+    "date": "Tue, 15 Sep 2026 12:36:00 GMT"
+  },
+  {
+    "category": "BizNews - Global",
+    "title": "Stock Market Today: Gift Nifty, Bond Yields To US-Iran War — Five Key Factors That May Drive Sensex, Nifty 50 On September 16 - NDTV Profit",
+    "summary": "Global markets are bracing for potential volatility today, influenced by factors ranging from bond yields to geopolitical tensions involving the US and Iran. These elements are expected to significantly impact major indices like the Sensex and Nifty 50.",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPa1AzVjdocS1JRnhwcnZKcXBzNnpudTR4Zm9ydG94N25IdlRBTXl4NlBsRUN1M1NZTFV2QlVEYlhJaGtZdGp4TkxwcHhaVk1iUlU4SWNHTldTQlNCYU5vN1kyZEZkU1V1UEdKclBJWWRnU1hfNFZFMTMyNWxmeWNpWjdlQzE4dmg5SzZtTmZtREpQbDhPeWdQZGFqS0Fmb0c5TkNxbmY2YzNTTU9ScktxN2hpclotNDQzaEx0eXlKWlB2NXh0aUFoNXhxcjlCUXNuTmVYMV9fYkhwQlVmOVcyNzJjTG1ZcFhxVW9aVW1ETFg5VnVuakY00gH_AUFVX3lxTE45LUhsSTZyODJmMXNvOWFkSC1vMzE2TklxUTliWGZvdDdnOXNsSXJpX2pVN3NOaVpHLUtyN2h0S1BfWlpGV2g3N05jNlJSV2N1YklsdlZqQUwwNzh6VklrNXloWkNidXgzdHVBbE5ibl9uVUtMTU5YT1Jrb3VYZjdJSGpQWGVvcGNVNHR3ZTI1U0xuRmJGZGVJRVdFVGtfQ1FSZ1BhNHM1R2ZLYUc2WkdwWjJXX1p2QlZhUnR2YUxqRERTUUltYXNhYzJyYV9jZkZvbk5VaXBtdkF1dElLWDVwQ3o3czZrQUhaQ2t1emlPSGZOSTR0ajl5a3hIckFVRQ?oc=5",
+    "date": "Wed, 16 Sep 2026 01:39:15 GMT"
   },
   {
     "category": "BizNews - India",
-    "title": "Stock Market Holiday Today: Are NSE, BSE and MCX Closed on Ganesh Chaturthi?",
-    "summary": "The Indian stock exchanges, including NSE, BSE, and MCX, are observing a holiday today for Ganesh Chaturthi. Investors should note this closure and plan their trading activities accordingly for the week.",
+    "title": "MARKET_TICKER",
+    "summary": "NIFTY 50: 23,250 (+0.7%) | SENSEX: 77,350 (+0.5%) | S&P 500: 5,100 (+0.8%) | NASDAQ: 16,000 (+1.0%)",
+    "link": "N/A",
+    "date": "2026-09-16"
+  },
+  {
+    "category": "BizNews - India",
+    "title": "Groww shares crash 4.5% after 1.69% equity sold in Rs 1,999-crore block deal",
+    "summary": "Fintech platform Groww experienced a significant share price drop following a large block deal on the market. This transaction involved a substantial portion of the company's equity, likely by major investors such as Peak XV or Sequoia.",
+    "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUFkwY1RsUDhEWkd4T19xSnpPMUJlNmR0U3UwNXRiVXM2a2x2aDMyb01lSGNsS09zS1NFa1dvYlhETllqWFF6WEtteG9YMjhSSHBvZjk0M0pMRVdlR29mc1ZCOXAtMS1TQ1o0Z1RSTk5GTTRRbEJRWDJLUGt1cVlzV2ZSYUpLWTU5UVdlQjFYVnZqdEdTbGRyZ3hWbFViUEJfMnVBMzhNV2M0aVdlWWlub3lncF9sR3VHMlBVZ2NSa19tSzZsUHpmcVZaVGFBSnNkOGNseDI4MFBfdWxtcWpBQ1ZwVm96Q1R4SzdYTE5NbXNVYndaZzFpWWJKNVB4Z9IBgwJBVV95cUxOQnp2UUtuU2pJNURRUlFXV1FBRGw0SGVFWXVjR0hYa29ZUUVjeFBIYWFLaGVYTzY5X1FwWXVMVVEzWVNNOEc2akNxUE9zTndtWFpvd3hYQjZVQ0FFNzdvUDI5X2xIbmI5TDUzMF9vb1d2YkM2ZlFuUERZSm16cHY2aTF6TmctV0ZIUTk4WmtPb2I1a2lUUWpHQjlMS094d2dRRWRpZy16ZE5YcUVIX1MxaHhNdGNPd3A5aUJ1OWE5cmlQSWo0amRPYldNalVJR0IwWExFVHQ5c0V6ei01ck55MF9ZbEp0NXRiV2t1QmNZTExXR2ZkdFVIWjRIeG0xdDBaWXU0?oc=5",
+    "date": "2026-09-16"
+  },
+  {
+    "category": "BizNews - India",
+    "title": "Stock Market Holiday Today: Are NSE, BSE and MCX Closed on Ganesh Chaturthi? Check Full Trading Schedule",
+    "summary": "Indian stock exchanges, including NSE, BSE, and MCX, will observe a trading holiday for Ganesh Chaturthi this week. Investors and traders should review the official schedule to plan their market activities accordingly.",
     "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQLWdiUGZ2Zl8zdGpLREdtRUx3NllPQktzemtNWi1IMWZCbUdhdTAyN3I1TVVGQjcwS2REdkE4T0lQdS1OS0NacVBEMm93elk4ZjdBTXJUTE5KcEFkMTBSNzE2VXNqVFdmeGZnbjN4WUxWTXpLSWhhZzl2RjR6ZlNLU0wyVE9ZMXF1Ym5tWTRfd2tSd3NqUmdZVnYyNUtPWVhYUFk4TkdFNkNZeVBzTEJWM1o5aHRadjNpV211enFEWmdFYnlKLU12VkQ3VzlSVlhJUDA3bUctaFdXTFQzN3dyTnB2U3BPSzExcHNmbDJxbEJrQlN3a01JTXR1X3cxX0dyYUHSAYgCQVVfeXFMTm5pYUVhLVc0MHRzMWpSVHJya09XQTJvcXJsY0FVRXJpWjhBc3lzOEd6MHp1b1NfOHllWHhvaUV0d2hzbGI4YXUtNjlGd0paMzdHQklzNDhGMXN2aDJYUU1QV2ZDd1dNT0lBWG5YeXlYQ20xUXMwbTk4WklycE11eGNWWU8xQ2ZSSmRkQ1F6LUhfMU12SFJIel82Z3hNZ3pGOTNZZmtPbmpXOWlyTnYxUlRkcmtTS09meGk5WlFYd1JEZmVsMWlxaDNPdmI4R0NyRF9lekdzUmFzQkxJVE00eHZ2UG1NTE5vT1YtQ0dUa2d5cGRzVFhidXFEOHprU1FWRS1jZEJ5bUhV?oc=5",
     "date": "2026-09-14"
   },
   {
     "category": "BizNews - India",
-    "title": "Jefferies says Sebi's proposed CAS changes will remove uncertainty, but still remains negative on BSE.",
-    "summary": "Jefferies believes that SEBI's proposed changes to the Corporate Action Settlement (CAS) system will bring much-needed clarity to the market. Despite this positive regulatory development, the firm maintains a cautious outlook on BSE's stock performance.",
-    "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQZS1DZ2RWOVNreS1qNXloZ092WDBUUWRJRmtuSTlKeURqOEVjc0J0SHVHQmI0R0xMWU05S3BKSjVZQllOVFlrZWQ1aTAxV2M0SHBXbWFtSk9lMjZtQm5wanB3Q3pvbnJWd0h0UVFWSmFiRTdkdmhnZEl4N1U3MXZIbzU5dGRUNTBhd09wczR1SmdnSUx2alljSVdXcXNEcTVDZnQ1VkdTVVB2VzlOX2lsSDlEN1VULS1fQzVKM1BnVmpWc3JTYXU4MVpZNE84cEdZUDdaRVZveDJ2enIzOVdlSGFERld3blVRUi04c08wQ2hlcGdrajRlT0tJdjFBa3l0X3pZa2tYMG05aW93V096YdIBlgJBVV95cUxNMHBlV1V2TGtMR21WRTQ1a1k4aGFPV1NDc3dlZ05FcjRSSk1feUVfaU1xTDFpTHZwMS1FOWhCYzJhM05qX3lXbHZQYVhfOHF3QjVndEpWeDRSLTB2ODFoY3EwRmt0bG5FeFhmd2UwZ05hRFpDOWhKT2o4SmdxZlNkbFBYWUlrZkVidVpsZTl3ZUZSVTlDUlAzM2JSVjA2Z0xuNGhBQVBkcmQwS2F1UDg2Vy1KVFA0bXNhLXUzVV82dDA4NlFQVkIxeno4NjdCVWJEX3REakNuaUpIZjJpZS1xV2s1cUdrcnR5OUtnQVBGMzNwc1lieHlIcHNTckZLdUo3MFdaQ19aQl9wY0piaEVudjl3MUVJZw?oc=5",
-    "date": "2026-09-14"
-  },
-  {
-    "category": "BizNews - India",
     "title": "India bars JPMorgan unit for alleged market manipulation",
-    "summary": "Indian regulators have taken action against a JPMorgan unit, prohibiting it from certain market activities due to accusations of market manipulation. This move underscores India's commitment to maintaining fair and transparent financial markets.",
+    "summary": "An Indian regulatory body has prohibited a JPMorgan subsidiary from participating in certain market activities. This decision stems from accusations of market manipulation, highlighting the regulator's commitment to fair trading practices.",
     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaFVLZFVaVzJCSkNXZHA2cDVkeUUtZ2FnUDNpbmE0OXpBazhCcHRDQzRZZWI3aHJ0VE9uV2U3UGFfdjdJaFRtYzBFb2pVX3Z6LXJRZnlvdmZxY054VGV4RjAySGZpcWVuTUR4QnpyRzh2MW5CRWxodTBhRms4U3B3ZFhGa0UzWjdpclJ6eURTanRPdWpvVVJLMtIBngFBVV95cUxOU2VoLU44MTNkdDRQSTFOdmhaOHZhUHE1TmpHeFA5VUxfUEl1ZVY2ZzFrLU5xbnBrX05DQ2loQVg2ZE5kU1QwbWplMHdFWHczNnBleEhoTzlKNzlQMl8wVkt3UXRubS1uTkJKR0hINVQxcW9yZExyY0k4Z1F1dHQzQVJ1bUVLaUxTdUpFQ2xqNXJUbFVyVmMtWHFxSWVOQQ?oc=5",
     "date": "2026-08-20"
   },
   {
     "category": "BizNews - India",
-    "title": "BSE turns 151: How Asia’s oldest stock exchange became India’s market pulse",
-    "summary": "The Bombay Stock Exchange (BSE) has reached a significant milestone, celebrating 151 years as Asia's oldest stock exchange. Over its long history, the BSE has played a pivotal role in shaping India's financial landscape and continues to be a crucial indicator of the nation's economic health.",
-    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQZ0ZzbWdzT2otVkxPZUlIcmZMR24zUXdpdldRMW1weVN0N2hiajhiYzlScGRKVnNGMkpZQXZWdUIzSF9zZGJwWjVQUGdURW9KeEZ2cXJ3cFJuYncxV05mRWQtbkEzS29GU0hHTDFHRUpManVWRVBDZ0M1MHFzODRJYXY0bGlQUGNJd3NMM0VaWlBmcldnT29EODZUVHJpTXg2dDVmS2xOWVB1MEJFdVpqOUUtc19QaDV2eGY0Zm9sQ05EeHhlMHBBdXluSU9GaUdRS1V4bUR4VTNwZk9zeG1mRXNuVllZM3VoV0U5V2tBb9IB9AFBVV95cUxNVHBfWHlfTjQ1ZDBTZHRYd0RMQTFlbDAwbVdEVW9FRFoyWEFrcTBodnYxNnFlbllCNDVOQWJNMGZHWnVuXzRDRXJwUXFVVm05UWNLRGVxU2VPNXp0YmRIY1JFaUxQemI5YzQ5TnR1dzNwQ1E5ZFVZRkxKYnlqYTBUQXhTVmlaczFrTmFiSmtVZXBvRXZwZGdYZW03dnNxeTYtY2xhYkJEeUZodkNocUtoVGtlQy0zT1dOcHd1WkI5ZEFwZ0pkT1lhY2ZzZERhWmZ1S1NRY3B2SXhDTnRNOXFMNlAxMzFZNGZDZ1BKcW01NUo2N21s?oc=5",
-    "date": "2026-07-09"
+    "title": "BSE shares fall over 3% from day’s high after report says NSE weighs trading shares on own platform",
+    "summary": "Shares of the Bombay Stock Exchange (BSE) saw a notable decline after reports emerged that the National Stock Exchange (NSE) is considering allowing trading of its own shares. This potential move could intensify competition within India's exchange landscape, impacting BSE's market position.",
+    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOc29tLVZtWFRWVFFTWjlaUGl4b0NUV1Ezbl9FZG01UzdOM0d3R2NiWVVhdjN0ZU1tSXlJSjlCckpqZGFJLS0xMEJ6bkx6b0x4NXhja0plN2QxSUg0Q2VmVGZQV0pjNlZCUFlMdG9peHZCNm1zQUdpZ2Q2dHNOLVktdDZqMkZtSG9QSHVCWUtlUkQ0SzFrd3NZNFJfTW5qYzR5MU5iWG9YMHJNZlM4bXNKbDBfN1A4RkRDdl95QnJlSW1JYkdLRU9JNHdPejVKLXZ4QXMwVGNqYWoxWGZyeUJNME5DemVFQUY4d290VF9PSWhEd1pqTzlUZEx0RU5MN2xQ0gGGAkFVX3lxTE54X20taHoxSzJWcVZneTZoeVJjeFlHLW1XU3U0YnpUbXV0eDNJQzJoOGxhVWR6b2ZKdktHVmZkSVRyN2VNMjhGYjRBc1h0SF9Vci1iaFVrOVFBSG1DUHRHME5RcmVkZ2Y2WVpWbDZLTkE0NGF4NFRNcHgzN2FqUWx0LThNc1FQTUg0U2FTMS1zMlZRQkVUNU5iNTRDMUotSVVYYTVvcFBUWTVkYTA0VE1nMFlpT3YtSDNENkFGemlEeTQ5THdUVWhaX1pTLW5FaTRoR3dUVlZTbGFsVXRPTTZIaU1qcmZ2WVIwanRzb09fVzdMd0o4MmxjMXdyQUhEZ3dmUk1LSkE?oc=5",
+    "date": "2026-08-20"
+  },
+  {
+    "category": "Fintech - AI in Finance",
+    "title": "AI finance is here, but scaling hurdles abound: fintech execs - BNN Bloomberg",
+    "summary": "While artificial intelligence is rapidly transforming the financial sector, industry leaders acknowledge significant obstacles to its widespread implementation. Fintech executives are actively working to overcome these scaling challenges to fully realize AI's potential.",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVhPQzgzLVdSeHRRWnhoa0ZscE1kY3M2R0RSZ2IxX19WZ0UteVVKOWFDZUlPYlI2Rm9oajY0eGQxN3pNeFd1OF81c0FSNksxRVFOWm5rM0ZQZzdwWlJxb0oxY2hUR0ZxRnU4TUhCcmlUbVgtQmZGSGdHd2tpQXZPanlpVlhfNTdwYzl0OXJzTlhSczJ3U3FCWGZBZUJyc1BKZ1VmNEI0Vm1MWVJ4MklKdWxjVjB1dzNCdTJBNkFNa1JONC10cFNhMXZHZGU?oc=5",
+    "date": "Tue, 15 Sep 2026 20:41:27 GMT"
+  },
+  {
+    "category": "Fintech - AI in Finance",
+    "title": "How banks are using AI in financial crime and compliance - FinTech Global",
+    "summary": "Financial institutions are increasingly deploying artificial intelligence to combat sophisticated financial crimes. AI-powered solutions enhance compliance efforts by identifying suspicious patterns and reducing false positives in fraud detection.",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYThPQ0FZQmJRM0VzbDFjMnpFMmRfTjRuNk5tY19xejF2dmg5QVJfSUFDRkpkby15OFlOZ2FZTFh5SVQyalliSVpueTBMdXJJcWRLY045c0ZNOUFCLThMMjJPLVJGVEVpejRLQnNvZlRnMlFpWWdvbFdTNWVkUloyamRhbDBLdE5lTjN1TlloZUZIbW1aMGc?oc=5",
+    "date": "Fri, 16 Jan 2026 08:00:00 GMT"
+  },
+  {
+    "category": "Fintech - AI in Finance",
+    "title": "Fintech & AI: The Rise of Embedded Finance in Everyday Platforms - intlbm",
+    "summary": "The convergence of fintech and AI is driving the expansion of embedded finance, seamlessly integrating financial services into non-financial platforms. This trend allows users to access banking, payments, and lending directly within their daily digital experiences.",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVjZtbnNQTVZvVFBIbERrQzh4VHZkbmZZR0t4LWtPYkZiTUN1WHZFTk5RVXduemlkWEFMNl8zWURmMFBnMFBTZDFTRzJidnowUkdIa2wtX1BiU2FMdUtCaVJza3V3REZGNTd6c1c2YzJiSjJaX0dwLXVkbmppZmRRNU9FSjBUeXlQNWxsWWtpMTFseV9iNXF3?oc=5",
+    "date": "Fri, 20 Feb 2026 08:00:00 GMT"
+  },
+  {
+    "category": "Fintech - AI in Finance",
+    "title": "AI Agents in Financial Services Market Size to Hit USD 6.54 Billion by 2035 - Precedence Research",
+    "summary": "The market for AI agents in financial services is projected for substantial growth, reaching billions by 2035. This expansion highlights the increasing reliance on intelligent automation and personalized digital assistants within the financial sector.",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8zTk04enBacTFnRGhBYU54LS1wcFJGZmZlQUtQdVIzQTZjbGlpbWkzZTlWQ2pubmZFSnI4clNYY1VyeVgtaUN0ZzdWbVBGblZTX0hVREUyQVhVOFhKZVgxSjF5R3VGY2c5X1dzVmhUb0V4c0RiVnNzc0xWb3hmdw?oc=5",
+    "date": "Tue, 23 Dec 2025 13:36:46 GMT"
+  },
+  {
+    "category": "Fintech - AI in Finance",
+    "title": "2 in 5 APAC finance firms lag in AI or machine learning - Asian Banking & Finance",
+    "summary": "A significant portion of financial institutions in the Asia-Pacific region are reportedly behind in adopting AI and machine learning technologies. This indicates a potential competitive disadvantage for firms that have not yet fully embraced these transformative tools.",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSnVoUVBGSVJoU0JfT3BZeTJ4RFdUM0U5QW5DdjJYaEhiNmxfZ3gzVmw5d2R1TjEwWEFhXzRTZG1oVlZFMzdCN3lxWHB0VkJxaW9rTmtvc3VzV1VyeFJ2VmtGbjkyM3BMWnN0bGt3ODVPWlZMbWlwS0Y1bTlVOGg3RVprVzlVOTU3QkxKUkdUZEtvSXltNTRIVjBjMjVIc2E3Tm9YaXptcnFHYjE5S0h3NkFNeEpjdFBFSXZZaQ?oc=5",
+    "date": "Fri, 13 Mar 2026 07:00:00 GMT"
+  },
+  {
+    "category": "Fintech - AI in Finance",
+    "title": "AI In FinTech Statistics By Growth And Future Trends (2026) - Bayelsa Watch",
+    "summary": "Recent statistics reveal robust growth and promising future trends for AI applications within the fintech sector. These insights underscore the ongoing evolution and increasing importance of artificial intelligence in shaping financial services.",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtMUlLNWJMVTJldWE0V1JmSGJFSlJpY3FDc0FPLUg5TFJ2MmtyRE5iTnlmRFE3VkFPM0EzZkpWTHhjOV92QnBWQUtwTGdEOHRGSzdUMVU0Z0ZOX3ZpcUhZ?oc=5",
+    "date": "Mon, 25 May 2026 07:00:00 GMT"
   },
   {
     "category": "AI - Global and India",
     "title": "India’s AI Revolution Accelerates as Billion-Dollar Investments Reshape the Artificial Intelligence Market - Spherical Insights",
-    "summary": "India is experiencing a rapid acceleration in its artificial intelligence sector, driven by substantial investments totaling billions of dollars. These significant financial injections are fundamentally transforming the country's AI landscape and market dynamics.",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZDVYRzA1ejdCbU1VQUtQSFpSbjR3OXJoSTczTWZQOExVTHBkSnFCUHJfeHhIM2FRakVYc0xvOWUtak93ZkNhSmNZTzl2VjZCTUNCRE1fbjF1U1lRcEplZG5TVWxTZTZ6dnVZb2lwMVJONWZYdm5yblE1T0tJSkJrbDZ4alRLTkdQYVlPR2x0OEdBbHhka2JBZ01sdlVVUDNHZS1oUnRYa2h0bVFpQ2JsU01GbU8yWWNrb1dEdjY2WFVPdkRLYzRVS0RueXU4Ti1kblZkQ2tyZTBrYkd0bU8w?oc=5",
+    "summary": "India is experiencing a significant surge in its artificial intelligence sector, fueled by substantial investments reaching billions of dollars. This financial influx is rapidly transforming the nation's AI landscape, positioning it as a major player in the global market.",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZDVYRzA1ejdCbU1VQUtQSFpSbjR3OXJoSTczTWZQOExVTHBkSnFCUHJfeHhIM2FRakVYc0xvOWUtak93ZkNhSmNZTzl2VjZCTUNCRE1fbjF1U1lRcEplZG5TVWxTZTZ6dnVZb2lwMUo1Zlh2bnJuUTVPS0lKQmtsNnhqVEtOR1BhWU9HbHQ4R0FseGRrYkFnTWx2VVVQM0dlLWhSdFhraHRtUWlDYmxTTUZtTzJZY2tvV0R2NjZYVU92REtjNFVLRG55dThOLWRuVmRDcmVvMGtiR3RtTzA?oc=5",
     "date": "Sun, 31 May 2026 10:16:40 GMT"
   },
   {
     "category": "AI - Global and India",
     "title": "India's AI future depends on an infrastructure challenge few are talking about - TNGlobal",
-    "summary": "The long-term success of artificial intelligence development in India hinges on addressing a critical, often overlooked, infrastructure deficit. Overcoming these foundational challenges is paramount for the nation to fully realize its AI ambitions.",
+    "summary": "Despite its rapid advancements in artificial intelligence, India faces a critical, often overlooked, infrastructure deficit that could hinder its long-term AI ambitions. Addressing these foundational challenges is crucial for the nation to fully realize its potential in the global AI arena.",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVmhsMTE5bEJUMHJ5bXh1UGVrRXNWUkNRWlk1dWt5U01CSndCMUY2TXBaV3A2Z01XQVVFX0tra3M4SWxTcWFrTFhmQUtRRndDWWwzQ2cxSE9DbS1zdXJ4SDhGaHhsamFkLTFSMjZEZkJMREZfTVNoTW5iY2hKaTdLd21lcVpUSzhyYWJaNklFNndraG5QdmloamxlQzhOM09QWVBESV9zUDR1MjR2eFE3VWtlWQ?oc=5",
     "date": "Tue, 30 Jun 2026 07:00:00 GMT"
   },
   {
     "category": "AI - Global and India",
-    "title": "India Issues 2025 AI Governance Guidelines- How It Compares to Other Global AI Acts - The National Law Review",
-    "summary": "India has unveiled its 2025 guidelines for AI governance, establishing a framework for the responsible development and deployment of artificial intelligence within the country. This new regulatory approach is being critically examined in comparison to existing global AI legislation and standards.",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTkw5ZDdjU1RSSHZrWHlzRVpBdm94TlcwR1dIWl9jb3NzMlJCaHZocFNKdEkzRDRvcXA0OXk3cURYRXJVb0o3c2JZM2Q2ajJXcC1sVzFNLXhCSlJLTW1WandQcWFIRlJDMjlzQlFVV3kzTlMyUEJXR0dHVUh2bWNmN1dqLXJlN0ZLMENkNkdLaWlEOU11OG5OZURydlZDMW1pdnZlaENoY1BIMjZadDRSeWZn0gG3AUFVX3lxTE5TVjBpWkhfWG9DYTg0T3BVQ09UVEM5czJpZjFLWjZBUlV3cW1BZWVtMDk0aTdPQVVJcWUyUDRJWlBQOXhGTGtINmR2S1cxTjVNQ05ReVpHdS1sQ3BiX2p6ei03N1hmZ01SbFEzRTNOdEtTVVY0UGRMbGh1NzhIYkF3LWZSQTBCaXd5V0J2V2xHRkEzd3dWUjhXV0ZmZkdfMjNfT3V3VGxaOTVhZ2N6bzlQVzJKOFZCVQ?oc=5",
-    "date": "Mon, 22 Dec 2025 08:00:00 GMT"
-  },
-  {
-    "category": "AI - Global and India",
-    "title": "India’s hosts AI Impact Summit, drawing world leaders, tech giants - aljazeera.com",
-    "summary": "India recently hosted a significant AI Impact Summit, attracting prominent world leaders and major technology corporations. This event underscored India's growing influence and commitment to shaping the global discourse on artificial intelligence.",
+    "title": "India’s hosts AI Impact Summit, drawing world leaders, tech giants - Al Jazeera",
+    "summary": "India recently convened a high-profile AI Impact Summit, attracting prominent global leaders and major technology corporations. This event underscored India's growing influence and commitment to shaping international discourse and collaboration on artificial intelligence.",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQlZBdmR2a2RBM1FGaWpuS2kxMENjYlBuNXpDdHRUVmlCYU1tNWlmUEVBQUlHUDJEa1J3TW5INldHY0YwUFFBcXVGZldpaE1jei1iOE9PNHNNNExJVGtCSExqYXl2MXJ6aDVIR1R4ZEdka3JUT2RzZllFVVZwbU96UjNOY1pOMUluai1teEFQbXFWemc3SGwwSlFvRENyVHVva3Vzczdn0gGrAUFVX3lxTE9sRHhEek8yVnU3dEw5T3V0bndfQmltdENibUNHLVpDZ0JkdVJEakxaRHE3Y0NUQVhudjRpVFJXeW12anRuZzRYalBtNXBvOXJING45ZExTZXloY2xxYmtNMTF0ZDhZdWE3NXFZSTdkY3diOUJrdTktR29fMS1TQmdQX2JfQ0p3MmRCMFk0SjdBeGZBVVl1RTVodzNJWGxHX05jS2Qxc2VMT09LSQ?oc=5",
     "date": "Mon, 16 Feb 2026 08:00:00 GMT"
   },
   {
     "category": "AI - Global and India",
-    "title": "Bridging agronomic science and context specific farm-level advisory through generative AI for rice systems in India - Frontiers",
-    "summary": "Generative AI is being deployed in India to create tailored agricultural advice for rice farmers, effectively connecting scientific agronomic principles with specific local farming conditions. This innovative approach aims to enhance productivity and sustainability in India's vital rice cultivation sector.",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPY21NVFotNTFDdEtqMDQxQ3V3M3pWejQ2U3NaWGg4MHlmLVh1U01SdUFIc3pIVjhWQXlsYmxGbXNPVEg4Sy1UWXMtVnNrV0doOVhqRURwUU1GeDBtUEJvXzJXbU5Nd1RDYnltODRHSkNpZTVzZnh1cm1fSUlGVDI0d2lLdGRndkNwVVBncU8tQWltaW51UThjWHk5M0xPa1phQWc?oc=5",
-    "date": "Tue, 30 Jun 2026 17:53:04 GMT"
+    "title": "AI could erode India's outsourcing advantage, warns WB report - Rediff",
+    "summary": "A recent World Bank report indicates that the widespread adoption of artificial intelligence poses a significant risk to India's long-standing outsourcing industry. The report suggests that AI technologies could diminish the competitive edge that has historically driven India's service exports.",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQ1ZuRUZZTEhJc2E3TjBRbEQzR2lNOFU2ZkRpMFRDU19oazlYODdKZVptNVJnOUR0Y2hBaktuNzJDZHpON1N0dzltbFhSNE91Q1JyWU9tVmI1N2s2QXVvWV9WMnlkR1lFeE9DWjFrajYyTFFMUzFISFRKVnVCSXdkUndZR0JaVGVvYzlYc3lnTExRbVhVaDFaLTh2V1BJeFYtSVNKMkEyZFdwc3FxOHUteNIBswFBVV95cUxQNVBEeWMxRmRXS0ZwcGJRNENmUGtnaFBMVmdOVlBwRHczUmFERjBiMFlCTFpGS2NJQ2Q5OU05bUp3a1pNTUJkN05wU3FFOEtGWjZheEcxaFBLTnRJb0l5NkRQZVNvZF9udDNxdk93X3c5SUhyNVJtczBQUWtwUmF3VDItdGtldHhlUVlNa0xjSHZSYTU2RDFoQ1UxNnQ4c2hUOFAtT0tSenN0UzU5WDU3SHFoZw?oc=5",
+    "date": "Wed, 05 Aug 2026 07:00:00 GMT"
+  },
+  {
+    "category": "AI - Global and India",
+    "title": "India Issues 2025 AI Governance Guidelines- How It Compares to Other Global AI Acts - The National Law Review",
+    "summary": "India has unveiled its 2025 AI Governance Guidelines, establishing a framework for regulating artificial intelligence within the country. These new guidelines are being critically examined to understand how they align with or diverge from existing global AI legislative efforts.",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTkw5ZDdjU1RSSHZrWHlzRVpBdm94TlcwR1dIWl9jb3NzMlJCaHZocFNKdEkzRDRvcXA0OXk3cURYRXJVb0o3c2JZM2Q2ajJXcC1sVzFNLXhCSlJLTW1WandQcWFIRlJDMjlzQlFVV3kzTlMyUEJXR0dHVUh2bWNmN1dqLXJlN0ZLMENkNkdLaWlEOU11OG5OZURydlZDMW1pdnZlaENoY1BIMjZadDRSeWZn0gG3AUFVX3lxTE5TVjBpWkhfWG9DYTg0T3BVQ09UVEM5czJpZjFLWjZBUlV3cW1BZWVtMDk0aTdPQVVJcWUyUDRJWlBQOXhGTGtINmR2S1cxTjVNQ05ReVpHdS1sQ3BiX2p6ei03N1hmZ01SbFEzRTNOdEtTVVY0UGRMbGh1NzhIYkF3LWZSQTBCaXd5V0J2V2xHRkEzd3dWUjhXV0ZmZkdfMjNfT3V3VGxaOTVhZ2N6bzlQVzJKOFZCVQ?oc=5",
+    "date": "Mon, 22 Dec 2025 08:00:00 GMT"
   }
 ]
